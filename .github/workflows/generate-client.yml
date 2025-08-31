@@ -1,0 +1,38 @@
+name: Generate API Client
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Run generation script
+        run: |
+          chmod +x generate.sh
+          ./generate.sh
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "feat: Regenerate API client"
+          title: "Regenerate API client from openapi.json"
+          body: |
+            This PR contains the auto-generated changes for the API client.
+            The client was regenerated based on the latest openapi.json.
+          branch: "auto-generate-client"
+          delete-branch: true
