@@ -5,6 +5,7 @@ import httpx
 
 from ... import errors
 from ...client import AuthenticatedClient, Client
+from ...models.match_mode import MatchMode
 from ...models.matches_v3_list_response import MatchesV3ListResponse
 from ...models.send_error import SendError
 from ...types import UNSET, Response, Unset
@@ -15,13 +16,17 @@ def _get_kwargs(
     name: str,
     tag: str,
     *,
-    mode: Union[Unset, str] = UNSET,
+    mode: Union[Unset, MatchMode] = UNSET,
     map_: Union[Unset, str] = UNSET,
     size: Union[Unset, int] = UNSET,
 ) -> dict[str, Any]:
     params: dict[str, Any] = {}
 
-    params["mode"] = mode
+    json_mode: Union[Unset, str] = UNSET
+    if not isinstance(mode, Unset):
+        json_mode = mode
+
+    params["mode"] = json_mode
 
     params["map"] = map_
 
@@ -84,7 +89,7 @@ def sync_detailed(
     tag: str,
     *,
     client: Union[AuthenticatedClient, Client],
-    mode: Union[Unset, str] = UNSET,
+    mode: Union[Unset, MatchMode] = UNSET,
     map_: Union[Unset, str] = UNSET,
     size: Union[Unset, int] = UNSET,
 ) -> Response[Union[MatchesV3ListResponse, SendError]]:
@@ -93,7 +98,7 @@ def sync_detailed(
         affinity (str):
         name (str):
         tag (str):
-        mode (Union[Unset, str]):
+        mode (Union[Unset, MatchMode]):
         map_ (Union[Unset, str]):
         size (Union[Unset, int]):
 
@@ -127,7 +132,7 @@ def sync(
     tag: str,
     *,
     client: Union[AuthenticatedClient, Client],
-    mode: Union[Unset, str] = UNSET,
+    mode: Union[Unset, MatchMode] = UNSET,
     map_: Union[Unset, str] = UNSET,
     size: Union[Unset, int] = UNSET,
 ) -> Optional[Union[MatchesV3ListResponse, SendError]]:
@@ -136,7 +141,7 @@ def sync(
         affinity (str):
         name (str):
         tag (str):
-        mode (Union[Unset, str]):
+        mode (Union[Unset, MatchMode]):
         map_ (Union[Unset, str]):
         size (Union[Unset, int]):
 
@@ -165,7 +170,7 @@ async def asyncio_detailed(
     tag: str,
     *,
     client: Union[AuthenticatedClient, Client],
-    mode: Union[Unset, str] = UNSET,
+    mode: Union[Unset, MatchMode] = UNSET,
     map_: Union[Unset, str] = UNSET,
     size: Union[Unset, int] = UNSET,
 ) -> Response[Union[MatchesV3ListResponse, SendError]]:
@@ -174,7 +179,7 @@ async def asyncio_detailed(
         affinity (str):
         name (str):
         tag (str):
-        mode (Union[Unset, str]):
+        mode (Union[Unset, MatchMode]):
         map_ (Union[Unset, str]):
         size (Union[Unset, int]):
 
@@ -206,7 +211,7 @@ async def asyncio(
     tag: str,
     *,
     client: Union[AuthenticatedClient, Client],
-    mode: Union[Unset, str] = UNSET,
+    mode: Union[Unset, MatchMode] = UNSET,
     map_: Union[Unset, str] = UNSET,
     size: Union[Unset, int] = UNSET,
 ) -> Optional[Union[MatchesV3ListResponse, SendError]]:
@@ -215,7 +220,7 @@ async def asyncio(
         affinity (str):
         name (str):
         tag (str):
-        mode (Union[Unset, str]):
+        mode (Union[Unset, MatchMode]):
         map_ (Union[Unset, str]):
         size (Union[Unset, int]):
 

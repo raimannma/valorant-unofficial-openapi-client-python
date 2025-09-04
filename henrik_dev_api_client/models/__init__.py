@@ -31,6 +31,7 @@ from .leaderboard_v3_data_threshold import LeaderboardV3DataThreshold
 from .leaderboard_v3_data_threshold_tier import LeaderboardV3DataThresholdTier
 from .leaderboard_v3_response import LeaderboardV3Response
 from .map_id_name_combo import MapIdNameCombo
+from .match_mode import MatchMode
 from .matches_v2_data import MatchesV2Data
 from .matches_v2_data_coach import MatchesV2DataCoach
 from .matches_v2_data_kill import MatchesV2DataKill
@@ -198,6 +199,8 @@ from .stored_mmrv2_response import StoredMMRV2Response
 from .tier_id_name_combo import TierIdNameCombo
 from .version_v1_data import VersionV1Data
 from .version_v1_response import VersionV1Response
+from .website_by_id_v1_data import WebsiteByIdV1Data
+from .website_by_id_v1_response import WebsiteByIdV1Response
 from .website_v1_data import WebsiteV1Data
 from .website_v1_response import WebsiteV1Response
 
@@ -313,6 +316,7 @@ __all__ = (
     "MatchesV4DataTeamRounds",
     "MatchesV4HistoryResponse",
     "MatchesV4Response",
+    "MatchMode",
     "MMRDataImages",
     "MMRHistoryV1Data",
     "MMRHistoryV1DataMap",
@@ -392,6 +396,8 @@ __all__ = (
     "TierIdNameCombo",
     "VersionV1Data",
     "VersionV1Response",
+    "WebsiteByIdV1Data",
+    "WebsiteByIdV1Response",
     "WebsiteV1Data",
     "WebsiteV1Response",
 )
