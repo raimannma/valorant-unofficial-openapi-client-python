@@ -214,6 +214,15 @@ docs/PremierTeamV1ResponseData.md
 docs/PremierTeamV1ResponseDataCustomization.md
 docs/PremierTeamV1ResponseDataPlacement.md
 docs/PremierTeamV1ResponseDataStats.md
+docs/PremiumApi.md
+docs/PremiumWebhookDeleteData.md
+docs/PremiumWebhookDeleteResponse.md
+docs/PremiumWebhookEvent.md
+docs/PremiumWebhookUserAddRequest.md
+docs/PremiumWebhookUserMutationData.md
+docs/PremiumWebhookUserMutationResponse.md
+docs/PremiumWebhookUserResponse.md
+docs/PremiumWebhookUserUpdateRequest.md
 docs/QueueStatusV1.md
 docs/QueueStatusV1Data.md
 docs/QueueStatusV1GameRules.md

@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **id** | **str** |  | 
 **losses** | **int** |  | 
 **name** | **str** |  | 
+**ranked** | **bool** |  | 
 **ranking** | **int** |  | 
 **region** | **str** |  | 
 **score** | **int** |  | 

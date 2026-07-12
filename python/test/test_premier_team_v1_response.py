@@ -56,6 +56,7 @@ class TestPremierTeamV1Response(unittest.TestCase):
                         division = 56, 
                         place = 56, 
                         points = 56, ), 
+                    ranked = True, 
                     stats = henrikdev_api_client.models.premier_team_v1_response_data_stats.PremierTeamV1ResponseDataStats(
                         losses = 56, 
                         matches = 56, 
@@ -88,6 +89,7 @@ class TestPremierTeamV1Response(unittest.TestCase):
                         division = 56, 
                         place = 56, 
                         points = 56, ), 
+                    ranked = True, 
                     stats = henrikdev_api_client.models.premier_team_v1_response_data_stats.PremierTeamV1ResponseDataStats(
                         losses = 56, 
                         matches = 56, 

@@ -40,6 +40,7 @@ import com.squareup.moshi.JsonClass
  * @param member 
  * @param name 
  * @param placement 
+ * @param ranked 
  * @param stats 
  * @param tag 
  */
@@ -64,6 +65,9 @@ data class PremierTeamV1ResponseData (
 
     @Json(name = "placement")
     val placement: PremierTeamV1ResponseDataPlacement,
+
+    @Json(name = "ranked")
+    val ranked: kotlin.Boolean,
 
     @Json(name = "stats")
     val stats: PremierTeamV1ResponseDataStats,

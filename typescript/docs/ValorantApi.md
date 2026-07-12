@@ -4,60 +4,60 @@ All URIs are relative to *https://api.henrikdev.xyz*
 
 |Method | HTTP request | Description|
 |------------- | ------------- | -------------|
-|[**crosshair**](#crosshair) | **GET** /valorant/v1/crosshair/generate | |
-|[**esportsEventV2**](#esportseventv2) | **GET** /valorant/v2/esports/vlr/events/{event_id}/matches | |
-|[**esportsEventsV2**](#esportseventsv2) | **GET** /valorant/v2/esports/vlr/events | |
-|[**esportsMatchV2**](#esportsmatchv2) | **GET** /valorant/v2/esports/vlr/matches/{match_id} | |
-|[**esportsPlayerMatchesV2**](#esportsplayermatchesv2) | **GET** /valorant/v2/esports/vlr/players/{player}/matches | |
-|[**esportsPlayerV2**](#esportsplayerv2) | **GET** /valorant/v2/esports/vlr/players/{player_id} | |
-|[**esportsSchedulesV1**](#esportsschedulesv1) | **GET** /valorant/v1/esports/schedule | |
-|[**esportsTeamMatchesV2**](#esportsteammatchesv2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/matches | |
-|[**esportsTeamTransactionsV2**](#esportsteamtransactionsv2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/transactions | |
-|[**esportsTeamV2**](#esportsteamv2) | **GET** /valorant/v2/esports/vlr/teams/{team_id} | |
-|[**getAccountByIdV1**](#getaccountbyidv1) | **GET** /valorant/v1/by-puuid/account/{puuid} | |
-|[**getAccountByIdV2**](#getaccountbyidv2) | **GET** /valorant/v2/by-puuid/account/{puuid} | |
-|[**getAccountV1**](#getaccountv1) | **GET** /valorant/v1/account/{name}/{tag} | |
-|[**getAccountV2**](#getaccountv2) | **GET** /valorant/v2/account/{name}/{tag} | |
-|[**getContentV1**](#getcontentv1) | **GET** /valorant/v1/content | |
-|[**getMatchesV3ById**](#getmatchesv3byid) | **GET** /valorant/v3/by-puuid/matches/{affinity}/{puuid} | |
-|[**getMatchesV3ByName**](#getmatchesv3byname) | **GET** /valorant/v3/matches/{affinity}/{name}/{tag} | |
-|[**getMatchesV4ById**](#getmatchesv4byid) | **GET** /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid} | |
-|[**getMatchesV4ByName**](#getmatchesv4byname) | **GET** /valorant/v4/matches/{affinity}/{platform}/{name}/{tag} | |
-|[**getMmrHistoryById**](#getmmrhistorybyid) | **GET** /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid} | |
-|[**getMmrHistoryByName**](#getmmrhistorybyname) | **GET** /valorant/v1/mmr-history/{affinity}/{name}/{tag} | |
-|[**getMmrHistoryV2ById**](#getmmrhistoryv2byid) | **GET** /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid} | |
-|[**getMmrHistoryV2ByName**](#getmmrhistoryv2byname) | **GET** /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag} | |
-|[**getMmrV1ById**](#getmmrv1byid) | **GET** /valorant/v1/by-puuid/mmr/{affinity}/{puuid} | |
-|[**getMmrV1ByName**](#getmmrv1byname) | **GET** /valorant/v1/mmr/{affinity}/{name}/{tag} | |
-|[**getMmrV2ById**](#getmmrv2byid) | **GET** /valorant/v2/by-puuid/mmr/{affinity}/{puuid} | |
-|[**getMmrV2ByName**](#getmmrv2byname) | **GET** /valorant/v2/mmr/{affinity}/{name}/{tag} | |
-|[**getMmrV3ById**](#getmmrv3byid) | **GET** /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid} | |
-|[**getMmrV3ByName**](#getmmrv3byname) | **GET** /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag} | |
-|[**leaderboardV1**](#leaderboardv1) | **GET** /valorant/v1/leaderboard/{affinity} | |
-|[**leaderboardV2**](#leaderboardv2) | **GET** /valorant/v2/leaderboard/{affinity} | |
-|[**leaderboardV3**](#leaderboardv3) | **GET** /valorant/v3/leaderboard/{affinity}/{platform} | |
-|[**matchV2**](#matchv2) | **GET** /valorant/v2/match/{match_id} | |
-|[**matchV4**](#matchv4) | **GET** /valorant/v4/match/{affinity}/{match_id} | |
-|[**premierById**](#premierbyid) | **GET** /valorant/v1/premier/{id} | |
-|[**premierByIdHistory**](#premierbyidhistory) | **GET** /valorant/v1/premier/{id}/history | |
-|[**premierByName**](#premierbyname) | **GET** /valorant/v1/premier/{name}/{tag} | |
-|[**premierByNameHistory**](#premierbynamehistory) | **GET** /valorant/v1/premier/{name}/{tag}/history | |
-|[**premierLeaderboard**](#premierleaderboard) | **GET** /valorant/v1/premier/leaderboard/{affinity} | |
-|[**premierSearch**](#premiersearch) | **GET** /valorant/v1/premier/search | |
-|[**queueStatus**](#queuestatus) | **GET** /valorant/v1/queue-status/{affinity} | |
-|[**raw**](#raw) | **POST** /valorant/v1/raw | |
-|[**status**](#status) | **GET** /valorant/v1/status/{affinity} | |
-|[**storeFeatured**](#storefeatured) | **GET** /valorant/{version}/store-featured | |
-|[**storeOffers**](#storeoffers) | **GET** /valorant/{version}/store-offers | |
-|[**storedMatches**](#storedmatches) | **GET** /valorant/v1/stored-matches/{affinity}/{name}/{tag} | |
-|[**storedMatchesById**](#storedmatchesbyid) | **GET** /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid} | |
-|[**storedMmrHistory**](#storedmmrhistory) | **GET** /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag} | |
-|[**storedMmrHistoryById**](#storedmmrhistorybyid) | **GET** /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid} | |
-|[**storedMmrHistoryV2**](#storedmmrhistoryv2) | **GET** /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag} | |
-|[**storedMmrHistoryV2ById**](#storedmmrhistoryv2byid) | **GET** /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid} | |
-|[**version**](#version) | **GET** /valorant/v1/version/{affinity} | |
-|[**website**](#website) | **GET** /valorant/v1/website/{country_code} | |
-|[**websiteById**](#websitebyid) | **GET** /valorant/v1/website/{country_code}/{db_id} | |
+|[**crosshair**](#crosshair) | **GET** /valorant/v1/crosshair/generate | Generate crosshair image (v1)|
+|[**esportsEventV2**](#esportseventv2) | **GET** /valorant/v2/esports/vlr/events/{event_id}/matches | Get VLR event matches (v2)|
+|[**esportsEventsV2**](#esportseventsv2) | **GET** /valorant/v2/esports/vlr/events | Get VLR esports events (v2)|
+|[**esportsMatchV2**](#esportsmatchv2) | **GET** /valorant/v2/esports/vlr/matches/{match_id} | Get VLR match details (v2)|
+|[**esportsPlayerMatchesV2**](#esportsplayermatchesv2) | **GET** /valorant/v2/esports/vlr/players/{player}/matches | Get VLR player matches (v2)|
+|[**esportsPlayerV2**](#esportsplayerv2) | **GET** /valorant/v2/esports/vlr/players/{player_id} | Get VLR player (v2)|
+|[**esportsSchedulesV1**](#esportsschedulesv1) | **GET** /valorant/v1/esports/schedule | Get esports schedule (v1)|
+|[**esportsTeamMatchesV2**](#esportsteammatchesv2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/matches | Get VLR team matches (v2)|
+|[**esportsTeamTransactionsV2**](#esportsteamtransactionsv2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/transactions | Get VLR team transactions (v2)|
+|[**esportsTeamV2**](#esportsteamv2) | **GET** /valorant/v2/esports/vlr/teams/{team_id} | Get VLR team (v2)|
+|[**getAccountByIdV1**](#getaccountbyidv1) | **GET** /valorant/v1/by-puuid/account/{puuid} | Get account by PUUID (v1)|
+|[**getAccountByIdV2**](#getaccountbyidv2) | **GET** /valorant/v2/by-puuid/account/{puuid} | Get account by PUUID (v2)|
+|[**getAccountV1**](#getaccountv1) | **GET** /valorant/v1/account/{name}/{tag} | Get account (v1)|
+|[**getAccountV2**](#getaccountv2) | **GET** /valorant/v2/account/{name}/{tag} | Get account (v2)|
+|[**getContentV1**](#getcontentv1) | **GET** /valorant/v1/content | Get content (v1)|
+|[**getMatchesV3ById**](#getmatchesv3byid) | **GET** /valorant/v3/by-puuid/matches/{affinity}/{puuid} | Get matches by PUUID (v3)|
+|[**getMatchesV3ByName**](#getmatchesv3byname) | **GET** /valorant/v3/matches/{affinity}/{name}/{tag} | Get matches by name (v3)|
+|[**getMatchesV4ById**](#getmatchesv4byid) | **GET** /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid} | Get matches by PUUID (v4)|
+|[**getMatchesV4ByName**](#getmatchesv4byname) | **GET** /valorant/v4/matches/{affinity}/{platform}/{name}/{tag} | Get matches by name (v4)|
+|[**getMmrHistoryById**](#getmmrhistorybyid) | **GET** /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid} | Get MMR history by PUUID (v1)|
+|[**getMmrHistoryByName**](#getmmrhistorybyname) | **GET** /valorant/v1/mmr-history/{affinity}/{name}/{tag} | Get MMR history by name (v1)|
+|[**getMmrHistoryV2ById**](#getmmrhistoryv2byid) | **GET** /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid} | Get MMR history by PUUID (v2)|
+|[**getMmrHistoryV2ByName**](#getmmrhistoryv2byname) | **GET** /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag} | Get MMR history by name (v2)|
+|[**getMmrV1ById**](#getmmrv1byid) | **GET** /valorant/v1/by-puuid/mmr/{affinity}/{puuid} | Get MMR by PUUID (v1)|
+|[**getMmrV1ByName**](#getmmrv1byname) | **GET** /valorant/v1/mmr/{affinity}/{name}/{tag} | Get MMR by name (v1)|
+|[**getMmrV2ById**](#getmmrv2byid) | **GET** /valorant/v2/by-puuid/mmr/{affinity}/{puuid} | Get MMR by PUUID (v2)|
+|[**getMmrV2ByName**](#getmmrv2byname) | **GET** /valorant/v2/mmr/{affinity}/{name}/{tag} | Get MMR by name (v2)|
+|[**getMmrV3ById**](#getmmrv3byid) | **GET** /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid} | Get MMR by PUUID (v3)|
+|[**getMmrV3ByName**](#getmmrv3byname) | **GET** /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag} | Get MMR by name (v3)|
+|[**leaderboardV1**](#leaderboardv1) | **GET** /valorant/v1/leaderboard/{affinity} | Get leaderboard (v1)|
+|[**leaderboardV2**](#leaderboardv2) | **GET** /valorant/v2/leaderboard/{affinity} | Get leaderboard (v2)|
+|[**leaderboardV3**](#leaderboardv3) | **GET** /valorant/v3/leaderboard/{affinity}/{platform} | Get leaderboard (v3)|
+|[**matchV2**](#matchv2) | **GET** /valorant/v2/match/{match_id} | Get match details (v2)|
+|[**matchV4**](#matchv4) | **GET** /valorant/v4/match/{affinity}/{match_id} | Get match details (v4)|
+|[**premierById**](#premierbyid) | **GET** /valorant/v1/premier/{id} | Get Premier team by ID (v1)|
+|[**premierByIdHistory**](#premierbyidhistory) | **GET** /valorant/v1/premier/{id}/history | Get Premier team history by ID (v1)|
+|[**premierByName**](#premierbyname) | **GET** /valorant/v1/premier/{name}/{tag} | Get Premier team by name (v1)|
+|[**premierByNameHistory**](#premierbynamehistory) | **GET** /valorant/v1/premier/{name}/{tag}/history | Get Premier team history by name (v1)|
+|[**premierLeaderboard**](#premierleaderboard) | **GET** /valorant/v1/premier/leaderboard/{affinity} | Get Premier leaderboard (v1)|
+|[**premierSearch**](#premiersearch) | **GET** /valorant/v1/premier/search | Search Premier teams (v1)|
+|[**queueStatus**](#queuestatus) | **GET** /valorant/v1/queue-status/{affinity} | Get queue status (v1)|
+|[**raw**](#raw) | **POST** /valorant/v1/raw | Get raw Riot API data (v1)|
+|[**status**](#status) | **GET** /valorant/v1/status/{affinity} | Get status (v1)|
+|[**storeFeatured**](#storefeatured) | **GET** /valorant/{version}/store-featured | Get featured store items|
+|[**storeOffers**](#storeoffers) | **GET** /valorant/{version}/store-offers | Get store offers|
+|[**storedMatches**](#storedmatches) | **GET** /valorant/v1/stored-matches/{affinity}/{name}/{tag} | Get stored matches by name (v1)|
+|[**storedMatchesById**](#storedmatchesbyid) | **GET** /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid} | Get stored matches by PUUID (v1)|
+|[**storedMmrHistory**](#storedmmrhistory) | **GET** /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag} | Get stored MMR history by name (v1)|
+|[**storedMmrHistoryById**](#storedmmrhistorybyid) | **GET** /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid} | Get stored MMR history by PUUID (v1)|
+|[**storedMmrHistoryV2**](#storedmmrhistoryv2) | **GET** /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag} | Get stored MMR history by name (v2)|
+|[**storedMmrHistoryV2ById**](#storedmmrhistoryv2byid) | **GET** /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid} | Get stored MMR history by PUUID (v2)|
+|[**version**](#version) | **GET** /valorant/v1/version/{affinity} | Get game version (v1)|
+|[**website**](#website) | **GET** /valorant/v1/website/{country_code} | Get website content (v1)|
+|[**websiteById**](#websitebyid) | **GET** /valorant/v1/website/{country_code}/{db_id} | Get website entry by ID (v1)|
 
 # **crosshair**
 > crosshair()
@@ -2070,10 +2070,12 @@ const apiInstance = new ValorantApi(configuration);
 
 let id: string; //Team UUID (default to undefined)
 let season: string; //Premier season id (optional) (optional) (default to undefined)
+let affinity: string; //Region/affinity for fallback resolution (optional) (optional) (default to undefined)
 
 const { status, data } = await apiInstance.premierById(
     id,
-    season
+    season,
+    affinity
 );
 ```
 
@@ -2083,6 +2085,7 @@ const { status, data } = await apiInstance.premierById(
 |------------- | ------------- | ------------- | -------------|
 | **id** | [**string**] | Team UUID | defaults to undefined|
 | **season** | [**string**] | Premier season id (optional) | (optional) defaults to undefined|
+| **affinity** | [**string**] | Region/affinity for fallback resolution (optional) | (optional) defaults to undefined|
 
 
 ### Return type
@@ -2183,11 +2186,13 @@ const apiInstance = new ValorantApi(configuration);
 let name: string; //Team name (default to undefined)
 let tag: string; //Team tag (default to undefined)
 let season: string; //Premier season id (optional) (optional) (default to undefined)
+let affinity: string; //Region/affinity for fallback resolution (optional) (optional) (default to undefined)
 
 const { status, data } = await apiInstance.premierByName(
     name,
     tag,
-    season
+    season,
+    affinity
 );
 ```
 
@@ -2198,6 +2203,7 @@ const { status, data } = await apiInstance.premierByName(
 | **name** | [**string**] | Team name | defaults to undefined|
 | **tag** | [**string**] | Team tag | defaults to undefined|
 | **season** | [**string**] | Premier season id (optional) | (optional) defaults to undefined|
+| **affinity** | [**string**] | Region/affinity for fallback resolution (optional) | (optional) defaults to undefined|
 
 
 ### Return type
@@ -2220,6 +2226,7 @@ No authorization required
 |**200** | Premier team data retrieved successfully |  -  |
 |**400** | Bad Request |  -  |
 |**404** | Team not found |  -  |
+|**409** | Multiple teams match this name and tag |  -  |
 |**500** | Internal Server Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

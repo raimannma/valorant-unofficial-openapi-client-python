@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **Losses** | **int32** |  | 
 **Name** | **string** |  | 
+**Ranked** | **bool** |  | 
 **Ranking** | **int32** |  | 
 **Region** | **string** |  | 
 **Score** | **int32** |  | 
@@ -22,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewPremierTeamLiteResponseData
 
-`func NewPremierTeamLiteResponseData(affinity string, conference string, customization PremierTeamV1ResponseDataCustomization, division int32, id string, losses int32, name string, ranking int32, region string, score int32, tag string, updatedAt string, wins int32, ) *PremierTeamLiteResponseData`
+`func NewPremierTeamLiteResponseData(affinity string, conference string, customization PremierTeamV1ResponseDataCustomization, division int32, id string, losses int32, name string, ranked bool, ranking int32, region string, score int32, tag string, updatedAt string, wins int32, ) *PremierTeamLiteResponseData`
 
 NewPremierTeamLiteResponseData instantiates a new PremierTeamLiteResponseData object
 This constructor will assign default values to properties that have it defined,
@@ -175,6 +176,26 @@ and a boolean to check if the value has been set.
 `func (o *PremierTeamLiteResponseData) SetName(v string)`
 
 SetName sets Name field to given value.
+
+
+### GetRanked
+
+`func (o *PremierTeamLiteResponseData) GetRanked() bool`
+
+GetRanked returns the Ranked field if non-nil, zero value otherwise.
+
+### GetRankedOk
+
+`func (o *PremierTeamLiteResponseData) GetRankedOk() (*bool, bool)`
+
+GetRankedOk returns a tuple with the Ranked field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRanked
+
+`func (o *PremierTeamLiteResponseData) SetRanked(v bool)`
+
+SetRanked sets Ranked field to given value.
 
 
 ### GetRanking

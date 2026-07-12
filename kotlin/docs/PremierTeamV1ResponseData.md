@@ -10,6 +10,7 @@
 | **member** | [**kotlin.collections.List&lt;PremierTeamMember&gt;**](PremierTeamMember.md) |  |  |
 | **name** | **kotlin.String** |  |  |
 | **placement** | [**PremierTeamV1ResponseDataPlacement**](PremierTeamV1ResponseDataPlacement.md) |  |  |
+| **ranked** | **kotlin.Boolean** |  |  |
 | **stats** | [**PremierTeamV1ResponseDataStats**](PremierTeamV1ResponseDataStats.md) |  |  |
 | **tag** | **kotlin.String** |  |  |
 

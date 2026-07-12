@@ -97,7 +97,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/crosshair/generate
-     * 
+     * Generate crosshair image (v1)
      * 
      * @param id Crosshair code (optional)
      * @return void
@@ -128,7 +128,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/crosshair/generate
-     * 
+     * Generate crosshair image (v1)
      * 
      * @param id Crosshair code (optional)
      * @return ApiResponse<Unit?>
@@ -173,7 +173,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/events/{event_id}/matches
-     * 
+     * Get VLR event matches (v2)
      * 
      * @param eventId 
      * @return EsportsV2EventResponse
@@ -205,7 +205,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/events/{event_id}/matches
-     * 
+     * Get VLR event matches (v2)
      * 
      * @param eventId 
      * @return ApiResponse<EsportsV2EventResponse?>
@@ -246,7 +246,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/events
-     * 
+     * Get VLR esports events (v2)
      * 
      * @param region  (optional)
      * @param type  (optional)
@@ -280,7 +280,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/events
-     * 
+     * Get VLR esports events (v2)
      * 
      * @param region  (optional)
      * @param type  (optional)
@@ -336,7 +336,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/matches/{match_id}
-     * 
+     * Get VLR match details (v2)
      * 
      * @param matchId 
      * @return EsportsV2MatchesResponse
@@ -368,7 +368,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/matches/{match_id}
-     * 
+     * Get VLR match details (v2)
      * 
      * @param matchId 
      * @return ApiResponse<EsportsV2MatchesResponse?>
@@ -409,7 +409,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/players/{player}/matches
-     * 
+     * Get VLR player matches (v2)
      * 
      * @param player 
      * @param page  (optional)
@@ -442,7 +442,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/players/{player}/matches
-     * 
+     * Get VLR player matches (v2)
      * 
      * @param player 
      * @param page  (optional)
@@ -490,7 +490,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/players/{player_id}
-     * 
+     * Get VLR player (v2)
      * 
      * @param player 
      * @param timespan  (optional)
@@ -523,7 +523,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/players/{player_id}
-     * 
+     * Get VLR player (v2)
      * 
      * @param player 
      * @param timespan  (optional)
@@ -571,7 +571,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/esports/schedule
-     * 
+     * Get esports schedule (v1)
      * 
      * @param region  (optional)
      * @param league  (optional)
@@ -604,7 +604,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/esports/schedule
-     * 
+     * Get esports schedule (v1)
      * 
      * @param region  (optional)
      * @param league  (optional)
@@ -655,7 +655,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/teams/{team_id}/matches
-     * 
+     * Get VLR team matches (v2)
      * 
      * @param teamId 
      * @param page  (optional)
@@ -688,7 +688,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/teams/{team_id}/matches
-     * 
+     * Get VLR team matches (v2)
      * 
      * @param teamId 
      * @param page  (optional)
@@ -736,7 +736,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/teams/{team_id}/transactions
-     * 
+     * Get VLR team transactions (v2)
      * 
      * @param teamId 
      * @return EsportsV2TeamTransactionsResponse
@@ -768,7 +768,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/teams/{team_id}/transactions
-     * 
+     * Get VLR team transactions (v2)
      * 
      * @param teamId 
      * @return ApiResponse<EsportsV2TeamTransactionsResponse?>
@@ -809,7 +809,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/teams/{team_id}
-     * 
+     * Get VLR team (v2)
      * 
      * @param teamId 
      * @return EsportsV2TeamResponse
@@ -841,7 +841,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/esports/vlr/teams/{team_id}
-     * 
+     * Get VLR team (v2)
      * 
      * @param teamId 
      * @return ApiResponse<EsportsV2TeamResponse?>
@@ -882,7 +882,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/by-puuid/account/{puuid}
-     * 
+     * Get account by PUUID (v1)
      * 
      * @param puuid Player UUID
      * @param force Bypass cache and refresh (optional) (optional)
@@ -915,7 +915,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/by-puuid/account/{puuid}
-     * 
+     * Get account by PUUID (v1)
      * 
      * @param puuid Player UUID
      * @param force Bypass cache and refresh (optional) (optional)
@@ -963,7 +963,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/by-puuid/account/{puuid}
-     * 
+     * Get account by PUUID (v2)
      * 
      * @param puuid Player UUID
      * @param force Bypass cache and refresh (optional) (optional)
@@ -996,7 +996,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/by-puuid/account/{puuid}
-     * 
+     * Get account by PUUID (v2)
      * 
      * @param puuid Player UUID
      * @param force Bypass cache and refresh (optional) (optional)
@@ -1044,7 +1044,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/account/{name}/{tag}
-     * 
+     * Get account (v1)
      * 
      * @param name Riot ID name
      * @param tag Riot ID tag
@@ -1078,7 +1078,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/account/{name}/{tag}
-     * 
+     * Get account (v1)
      * 
      * @param name Riot ID name
      * @param tag Riot ID tag
@@ -1128,7 +1128,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/account/{name}/{tag}
-     * 
+     * Get account (v2)
      * 
      * @param name Riot ID name
      * @param tag Riot ID tag
@@ -1162,7 +1162,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/account/{name}/{tag}
-     * 
+     * Get account (v2)
      * 
      * @param name Riot ID name
      * @param tag Riot ID tag
@@ -1212,7 +1212,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/content
-     * 
+     * Get content (v1)
      * 
      * @param locale Locale code (e.g., en-US, de-DE) - optional (optional)
      * @return ContentV1Response
@@ -1244,7 +1244,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/content
-     * 
+     * Get content (v1)
      * 
      * @param locale Locale code (e.g., en-US, de-DE) - optional (optional)
      * @return ApiResponse<ContentV1Response?>
@@ -1290,7 +1290,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v3/by-puuid/matches/{affinity}/{puuid}
-     * 
+     * Get matches by PUUID (v3)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -1326,7 +1326,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v3/by-puuid/matches/{affinity}/{puuid}
-     * 
+     * Get matches by PUUID (v3)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -1386,7 +1386,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v3/matches/{affinity}/{name}/{tag}
-     * 
+     * Get matches by name (v3)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -1423,7 +1423,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v3/matches/{affinity}/{name}/{tag}
-     * 
+     * Get matches by name (v3)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -1485,7 +1485,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid}
-     * 
+     * Get matches by PUUID (v4)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -1523,7 +1523,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid}
-     * 
+     * Get matches by PUUID (v4)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -1590,7 +1590,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v4/matches/{affinity}/{platform}/{name}/{tag}
-     * 
+     * Get matches by name (v4)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -1629,7 +1629,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v4/matches/{affinity}/{platform}/{name}/{tag}
-     * 
+     * Get matches by name (v4)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -1698,7 +1698,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid}
-     * 
+     * Get MMR history by PUUID (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -1731,7 +1731,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid}
-     * 
+     * Get MMR history by PUUID (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -1774,7 +1774,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/mmr-history/{affinity}/{name}/{tag}
-     * 
+     * Get MMR history by name (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -1808,7 +1808,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/mmr-history/{affinity}/{name}/{tag}
-     * 
+     * Get MMR history by name (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -1853,7 +1853,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid}
-     * 
+     * Get MMR history by PUUID (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -1887,7 +1887,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid}
-     * 
+     * Get MMR history by PUUID (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -1932,7 +1932,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag}
-     * 
+     * Get MMR history by name (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -1967,7 +1967,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag}
-     * 
+     * Get MMR history by name (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -2014,7 +2014,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/by-puuid/mmr/{affinity}/{puuid}
-     * 
+     * Get MMR by PUUID (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -2047,7 +2047,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/by-puuid/mmr/{affinity}/{puuid}
-     * 
+     * Get MMR by PUUID (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -2090,7 +2090,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/mmr/{affinity}/{name}/{tag}
-     * 
+     * Get MMR by name (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -2124,7 +2124,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/mmr/{affinity}/{name}/{tag}
-     * 
+     * Get MMR by name (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -2169,7 +2169,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/by-puuid/mmr/{affinity}/{puuid}
-     * 
+     * Get MMR by PUUID (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -2202,7 +2202,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/by-puuid/mmr/{affinity}/{puuid}
-     * 
+     * Get MMR by PUUID (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -2245,7 +2245,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/mmr/{affinity}/{name}/{tag}
-     * 
+     * Get MMR by name (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -2279,7 +2279,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/mmr/{affinity}/{name}/{tag}
-     * 
+     * Get MMR by name (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -2324,7 +2324,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid}
-     * 
+     * Get MMR by PUUID (v3)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -2358,7 +2358,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid}
-     * 
+     * Get MMR by PUUID (v3)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -2403,7 +2403,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag}
-     * 
+     * Get MMR by name (v3)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -2438,7 +2438,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag}
-     * 
+     * Get MMR by name (v3)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -2485,7 +2485,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/leaderboard/{affinity}
-     * 
+     * Get leaderboard (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param season Season ID (optional) (optional)
@@ -2520,7 +2520,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/leaderboard/{affinity}
-     * 
+     * Get leaderboard (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param season Season ID (optional) (optional)
@@ -2578,7 +2578,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/leaderboard/{affinity}
-     * 
+     * Get leaderboard (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param season Season ID (optional) (optional)
@@ -2614,7 +2614,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/leaderboard/{affinity}
-     * 
+     * Get leaderboard (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param season Season ID (optional) (optional)
@@ -2677,7 +2677,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v3/leaderboard/{affinity}/{platform}
-     * 
+     * Get leaderboard (v3)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -2715,7 +2715,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v3/leaderboard/{affinity}/{platform}
-     * 
+     * Get leaderboard (v3)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -2785,7 +2785,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/match/{match_id}
-     * 
+     * Get match details (v2)
      * 
      * @param matchId Match UUID
      * @return MatchesV2Response
@@ -2817,7 +2817,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/match/{match_id}
-     * 
+     * Get match details (v2)
      * 
      * @param matchId Match UUID
      * @return ApiResponse<MatchesV2Response?>
@@ -2858,7 +2858,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v4/match/{affinity}/{match_id}
-     * 
+     * Get match details (v4)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param matchId Match UUID
@@ -2891,7 +2891,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v4/match/{affinity}/{match_id}
-     * 
+     * Get match details (v4)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param matchId Match UUID
@@ -2934,10 +2934,11 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/{id}
-     * 
+     * Get Premier team by ID (v1)
      * 
      * @param id Team UUID
      * @param season Premier season id (optional) (optional)
+     * @param affinity Region/affinity for fallback resolution (optional) (optional)
      * @return PremierTeamV1Response
      * @throws IllegalStateException If the request is not correctly configured
      * @throws IOException Rethrows the OkHttp execute method exception
@@ -2947,8 +2948,8 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
      */
     @Suppress("UNCHECKED_CAST")
     @Throws(IllegalStateException::class, IOException::class, UnsupportedOperationException::class, ClientException::class, ServerException::class)
-    fun premierById(id: kotlin.String, season: kotlin.String? = null) : PremierTeamV1Response {
-        val localVarResponse = premierByIdWithHttpInfo(id = id, season = season)
+    fun premierById(id: kotlin.String, season: kotlin.String? = null, affinity: kotlin.String? = null) : PremierTeamV1Response {
+        val localVarResponse = premierByIdWithHttpInfo(id = id, season = season, affinity = affinity)
 
         return when (localVarResponse.responseType) {
             ResponseType.Success -> (localVarResponse as Success<*>).data as PremierTeamV1Response
@@ -2967,18 +2968,19 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/{id}
-     * 
+     * Get Premier team by ID (v1)
      * 
      * @param id Team UUID
      * @param season Premier season id (optional) (optional)
+     * @param affinity Region/affinity for fallback resolution (optional) (optional)
      * @return ApiResponse<PremierTeamV1Response?>
      * @throws IllegalStateException If the request is not correctly configured
      * @throws IOException Rethrows the OkHttp execute method exception
      */
     @Suppress("UNCHECKED_CAST")
     @Throws(IllegalStateException::class, IOException::class)
-    fun premierByIdWithHttpInfo(id: kotlin.String, season: kotlin.String?) : ApiResponse<PremierTeamV1Response?> {
-        val localVariableConfig = premierByIdRequestConfig(id = id, season = season)
+    fun premierByIdWithHttpInfo(id: kotlin.String, season: kotlin.String?, affinity: kotlin.String?) : ApiResponse<PremierTeamV1Response?> {
+        val localVariableConfig = premierByIdRequestConfig(id = id, season = season, affinity = affinity)
 
         return request<Unit, PremierTeamV1Response>(
             localVariableConfig
@@ -2990,14 +2992,18 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
      *
      * @param id Team UUID
      * @param season Premier season id (optional) (optional)
+     * @param affinity Region/affinity for fallback resolution (optional) (optional)
      * @return RequestConfig
      */
-    fun premierByIdRequestConfig(id: kotlin.String, season: kotlin.String?) : RequestConfig<Unit> {
+    fun premierByIdRequestConfig(id: kotlin.String, season: kotlin.String?, affinity: kotlin.String?) : RequestConfig<Unit> {
         val localVariableBody = null
         val localVariableQuery: MultiValueMap = mutableMapOf<kotlin.String, kotlin.collections.List<kotlin.String>>()
             .apply {
                 if (season != null) {
                     put("season", listOf(season.toString()))
+                }
+                if (affinity != null) {
+                    put("affinity", listOf(affinity.toString()))
                 }
             }
         val localVariableHeaders: MutableMap<String, String> = mutableMapOf()
@@ -3015,7 +3021,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/{id}/history
-     * 
+     * Get Premier team history by ID (v1)
      * 
      * @param id Team UUID
      * @param season Premier season id (optional) (optional)
@@ -3048,7 +3054,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/{id}/history
-     * 
+     * Get Premier team history by ID (v1)
      * 
      * @param id Team UUID
      * @param season Premier season id (optional) (optional)
@@ -3096,11 +3102,12 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/{name}/{tag}
-     * 
+     * Get Premier team by name (v1)
      * 
      * @param name Team name
      * @param tag Team tag
      * @param season Premier season id (optional) (optional)
+     * @param affinity Region/affinity for fallback resolution (optional) (optional)
      * @return PremierTeamV1Response
      * @throws IllegalStateException If the request is not correctly configured
      * @throws IOException Rethrows the OkHttp execute method exception
@@ -3110,8 +3117,8 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
      */
     @Suppress("UNCHECKED_CAST")
     @Throws(IllegalStateException::class, IOException::class, UnsupportedOperationException::class, ClientException::class, ServerException::class)
-    fun premierByName(name: kotlin.String, tag: kotlin.String, season: kotlin.String? = null) : PremierTeamV1Response {
-        val localVarResponse = premierByNameWithHttpInfo(name = name, tag = tag, season = season)
+    fun premierByName(name: kotlin.String, tag: kotlin.String, season: kotlin.String? = null, affinity: kotlin.String? = null) : PremierTeamV1Response {
+        val localVarResponse = premierByNameWithHttpInfo(name = name, tag = tag, season = season, affinity = affinity)
 
         return when (localVarResponse.responseType) {
             ResponseType.Success -> (localVarResponse as Success<*>).data as PremierTeamV1Response
@@ -3130,19 +3137,20 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/{name}/{tag}
-     * 
+     * Get Premier team by name (v1)
      * 
      * @param name Team name
      * @param tag Team tag
      * @param season Premier season id (optional) (optional)
+     * @param affinity Region/affinity for fallback resolution (optional) (optional)
      * @return ApiResponse<PremierTeamV1Response?>
      * @throws IllegalStateException If the request is not correctly configured
      * @throws IOException Rethrows the OkHttp execute method exception
      */
     @Suppress("UNCHECKED_CAST")
     @Throws(IllegalStateException::class, IOException::class)
-    fun premierByNameWithHttpInfo(name: kotlin.String, tag: kotlin.String, season: kotlin.String?) : ApiResponse<PremierTeamV1Response?> {
-        val localVariableConfig = premierByNameRequestConfig(name = name, tag = tag, season = season)
+    fun premierByNameWithHttpInfo(name: kotlin.String, tag: kotlin.String, season: kotlin.String?, affinity: kotlin.String?) : ApiResponse<PremierTeamV1Response?> {
+        val localVariableConfig = premierByNameRequestConfig(name = name, tag = tag, season = season, affinity = affinity)
 
         return request<Unit, PremierTeamV1Response>(
             localVariableConfig
@@ -3155,14 +3163,18 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
      * @param name Team name
      * @param tag Team tag
      * @param season Premier season id (optional) (optional)
+     * @param affinity Region/affinity for fallback resolution (optional) (optional)
      * @return RequestConfig
      */
-    fun premierByNameRequestConfig(name: kotlin.String, tag: kotlin.String, season: kotlin.String?) : RequestConfig<Unit> {
+    fun premierByNameRequestConfig(name: kotlin.String, tag: kotlin.String, season: kotlin.String?, affinity: kotlin.String?) : RequestConfig<Unit> {
         val localVariableBody = null
         val localVariableQuery: MultiValueMap = mutableMapOf<kotlin.String, kotlin.collections.List<kotlin.String>>()
             .apply {
                 if (season != null) {
                     put("season", listOf(season.toString()))
+                }
+                if (affinity != null) {
+                    put("affinity", listOf(affinity.toString()))
                 }
             }
         val localVariableHeaders: MutableMap<String, String> = mutableMapOf()
@@ -3180,7 +3192,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/{name}/{tag}/history
-     * 
+     * Get Premier team history by name (v1)
      * 
      * @param name Team name
      * @param tag Team tag
@@ -3214,7 +3226,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/{name}/{tag}/history
-     * 
+     * Get Premier team history by name (v1)
      * 
      * @param name Team name
      * @param tag Team tag
@@ -3264,7 +3276,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/leaderboard/{affinity}
-     * 
+     * Get Premier leaderboard (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param conference Conference filter (optional) (optional)
@@ -3299,7 +3311,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/leaderboard/{affinity}
-     * 
+     * Get Premier leaderboard (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param conference Conference filter (optional) (optional)
@@ -3357,7 +3369,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/search
-     * 
+     * Search Premier teams (v1)
      * 
      * @param name Team name to search for (optional) (optional)
      * @param tag Team tag to search for (optional) (optional)
@@ -3392,7 +3404,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/premier/search
-     * 
+     * Search Premier teams (v1)
      * 
      * @param name Team name to search for (optional) (optional)
      * @param tag Team tag to search for (optional) (optional)
@@ -3453,7 +3465,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/queue-status/{affinity}
-     * 
+     * Get queue status (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @return QueueStatusV1
@@ -3485,7 +3497,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/queue-status/{affinity}
-     * 
+     * Get queue status (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @return ApiResponse<QueueStatusV1?>
@@ -3526,7 +3538,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * POST /valorant/v1/raw
-     * 
+     * Get raw Riot API data (v1)
      * 
      * @param rawV1Payload 
      * @return RawV1Response
@@ -3558,7 +3570,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * POST /valorant/v1/raw
-     * 
+     * Get raw Riot API data (v1)
      * 
      * @param rawV1Payload 
      * @return ApiResponse<RawV1Response?>
@@ -3600,7 +3612,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/status/{affinity}
-     * 
+     * Get status (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @return StatusV1
@@ -3632,7 +3644,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/status/{affinity}
-     * 
+     * Get status (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @return ApiResponse<StatusV1?>
@@ -3673,7 +3685,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/{version}/store-featured
-     * 
+     * Get featured store items
      * 
      * @param version API version (v1, v2)
      * @return StoreFeaturedV1
@@ -3705,7 +3717,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/{version}/store-featured
-     * 
+     * Get featured store items
      * 
      * @param version API version (v1, v2)
      * @return ApiResponse<StoreFeaturedV1?>
@@ -3746,7 +3758,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/{version}/store-offers
-     * 
+     * Get store offers
      * 
      * @param version API version (v1, v2)
      * @return StoreOffersV1Response
@@ -3778,7 +3790,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/{version}/store-offers
-     * 
+     * Get store offers
      * 
      * @param version API version (v1, v2)
      * @return ApiResponse<StoreOffersV1Response?>
@@ -3819,7 +3831,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/stored-matches/{affinity}/{name}/{tag}
-     * 
+     * Get stored matches by name (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -3856,7 +3868,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/stored-matches/{affinity}/{name}/{tag}
-     * 
+     * Get stored matches by name (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -3918,7 +3930,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid}
-     * 
+     * Get stored matches by PUUID (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -3954,7 +3966,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid}
-     * 
+     * Get stored matches by PUUID (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -4014,7 +4026,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag}
-     * 
+     * Get stored MMR history by name (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -4049,7 +4061,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag}
-     * 
+     * Get stored MMR history by name (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param name Riot ID name
@@ -4101,7 +4113,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid}
-     * 
+     * Get stored MMR history by PUUID (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -4135,7 +4147,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid}
-     * 
+     * Get stored MMR history by PUUID (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param puuid Player UUID
@@ -4185,7 +4197,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag}
-     * 
+     * Get stored MMR history by name (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -4221,7 +4233,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag}
-     * 
+     * Get stored MMR history by name (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -4275,7 +4287,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid}
-     * 
+     * Get stored MMR history by PUUID (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -4310,7 +4322,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid}
-     * 
+     * Get stored MMR history by PUUID (v2)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @param platform Platform (pc, console)
@@ -4362,7 +4374,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/version/{affinity}
-     * 
+     * Get game version (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @return VersionV1Response
@@ -4394,7 +4406,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/version/{affinity}
-     * 
+     * Get game version (v1)
      * 
      * @param affinity Region/affinity (e.g., na, eu, ap, kr)
      * @return ApiResponse<VersionV1Response?>
@@ -4435,7 +4447,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/website/{country_code}
-     * 
+     * Get website content (v1)
      * 
      * @param countryCode Country code (e.g., en-us, de-de)
      * @param category Category filter (optional) (optional)
@@ -4468,7 +4480,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/website/{country_code}
-     * 
+     * Get website content (v1)
      * 
      * @param countryCode Country code (e.g., en-us, de-de)
      * @param category Category filter (optional) (optional)
@@ -4516,7 +4528,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/website/{country_code}/{db_id}
-     * 
+     * Get website entry by ID (v1)
      * 
      * @param dbId Database ID of the website entry
      * @param countryCode Country code (e.g., en-us, de-de)
@@ -4549,7 +4561,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
 
     /**
      * GET /valorant/v1/website/{country_code}/{db_id}
-     * 
+     * Get website entry by ID (v1)
      * 
      * @param dbId Database ID of the website entry
      * @param countryCode Country code (e.g., en-us, de-de)

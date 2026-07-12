@@ -18,6 +18,7 @@ __version__ = "1.0.0"
 
 # Define package exports
 __all__ = [
+    "PremiumApi",
     "ValorantApi",
     "ApiResponse",
     "ApiClient",
@@ -236,6 +237,14 @@ __all__ = [
     "PremierTeamV1ResponseDataCustomization",
     "PremierTeamV1ResponseDataPlacement",
     "PremierTeamV1ResponseDataStats",
+    "PremiumWebhookDeleteData",
+    "PremiumWebhookDeleteResponse",
+    "PremiumWebhookEvent",
+    "PremiumWebhookUserAddRequest",
+    "PremiumWebhookUserMutationData",
+    "PremiumWebhookUserMutationResponse",
+    "PremiumWebhookUserResponse",
+    "PremiumWebhookUserUpdateRequest",
     "QueueStatusV1",
     "QueueStatusV1Data",
     "QueueStatusV1GameRules",
@@ -290,6 +299,7 @@ __all__ = [
 ]
 
 # import apis into sdk package
+from henrikdev_api_client.api.premium_api import PremiumApi as PremiumApi
 from henrikdev_api_client.api.valorant_api import ValorantApi as ValorantApi
 
 # import ApiClient
@@ -512,6 +522,14 @@ from henrikdev_api_client.models.premier_team_v1_response_data import PremierTea
 from henrikdev_api_client.models.premier_team_v1_response_data_customization import PremierTeamV1ResponseDataCustomization as PremierTeamV1ResponseDataCustomization
 from henrikdev_api_client.models.premier_team_v1_response_data_placement import PremierTeamV1ResponseDataPlacement as PremierTeamV1ResponseDataPlacement
 from henrikdev_api_client.models.premier_team_v1_response_data_stats import PremierTeamV1ResponseDataStats as PremierTeamV1ResponseDataStats
+from henrikdev_api_client.models.premium_webhook_delete_data import PremiumWebhookDeleteData as PremiumWebhookDeleteData
+from henrikdev_api_client.models.premium_webhook_delete_response import PremiumWebhookDeleteResponse as PremiumWebhookDeleteResponse
+from henrikdev_api_client.models.premium_webhook_event import PremiumWebhookEvent as PremiumWebhookEvent
+from henrikdev_api_client.models.premium_webhook_user_add_request import PremiumWebhookUserAddRequest as PremiumWebhookUserAddRequest
+from henrikdev_api_client.models.premium_webhook_user_mutation_data import PremiumWebhookUserMutationData as PremiumWebhookUserMutationData
+from henrikdev_api_client.models.premium_webhook_user_mutation_response import PremiumWebhookUserMutationResponse as PremiumWebhookUserMutationResponse
+from henrikdev_api_client.models.premium_webhook_user_response import PremiumWebhookUserResponse as PremiumWebhookUserResponse
+from henrikdev_api_client.models.premium_webhook_user_update_request import PremiumWebhookUserUpdateRequest as PremiumWebhookUserUpdateRequest
 from henrikdev_api_client.models.queue_status_v1 import QueueStatusV1 as QueueStatusV1
 from henrikdev_api_client.models.queue_status_v1_data import QueueStatusV1Data as QueueStatusV1Data
 from henrikdev_api_client.models.queue_status_v1_game_rules import QueueStatusV1GameRules as QueueStatusV1GameRules

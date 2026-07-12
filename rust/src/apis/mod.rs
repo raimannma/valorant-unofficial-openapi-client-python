@@ -111,6 +111,7 @@ impl From<&str> for ContentType {
     }
 }
 
+pub mod premium_api;
 pub mod valorant_api;
 
 pub mod configuration;

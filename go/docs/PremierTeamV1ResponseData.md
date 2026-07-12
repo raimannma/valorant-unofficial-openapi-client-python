@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **Member** | [**[]PremierTeamMember**](PremierTeamMember.md) |  | 
 **Name** | **string** |  | 
 **Placement** | [**PremierTeamV1ResponseDataPlacement**](PremierTeamV1ResponseDataPlacement.md) |  | 
+**Ranked** | **bool** |  | 
 **Stats** | [**PremierTeamV1ResponseDataStats**](PremierTeamV1ResponseDataStats.md) |  | 
 **Tag** | **string** |  | 
 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 
 ### NewPremierTeamV1ResponseData
 
-`func NewPremierTeamV1ResponseData(customization PremierTeamV1ResponseDataCustomization, enrolled bool, id string, member []PremierTeamMember, name string, placement PremierTeamV1ResponseDataPlacement, stats PremierTeamV1ResponseDataStats, tag string, ) *PremierTeamV1ResponseData`
+`func NewPremierTeamV1ResponseData(customization PremierTeamV1ResponseDataCustomization, enrolled bool, id string, member []PremierTeamMember, name string, placement PremierTeamV1ResponseDataPlacement, ranked bool, stats PremierTeamV1ResponseDataStats, tag string, ) *PremierTeamV1ResponseData`
 
 NewPremierTeamV1ResponseData instantiates a new PremierTeamV1ResponseData object
 This constructor will assign default values to properties that have it defined,
@@ -150,6 +151,26 @@ and a boolean to check if the value has been set.
 `func (o *PremierTeamV1ResponseData) SetPlacement(v PremierTeamV1ResponseDataPlacement)`
 
 SetPlacement sets Placement field to given value.
+
+
+### GetRanked
+
+`func (o *PremierTeamV1ResponseData) GetRanked() bool`
+
+GetRanked returns the Ranked field if non-nil, zero value otherwise.
+
+### GetRankedOk
+
+`func (o *PremierTeamV1ResponseData) GetRankedOk() (*bool, bool)`
+
+GetRankedOk returns a tuple with the Ranked field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRanked
+
+`func (o *PremierTeamV1ResponseData) SetRanked(v bool)`
+
+SetRanked sets Ranked field to given value.
 
 
 ### GetStats

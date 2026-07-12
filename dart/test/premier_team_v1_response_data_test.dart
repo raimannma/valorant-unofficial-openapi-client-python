@@ -46,6 +46,11 @@ void main() {
       // TODO
     });
 
+    // bool ranked
+    test('to test the property `ranked`', () async {
+      // TODO
+    });
+
     // PremierTeamV1ResponseDataStats stats
     test('to test the property `stats`', () async {
       // TODO

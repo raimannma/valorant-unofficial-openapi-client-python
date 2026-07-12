@@ -419,7 +419,8 @@ class ValorantApiTest : ShouldSpec() {
             // uncomment below to test premierById
             //val id : kotlin.String = id_example // kotlin.String | Team UUID
             //val season : kotlin.String = season_example // kotlin.String | Premier season id (optional)
-            //val result : PremierTeamV1Response = apiInstance.premierById(id, season)
+            //val affinity : kotlin.String = affinity_example // kotlin.String | Region/affinity for fallback resolution (optional)
+            //val result : PremierTeamV1Response = apiInstance.premierById(id, season, affinity)
             //result shouldBe ("TODO")
         }
 
@@ -438,7 +439,8 @@ class ValorantApiTest : ShouldSpec() {
             //val name : kotlin.String = name_example // kotlin.String | Team name
             //val tag : kotlin.String = tag_example // kotlin.String | Team tag
             //val season : kotlin.String = season_example // kotlin.String | Premier season id (optional)
-            //val result : PremierTeamV1Response = apiInstance.premierByName(name, tag, season)
+            //val affinity : kotlin.String = affinity_example // kotlin.String | Region/affinity for fallback resolution (optional)
+            //val result : PremierTeamV1Response = apiInstance.premierByName(name, tag, season, affinity)
             //result shouldBe ("TODO")
         }
 

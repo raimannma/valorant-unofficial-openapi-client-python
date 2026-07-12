@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **id** | **string** |  |
 **losses** | **int** |  |
 **name** | **string** |  |
+**ranked** | **bool** |  |
 **ranking** | **int** |  |
 **region** | **string** |  |
 **score** | **int** |  |

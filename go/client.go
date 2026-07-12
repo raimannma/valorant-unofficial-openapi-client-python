@@ -49,6 +49,8 @@ type APIClient struct {
 
 	// API Services
 
+	PremiumAPI *PremiumAPIService
+
 	ValorantAPI *ValorantAPIService
 }
 
@@ -68,6 +70,7 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	c.common.client = c
 
 	// API Services
+	c.PremiumAPI = (*PremiumAPIService)(&c.common)
 	c.ValorantAPI = (*ValorantAPIService)(&c.common)
 
 	return c

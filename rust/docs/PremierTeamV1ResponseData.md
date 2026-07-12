@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **member** | [**Vec<models::PremierTeamMember>**](PremierTeamMember.md) |  | 
 **name** | **String** |  | 
 **placement** | [**models::PremierTeamV1ResponseDataPlacement**](PremierTeamV1ResponseDataPlacement.md) |  | 
+**ranked** | **bool** |  | 
 **stats** | [**models::PremierTeamV1ResponseDataStats**](PremierTeamV1ResponseDataStats.md) |  | 
 **tag** | **String** |  | 
 

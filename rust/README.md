@@ -26,60 +26,64 @@ All URIs are relative to *https://api.henrikdev.xyz*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ValorantApi* | [**crosshair**](docs/ValorantApi.md#crosshair) | **GET** /valorant/v1/crosshair/generate | 
-*ValorantApi* | [**esports_event_v2**](docs/ValorantApi.md#esports_event_v2) | **GET** /valorant/v2/esports/vlr/events/{event_id}/matches | 
-*ValorantApi* | [**esports_events_v2**](docs/ValorantApi.md#esports_events_v2) | **GET** /valorant/v2/esports/vlr/events | 
-*ValorantApi* | [**esports_match_v2**](docs/ValorantApi.md#esports_match_v2) | **GET** /valorant/v2/esports/vlr/matches/{match_id} | 
-*ValorantApi* | [**esports_player_matches_v2**](docs/ValorantApi.md#esports_player_matches_v2) | **GET** /valorant/v2/esports/vlr/players/{player}/matches | 
-*ValorantApi* | [**esports_player_v2**](docs/ValorantApi.md#esports_player_v2) | **GET** /valorant/v2/esports/vlr/players/{player_id} | 
-*ValorantApi* | [**esports_schedules_v1**](docs/ValorantApi.md#esports_schedules_v1) | **GET** /valorant/v1/esports/schedule | 
-*ValorantApi* | [**esports_team_matches_v2**](docs/ValorantApi.md#esports_team_matches_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/matches | 
-*ValorantApi* | [**esports_team_transactions_v2**](docs/ValorantApi.md#esports_team_transactions_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/transactions | 
-*ValorantApi* | [**esports_team_v2**](docs/ValorantApi.md#esports_team_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id} | 
-*ValorantApi* | [**get_account_by_id_v1**](docs/ValorantApi.md#get_account_by_id_v1) | **GET** /valorant/v1/by-puuid/account/{puuid} | 
-*ValorantApi* | [**get_account_by_id_v2**](docs/ValorantApi.md#get_account_by_id_v2) | **GET** /valorant/v2/by-puuid/account/{puuid} | 
-*ValorantApi* | [**get_account_v1**](docs/ValorantApi.md#get_account_v1) | **GET** /valorant/v1/account/{name}/{tag} | 
-*ValorantApi* | [**get_account_v2**](docs/ValorantApi.md#get_account_v2) | **GET** /valorant/v2/account/{name}/{tag} | 
-*ValorantApi* | [**get_content_v1**](docs/ValorantApi.md#get_content_v1) | **GET** /valorant/v1/content | 
-*ValorantApi* | [**get_matches_v3_by_id**](docs/ValorantApi.md#get_matches_v3_by_id) | **GET** /valorant/v3/by-puuid/matches/{affinity}/{puuid} | 
-*ValorantApi* | [**get_matches_v3_by_name**](docs/ValorantApi.md#get_matches_v3_by_name) | **GET** /valorant/v3/matches/{affinity}/{name}/{tag} | 
-*ValorantApi* | [**get_matches_v4_by_id**](docs/ValorantApi.md#get_matches_v4_by_id) | **GET** /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid} | 
-*ValorantApi* | [**get_matches_v4_by_name**](docs/ValorantApi.md#get_matches_v4_by_name) | **GET** /valorant/v4/matches/{affinity}/{platform}/{name}/{tag} | 
-*ValorantApi* | [**get_mmr_history_by_id**](docs/ValorantApi.md#get_mmr_history_by_id) | **GET** /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid} | 
-*ValorantApi* | [**get_mmr_history_by_name**](docs/ValorantApi.md#get_mmr_history_by_name) | **GET** /valorant/v1/mmr-history/{affinity}/{name}/{tag} | 
-*ValorantApi* | [**get_mmr_history_v2_by_id**](docs/ValorantApi.md#get_mmr_history_v2_by_id) | **GET** /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid} | 
-*ValorantApi* | [**get_mmr_history_v2_by_name**](docs/ValorantApi.md#get_mmr_history_v2_by_name) | **GET** /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag} | 
-*ValorantApi* | [**get_mmr_v1_by_id**](docs/ValorantApi.md#get_mmr_v1_by_id) | **GET** /valorant/v1/by-puuid/mmr/{affinity}/{puuid} | 
-*ValorantApi* | [**get_mmr_v1_by_name**](docs/ValorantApi.md#get_mmr_v1_by_name) | **GET** /valorant/v1/mmr/{affinity}/{name}/{tag} | 
-*ValorantApi* | [**get_mmr_v2_by_id**](docs/ValorantApi.md#get_mmr_v2_by_id) | **GET** /valorant/v2/by-puuid/mmr/{affinity}/{puuid} | 
-*ValorantApi* | [**get_mmr_v2_by_name**](docs/ValorantApi.md#get_mmr_v2_by_name) | **GET** /valorant/v2/mmr/{affinity}/{name}/{tag} | 
-*ValorantApi* | [**get_mmr_v3_by_id**](docs/ValorantApi.md#get_mmr_v3_by_id) | **GET** /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid} | 
-*ValorantApi* | [**get_mmr_v3_by_name**](docs/ValorantApi.md#get_mmr_v3_by_name) | **GET** /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag} | 
-*ValorantApi* | [**leaderboard_v1**](docs/ValorantApi.md#leaderboard_v1) | **GET** /valorant/v1/leaderboard/{affinity} | 
-*ValorantApi* | [**leaderboard_v2**](docs/ValorantApi.md#leaderboard_v2) | **GET** /valorant/v2/leaderboard/{affinity} | 
-*ValorantApi* | [**leaderboard_v3**](docs/ValorantApi.md#leaderboard_v3) | **GET** /valorant/v3/leaderboard/{affinity}/{platform} | 
-*ValorantApi* | [**match_v2**](docs/ValorantApi.md#match_v2) | **GET** /valorant/v2/match/{match_id} | 
-*ValorantApi* | [**match_v4**](docs/ValorantApi.md#match_v4) | **GET** /valorant/v4/match/{affinity}/{match_id} | 
-*ValorantApi* | [**premier_by_id**](docs/ValorantApi.md#premier_by_id) | **GET** /valorant/v1/premier/{id} | 
-*ValorantApi* | [**premier_by_id_history**](docs/ValorantApi.md#premier_by_id_history) | **GET** /valorant/v1/premier/{id}/history | 
-*ValorantApi* | [**premier_by_name**](docs/ValorantApi.md#premier_by_name) | **GET** /valorant/v1/premier/{name}/{tag} | 
-*ValorantApi* | [**premier_by_name_history**](docs/ValorantApi.md#premier_by_name_history) | **GET** /valorant/v1/premier/{name}/{tag}/history | 
-*ValorantApi* | [**premier_leaderboard**](docs/ValorantApi.md#premier_leaderboard) | **GET** /valorant/v1/premier/leaderboard/{affinity} | 
-*ValorantApi* | [**premier_search**](docs/ValorantApi.md#premier_search) | **GET** /valorant/v1/premier/search | 
-*ValorantApi* | [**queue_status**](docs/ValorantApi.md#queue_status) | **GET** /valorant/v1/queue-status/{affinity} | 
-*ValorantApi* | [**raw**](docs/ValorantApi.md#raw) | **POST** /valorant/v1/raw | 
-*ValorantApi* | [**status**](docs/ValorantApi.md#status) | **GET** /valorant/v1/status/{affinity} | 
-*ValorantApi* | [**store_featured**](docs/ValorantApi.md#store_featured) | **GET** /valorant/{version}/store-featured | 
-*ValorantApi* | [**store_offers**](docs/ValorantApi.md#store_offers) | **GET** /valorant/{version}/store-offers | 
-*ValorantApi* | [**stored_matches**](docs/ValorantApi.md#stored_matches) | **GET** /valorant/v1/stored-matches/{affinity}/{name}/{tag} | 
-*ValorantApi* | [**stored_matches_by_id**](docs/ValorantApi.md#stored_matches_by_id) | **GET** /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid} | 
-*ValorantApi* | [**stored_mmr_history**](docs/ValorantApi.md#stored_mmr_history) | **GET** /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag} | 
-*ValorantApi* | [**stored_mmr_history_by_id**](docs/ValorantApi.md#stored_mmr_history_by_id) | **GET** /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid} | 
-*ValorantApi* | [**stored_mmr_history_v2**](docs/ValorantApi.md#stored_mmr_history_v2) | **GET** /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag} | 
-*ValorantApi* | [**stored_mmr_history_v2_by_id**](docs/ValorantApi.md#stored_mmr_history_v2_by_id) | **GET** /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid} | 
-*ValorantApi* | [**version**](docs/ValorantApi.md#version) | **GET** /valorant/v1/version/{affinity} | 
-*ValorantApi* | [**website**](docs/ValorantApi.md#website) | **GET** /valorant/v1/website/{country_code} | 
-*ValorantApi* | [**website_by_id**](docs/ValorantApi.md#website_by_id) | **GET** /valorant/v1/website/{country_code}/{db_id} | 
+*PremiumApi* | [**add_webhook_user**](docs/PremiumApi.md#add_webhook_user) | **POST** /public/v1/premium/webhook/users | Add premium webhook user
+*PremiumApi* | [**delete_webhook_user**](docs/PremiumApi.md#delete_webhook_user) | **DELETE** /public/v1/premium/webhook/users/{id} | Delete premium webhook user
+*PremiumApi* | [**get_webhook_settings**](docs/PremiumApi.md#get_webhook_settings) | **GET** /public/v1/premium/webhook | Get premium webhook settings
+*PremiumApi* | [**update_webhook_user**](docs/PremiumApi.md#update_webhook_user) | **PUT** /public/v1/premium/webhook/users/{id} | Update premium webhook user
+*ValorantApi* | [**crosshair**](docs/ValorantApi.md#crosshair) | **GET** /valorant/v1/crosshair/generate | Generate crosshair image (v1)
+*ValorantApi* | [**esports_event_v2**](docs/ValorantApi.md#esports_event_v2) | **GET** /valorant/v2/esports/vlr/events/{event_id}/matches | Get VLR event matches (v2)
+*ValorantApi* | [**esports_events_v2**](docs/ValorantApi.md#esports_events_v2) | **GET** /valorant/v2/esports/vlr/events | Get VLR esports events (v2)
+*ValorantApi* | [**esports_match_v2**](docs/ValorantApi.md#esports_match_v2) | **GET** /valorant/v2/esports/vlr/matches/{match_id} | Get VLR match details (v2)
+*ValorantApi* | [**esports_player_matches_v2**](docs/ValorantApi.md#esports_player_matches_v2) | **GET** /valorant/v2/esports/vlr/players/{player}/matches | Get VLR player matches (v2)
+*ValorantApi* | [**esports_player_v2**](docs/ValorantApi.md#esports_player_v2) | **GET** /valorant/v2/esports/vlr/players/{player_id} | Get VLR player (v2)
+*ValorantApi* | [**esports_schedules_v1**](docs/ValorantApi.md#esports_schedules_v1) | **GET** /valorant/v1/esports/schedule | Get esports schedule (v1)
+*ValorantApi* | [**esports_team_matches_v2**](docs/ValorantApi.md#esports_team_matches_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/matches | Get VLR team matches (v2)
+*ValorantApi* | [**esports_team_transactions_v2**](docs/ValorantApi.md#esports_team_transactions_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/transactions | Get VLR team transactions (v2)
+*ValorantApi* | [**esports_team_v2**](docs/ValorantApi.md#esports_team_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id} | Get VLR team (v2)
+*ValorantApi* | [**get_account_by_id_v1**](docs/ValorantApi.md#get_account_by_id_v1) | **GET** /valorant/v1/by-puuid/account/{puuid} | Get account by PUUID (v1)
+*ValorantApi* | [**get_account_by_id_v2**](docs/ValorantApi.md#get_account_by_id_v2) | **GET** /valorant/v2/by-puuid/account/{puuid} | Get account by PUUID (v2)
+*ValorantApi* | [**get_account_v1**](docs/ValorantApi.md#get_account_v1) | **GET** /valorant/v1/account/{name}/{tag} | Get account (v1)
+*ValorantApi* | [**get_account_v2**](docs/ValorantApi.md#get_account_v2) | **GET** /valorant/v2/account/{name}/{tag} | Get account (v2)
+*ValorantApi* | [**get_content_v1**](docs/ValorantApi.md#get_content_v1) | **GET** /valorant/v1/content | Get content (v1)
+*ValorantApi* | [**get_matches_v3_by_id**](docs/ValorantApi.md#get_matches_v3_by_id) | **GET** /valorant/v3/by-puuid/matches/{affinity}/{puuid} | Get matches by PUUID (v3)
+*ValorantApi* | [**get_matches_v3_by_name**](docs/ValorantApi.md#get_matches_v3_by_name) | **GET** /valorant/v3/matches/{affinity}/{name}/{tag} | Get matches by name (v3)
+*ValorantApi* | [**get_matches_v4_by_id**](docs/ValorantApi.md#get_matches_v4_by_id) | **GET** /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid} | Get matches by PUUID (v4)
+*ValorantApi* | [**get_matches_v4_by_name**](docs/ValorantApi.md#get_matches_v4_by_name) | **GET** /valorant/v4/matches/{affinity}/{platform}/{name}/{tag} | Get matches by name (v4)
+*ValorantApi* | [**get_mmr_history_by_id**](docs/ValorantApi.md#get_mmr_history_by_id) | **GET** /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid} | Get MMR history by PUUID (v1)
+*ValorantApi* | [**get_mmr_history_by_name**](docs/ValorantApi.md#get_mmr_history_by_name) | **GET** /valorant/v1/mmr-history/{affinity}/{name}/{tag} | Get MMR history by name (v1)
+*ValorantApi* | [**get_mmr_history_v2_by_id**](docs/ValorantApi.md#get_mmr_history_v2_by_id) | **GET** /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid} | Get MMR history by PUUID (v2)
+*ValorantApi* | [**get_mmr_history_v2_by_name**](docs/ValorantApi.md#get_mmr_history_v2_by_name) | **GET** /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag} | Get MMR history by name (v2)
+*ValorantApi* | [**get_mmr_v1_by_id**](docs/ValorantApi.md#get_mmr_v1_by_id) | **GET** /valorant/v1/by-puuid/mmr/{affinity}/{puuid} | Get MMR by PUUID (v1)
+*ValorantApi* | [**get_mmr_v1_by_name**](docs/ValorantApi.md#get_mmr_v1_by_name) | **GET** /valorant/v1/mmr/{affinity}/{name}/{tag} | Get MMR by name (v1)
+*ValorantApi* | [**get_mmr_v2_by_id**](docs/ValorantApi.md#get_mmr_v2_by_id) | **GET** /valorant/v2/by-puuid/mmr/{affinity}/{puuid} | Get MMR by PUUID (v2)
+*ValorantApi* | [**get_mmr_v2_by_name**](docs/ValorantApi.md#get_mmr_v2_by_name) | **GET** /valorant/v2/mmr/{affinity}/{name}/{tag} | Get MMR by name (v2)
+*ValorantApi* | [**get_mmr_v3_by_id**](docs/ValorantApi.md#get_mmr_v3_by_id) | **GET** /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid} | Get MMR by PUUID (v3)
+*ValorantApi* | [**get_mmr_v3_by_name**](docs/ValorantApi.md#get_mmr_v3_by_name) | **GET** /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag} | Get MMR by name (v3)
+*ValorantApi* | [**leaderboard_v1**](docs/ValorantApi.md#leaderboard_v1) | **GET** /valorant/v1/leaderboard/{affinity} | Get leaderboard (v1)
+*ValorantApi* | [**leaderboard_v2**](docs/ValorantApi.md#leaderboard_v2) | **GET** /valorant/v2/leaderboard/{affinity} | Get leaderboard (v2)
+*ValorantApi* | [**leaderboard_v3**](docs/ValorantApi.md#leaderboard_v3) | **GET** /valorant/v3/leaderboard/{affinity}/{platform} | Get leaderboard (v3)
+*ValorantApi* | [**match_v2**](docs/ValorantApi.md#match_v2) | **GET** /valorant/v2/match/{match_id} | Get match details (v2)
+*ValorantApi* | [**match_v4**](docs/ValorantApi.md#match_v4) | **GET** /valorant/v4/match/{affinity}/{match_id} | Get match details (v4)
+*ValorantApi* | [**premier_by_id**](docs/ValorantApi.md#premier_by_id) | **GET** /valorant/v1/premier/{id} | Get Premier team by ID (v1)
+*ValorantApi* | [**premier_by_id_history**](docs/ValorantApi.md#premier_by_id_history) | **GET** /valorant/v1/premier/{id}/history | Get Premier team history by ID (v1)
+*ValorantApi* | [**premier_by_name**](docs/ValorantApi.md#premier_by_name) | **GET** /valorant/v1/premier/{name}/{tag} | Get Premier team by name (v1)
+*ValorantApi* | [**premier_by_name_history**](docs/ValorantApi.md#premier_by_name_history) | **GET** /valorant/v1/premier/{name}/{tag}/history | Get Premier team history by name (v1)
+*ValorantApi* | [**premier_leaderboard**](docs/ValorantApi.md#premier_leaderboard) | **GET** /valorant/v1/premier/leaderboard/{affinity} | Get Premier leaderboard (v1)
+*ValorantApi* | [**premier_search**](docs/ValorantApi.md#premier_search) | **GET** /valorant/v1/premier/search | Search Premier teams (v1)
+*ValorantApi* | [**queue_status**](docs/ValorantApi.md#queue_status) | **GET** /valorant/v1/queue-status/{affinity} | Get queue status (v1)
+*ValorantApi* | [**raw**](docs/ValorantApi.md#raw) | **POST** /valorant/v1/raw | Get raw Riot API data (v1)
+*ValorantApi* | [**status**](docs/ValorantApi.md#status) | **GET** /valorant/v1/status/{affinity} | Get status (v1)
+*ValorantApi* | [**store_featured**](docs/ValorantApi.md#store_featured) | **GET** /valorant/{version}/store-featured | Get featured store items
+*ValorantApi* | [**store_offers**](docs/ValorantApi.md#store_offers) | **GET** /valorant/{version}/store-offers | Get store offers
+*ValorantApi* | [**stored_matches**](docs/ValorantApi.md#stored_matches) | **GET** /valorant/v1/stored-matches/{affinity}/{name}/{tag} | Get stored matches by name (v1)
+*ValorantApi* | [**stored_matches_by_id**](docs/ValorantApi.md#stored_matches_by_id) | **GET** /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid} | Get stored matches by PUUID (v1)
+*ValorantApi* | [**stored_mmr_history**](docs/ValorantApi.md#stored_mmr_history) | **GET** /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag} | Get stored MMR history by name (v1)
+*ValorantApi* | [**stored_mmr_history_by_id**](docs/ValorantApi.md#stored_mmr_history_by_id) | **GET** /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid} | Get stored MMR history by PUUID (v1)
+*ValorantApi* | [**stored_mmr_history_v2**](docs/ValorantApi.md#stored_mmr_history_v2) | **GET** /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag} | Get stored MMR history by name (v2)
+*ValorantApi* | [**stored_mmr_history_v2_by_id**](docs/ValorantApi.md#stored_mmr_history_v2_by_id) | **GET** /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid} | Get stored MMR history by PUUID (v2)
+*ValorantApi* | [**version**](docs/ValorantApi.md#version) | **GET** /valorant/v1/version/{affinity} | Get game version (v1)
+*ValorantApi* | [**website**](docs/ValorantApi.md#website) | **GET** /valorant/v1/website/{country_code} | Get website content (v1)
+*ValorantApi* | [**website_by_id**](docs/ValorantApi.md#website_by_id) | **GET** /valorant/v1/website/{country_code}/{db_id} | Get website entry by ID (v1)
 
 
 ## Documentation For Models
@@ -292,6 +296,14 @@ Class | Method | HTTP request | Description
  - [PremierTeamV1ResponseDataCustomization](docs/PremierTeamV1ResponseDataCustomization.md)
  - [PremierTeamV1ResponseDataPlacement](docs/PremierTeamV1ResponseDataPlacement.md)
  - [PremierTeamV1ResponseDataStats](docs/PremierTeamV1ResponseDataStats.md)
+ - [PremiumWebhookDeleteData](docs/PremiumWebhookDeleteData.md)
+ - [PremiumWebhookDeleteResponse](docs/PremiumWebhookDeleteResponse.md)
+ - [PremiumWebhookEvent](docs/PremiumWebhookEvent.md)
+ - [PremiumWebhookUserAddRequest](docs/PremiumWebhookUserAddRequest.md)
+ - [PremiumWebhookUserMutationData](docs/PremiumWebhookUserMutationData.md)
+ - [PremiumWebhookUserMutationResponse](docs/PremiumWebhookUserMutationResponse.md)
+ - [PremiumWebhookUserResponse](docs/PremiumWebhookUserResponse.md)
+ - [PremiumWebhookUserUpdateRequest](docs/PremiumWebhookUserUpdateRequest.md)
  - [QueueStatusV1](docs/QueueStatusV1.md)
  - [QueueStatusV1Data](docs/QueueStatusV1Data.md)
  - [QueueStatusV1GameRules](docs/QueueStatusV1GameRules.md)

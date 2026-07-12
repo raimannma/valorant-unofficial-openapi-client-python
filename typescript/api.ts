@@ -1387,6 +1387,7 @@ export interface PremierTeamLiteResponseData {
     'id': string;
     'losses': number;
     'name': string;
+    'ranked': boolean;
     'ranking': number;
     'region': string;
     'score': number;
@@ -1410,6 +1411,7 @@ export interface PremierTeamV1ResponseData {
     'member': Array<PremierTeamMember>;
     'name': string;
     'placement': PremierTeamV1ResponseDataPlacement;
+    'ranked': boolean;
     'stats': PremierTeamV1ResponseDataStats;
     'tag': string;
 }
@@ -1432,6 +1434,50 @@ export interface PremierTeamV1ResponseDataStats {
     'rounds_lost': number;
     'rounds_won': number;
     'wins': number;
+}
+export interface PremiumWebhookDeleteData {
+    'deleted': boolean;
+}
+export interface PremiumWebhookDeleteResponse {
+    'data': PremiumWebhookDeleteData;
+}
+
+export const PremiumWebhookEvent = {
+    Match: 'MATCH',
+    Mmr: 'MMR',
+} as const;
+
+export type PremiumWebhookEvent = typeof PremiumWebhookEvent[keyof typeof PremiumWebhookEvent];
+
+
+export interface PremiumWebhookUserAddRequest {
+    'enabled'?: boolean;
+    'events'?: Array<PremiumWebhookEvent>;
+    'name'?: string | null;
+    'puuid'?: string | null;
+    'tag'?: string | null;
+}
+export interface PremiumWebhookUserMutationData {
+    'success': boolean;
+    'user': PremiumWebhookUserResponse;
+}
+export interface PremiumWebhookUserMutationResponse {
+    'data': PremiumWebhookUserMutationData;
+}
+export interface PremiumWebhookUserResponse {
+    'created_at': number;
+    'enabled': boolean;
+    'events': Array<PremiumWebhookEvent>;
+    'id': string;
+    'last_checked_at'?: number | null;
+    'last_match'?: string | null;
+    'last_mmr'?: number | null;
+    'puuid': string;
+    'region': string;
+    'updated_at': number;
+}
+export interface PremiumWebhookUserUpdateRequest {
+    'events'?: Array<PremiumWebhookEvent>;
 }
 export interface QueueStatusV1 {
     'data': Array<QueueStatusV1Data>;
@@ -1736,12 +1782,371 @@ export interface WebsiteV1Response {
 }
 
 /**
+ * PremiumApi - axios parameter creator
+ */
+export const PremiumApiAxiosParamCreator = function (configuration?: Configuration) {
+    return {
+        /**
+         * 
+         * @summary Add premium webhook user
+         * @param {PremiumWebhookUserAddRequest} premiumWebhookUserAddRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        addWebhookUser: async (premiumWebhookUserAddRequest: PremiumWebhookUserAddRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'premiumWebhookUserAddRequest' is not null or undefined
+            assertParamExists('addWebhookUser', 'premiumWebhookUserAddRequest', premiumWebhookUserAddRequest)
+            const localVarPath = `/public/v1/premium/webhook/users`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(premiumWebhookUserAddRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Delete premium webhook user
+         * @param {string} id Tracked user id
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        deleteWebhookUser: async (id: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('deleteWebhookUser', 'id', id)
+            const localVarPath = `/public/v1/premium/webhook/users/{id}`
+                .replace('{id}', encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Get premium webhook settings
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getWebhookSettings: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/public/v1/premium/webhook`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Update premium webhook user
+         * @param {string} id Tracked user id
+         * @param {PremiumWebhookUserUpdateRequest} premiumWebhookUserUpdateRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateWebhookUser: async (id: string, premiumWebhookUserUpdateRequest: PremiumWebhookUserUpdateRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('updateWebhookUser', 'id', id)
+            // verify required parameter 'premiumWebhookUserUpdateRequest' is not null or undefined
+            assertParamExists('updateWebhookUser', 'premiumWebhookUserUpdateRequest', premiumWebhookUserUpdateRequest)
+            const localVarPath = `/public/v1/premium/webhook/users/{id}`
+                .replace('{id}', encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'PUT', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(premiumWebhookUserUpdateRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+    }
+};
+
+/**
+ * PremiumApi - functional programming interface
+ */
+export const PremiumApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = PremiumApiAxiosParamCreator(configuration)
+    return {
+        /**
+         * 
+         * @summary Add premium webhook user
+         * @param {PremiumWebhookUserAddRequest} premiumWebhookUserAddRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async addWebhookUser(premiumWebhookUserAddRequest: PremiumWebhookUserAddRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PremiumWebhookUserMutationResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.addWebhookUser(premiumWebhookUserAddRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PremiumApi.addWebhookUser']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Delete premium webhook user
+         * @param {string} id Tracked user id
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async deleteWebhookUser(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PremiumWebhookDeleteResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.deleteWebhookUser(id, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PremiumApi.deleteWebhookUser']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Get premium webhook settings
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getWebhookSettings(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getWebhookSettings(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PremiumApi.getWebhookSettings']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Update premium webhook user
+         * @param {string} id Tracked user id
+         * @param {PremiumWebhookUserUpdateRequest} premiumWebhookUserUpdateRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updateWebhookUser(id: string, premiumWebhookUserUpdateRequest: PremiumWebhookUserUpdateRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateWebhookUser(id, premiumWebhookUserUpdateRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PremiumApi.updateWebhookUser']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+    }
+};
+
+/**
+ * PremiumApi - factory interface
+ */
+export const PremiumApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = PremiumApiFp(configuration)
+    return {
+        /**
+         * 
+         * @summary Add premium webhook user
+         * @param {PremiumApiAddWebhookUserRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        addWebhookUser(requestParameters: PremiumApiAddWebhookUserRequest, options?: RawAxiosRequestConfig): AxiosPromise<PremiumWebhookUserMutationResponse> {
+            return localVarFp.addWebhookUser(requestParameters.premiumWebhookUserAddRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Delete premium webhook user
+         * @param {PremiumApiDeleteWebhookUserRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        deleteWebhookUser(requestParameters: PremiumApiDeleteWebhookUserRequest, options?: RawAxiosRequestConfig): AxiosPromise<PremiumWebhookDeleteResponse> {
+            return localVarFp.deleteWebhookUser(requestParameters.id, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Get premium webhook settings
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getWebhookSettings(options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.getWebhookSettings(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Update premium webhook user
+         * @param {PremiumApiUpdateWebhookUserRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateWebhookUser(requestParameters: PremiumApiUpdateWebhookUserRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateWebhookUser(requestParameters.id, requestParameters.premiumWebhookUserUpdateRequest, options).then((request) => request(axios, basePath));
+        },
+    };
+};
+
+/**
+ * Request parameters for addWebhookUser operation in PremiumApi.
+ */
+export interface PremiumApiAddWebhookUserRequest {
+    readonly premiumWebhookUserAddRequest: PremiumWebhookUserAddRequest
+}
+
+/**
+ * Request parameters for deleteWebhookUser operation in PremiumApi.
+ */
+export interface PremiumApiDeleteWebhookUserRequest {
+    /**
+     * Tracked user id
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for updateWebhookUser operation in PremiumApi.
+ */
+export interface PremiumApiUpdateWebhookUserRequest {
+    /**
+     * Tracked user id
+     */
+    readonly id: string
+
+    readonly premiumWebhookUserUpdateRequest: PremiumWebhookUserUpdateRequest
+}
+
+/**
+ * PremiumApi - object-oriented interface
+ */
+export class PremiumApi extends BaseAPI {
+    /**
+     * 
+     * @summary Add premium webhook user
+     * @param {PremiumApiAddWebhookUserRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public addWebhookUser(requestParameters: PremiumApiAddWebhookUserRequest, options?: RawAxiosRequestConfig) {
+        return PremiumApiFp(this.configuration).addWebhookUser(requestParameters.premiumWebhookUserAddRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Delete premium webhook user
+     * @param {PremiumApiDeleteWebhookUserRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public deleteWebhookUser(requestParameters: PremiumApiDeleteWebhookUserRequest, options?: RawAxiosRequestConfig) {
+        return PremiumApiFp(this.configuration).deleteWebhookUser(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Get premium webhook settings
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getWebhookSettings(options?: RawAxiosRequestConfig) {
+        return PremiumApiFp(this.configuration).getWebhookSettings(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Update premium webhook user
+     * @param {PremiumApiUpdateWebhookUserRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public updateWebhookUser(requestParameters: PremiumApiUpdateWebhookUserRequest, options?: RawAxiosRequestConfig) {
+        return PremiumApiFp(this.configuration).updateWebhookUser(requestParameters.id, requestParameters.premiumWebhookUserUpdateRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+}
+
+
+
+/**
  * ValorantApi - axios parameter creator
  */
 export const ValorantApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
+         * @summary Generate crosshair image (v1)
          * @param {string} [id] Crosshair code
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -1776,6 +2181,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get VLR event matches (v2)
          * @param {number} eventId 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -1809,6 +2215,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get VLR esports events (v2)
          * @param {EsportsV2Region} [region] 
          * @param {EsportsV2EventType} [type] 
          * @param {number} [page] 
@@ -1853,6 +2260,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get VLR match details (v2)
          * @param {number} matchId 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -1886,6 +2294,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get VLR player matches (v2)
          * @param {number} player 
          * @param {number | null} [page] 
          * @param {*} [options] Override http request option.
@@ -1924,6 +2333,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get VLR player (v2)
          * @param {number} player 
          * @param {EsportsV2PlayerTimespan} [timespan] 
          * @param {*} [options] Override http request option.
@@ -1962,6 +2372,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get esports schedule (v1)
          * @param {string | null} [region] 
          * @param {string | null} [league] 
          * @param {*} [options] Override http request option.
@@ -2001,6 +2412,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get VLR team matches (v2)
          * @param {number} teamId 
          * @param {number | null} [page] 
          * @param {*} [options] Override http request option.
@@ -2039,6 +2451,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get VLR team transactions (v2)
          * @param {number} teamId 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -2072,6 +2485,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get VLR team (v2)
          * @param {number} teamId 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -2105,6 +2519,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get account by PUUID (v1)
          * @param {string} puuid Player UUID
          * @param {boolean} [force] Bypass cache and refresh (optional)
          * @param {*} [options] Override http request option.
@@ -2143,6 +2558,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get account by PUUID (v2)
          * @param {string} puuid Player UUID
          * @param {boolean} [force] Bypass cache and refresh (optional)
          * @param {*} [options] Override http request option.
@@ -2181,6 +2597,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get account (v1)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
          * @param {boolean} [force] Bypass cache and refresh (optional)
@@ -2223,6 +2640,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get account (v2)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
          * @param {boolean} [force] Bypass cache and refresh (optional)
@@ -2265,6 +2683,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get content (v1)
          * @param {string} [locale] Locale code (e.g., en-US, de-DE) - optional
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -2299,6 +2718,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get matches by PUUID (v3)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {string} [mode] Game mode filter (optional)
@@ -2351,6 +2771,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get matches by name (v3)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -2407,6 +2828,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get matches by PUUID (v4)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} puuid Player UUID
@@ -2468,6 +2890,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get matches by name (v4)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} name Riot ID name
@@ -2533,6 +2956,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get MMR history by PUUID (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {*} [options] Override http request option.
@@ -2570,6 +2994,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get MMR history by name (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -2611,6 +3036,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get MMR history by PUUID (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} puuid Player UUID
@@ -2652,6 +3078,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get MMR history by name (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} name Riot ID name
@@ -2697,6 +3124,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get MMR by PUUID (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {*} [options] Override http request option.
@@ -2734,6 +3162,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get MMR by name (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -2775,6 +3204,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get MMR by PUUID (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {*} [options] Override http request option.
@@ -2812,6 +3242,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get MMR by name (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -2853,6 +3284,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get MMR by PUUID (v3)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} puuid Player UUID
@@ -2894,6 +3326,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get MMR by name (v3)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} name Riot ID name
@@ -2939,6 +3372,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get leaderboard (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} [season] Season ID (optional)
          * @param {string} [name] Player name to search for (optional)
@@ -2987,6 +3421,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get leaderboard (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} [season] Season ID (optional)
          * @param {string} [name] Player name to search for (optional)
@@ -3040,6 +3475,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get leaderboard (v3)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} [season] Season ID (optional)
@@ -3102,6 +3538,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get match details (v2)
          * @param {string} matchId Match UUID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -3135,6 +3572,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get match details (v4)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} matchId Match UUID
          * @param {*} [options] Override http request option.
@@ -3172,12 +3610,14 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get Premier team by ID (v1)
          * @param {string} id Team UUID
          * @param {string} [season] Premier season id (optional)
+         * @param {string} [affinity] Region/affinity for fallback resolution (optional)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        premierById: async (id: string, season?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        premierById: async (id: string, season?: string, affinity?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'id' is not null or undefined
             assertParamExists('premierById', 'id', id)
             const localVarPath = `/valorant/v1/premier/{id}`
@@ -3197,6 +3637,10 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['season'] = season;
             }
 
+            if (affinity !== undefined) {
+                localVarQueryParameter['affinity'] = affinity;
+            }
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3210,6 +3654,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get Premier team history by ID (v1)
          * @param {string} id Team UUID
          * @param {string} [season] Premier season id (optional)
          * @param {*} [options] Override http request option.
@@ -3248,13 +3693,15 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get Premier team by name (v1)
          * @param {string} name Team name
          * @param {string} tag Team tag
          * @param {string} [season] Premier season id (optional)
+         * @param {string} [affinity] Region/affinity for fallback resolution (optional)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        premierByName: async (name: string, tag: string, season?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        premierByName: async (name: string, tag: string, season?: string, affinity?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'name' is not null or undefined
             assertParamExists('premierByName', 'name', name)
             // verify required parameter 'tag' is not null or undefined
@@ -3277,6 +3724,10 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['season'] = season;
             }
 
+            if (affinity !== undefined) {
+                localVarQueryParameter['affinity'] = affinity;
+            }
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3290,6 +3741,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get Premier team history by name (v1)
          * @param {string} name Team name
          * @param {string} tag Team tag
          * @param {string} [season] Premier season id (optional)
@@ -3332,6 +3784,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get Premier leaderboard (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} [conference] Conference filter (optional)
          * @param {string} [division] Division filter (optional)
@@ -3380,6 +3833,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Search Premier teams (v1)
          * @param {string} [name] Team name to search for (optional)
          * @param {string} [tag] Team tag to search for (optional)
          * @param {string} [id] Team UUID to search for (optional)
@@ -3429,6 +3883,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get queue status (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -3462,6 +3917,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get raw Riot API data (v1)
          * @param {RawV1Payload} rawV1Payload 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -3496,6 +3952,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get status (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -3529,6 +3986,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get featured store items
          * @param {string} version API version (v1, v2)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -3562,6 +4020,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get store offers
          * @param {string} version API version (v1, v2)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -3595,6 +4054,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get stored matches by name (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -3651,6 +4111,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get stored matches by PUUID (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {string} [mode] Game mode filter (optional)
@@ -3703,6 +4164,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get stored MMR history by name (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -3749,6 +4211,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get stored MMR history by PUUID (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {number} [size] Number of results (optional)
@@ -3791,6 +4254,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get stored MMR history by name (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} name Riot ID name
@@ -3841,6 +4305,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get stored MMR history by PUUID (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} puuid Player UUID
@@ -3887,6 +4352,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get game version (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -3920,6 +4386,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get website content (v1)
          * @param {string} countryCode Country code (e.g., en-us, de-de)
          * @param {string} [category] Category filter (optional)
          * @param {*} [options] Override http request option.
@@ -3958,6 +4425,7 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
         },
         /**
          * 
+         * @summary Get website entry by ID (v1)
          * @param {string} dbId Database ID of the website entry
          * @param {string} countryCode Country code (e.g., en-us, de-de)
          * @param {*} [options] Override http request option.
@@ -4004,6 +4472,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
     return {
         /**
          * 
+         * @summary Generate crosshair image (v1)
          * @param {string} [id] Crosshair code
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4016,6 +4485,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get VLR event matches (v2)
          * @param {number} eventId 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4028,6 +4498,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get VLR esports events (v2)
          * @param {EsportsV2Region} [region] 
          * @param {EsportsV2EventType} [type] 
          * @param {number} [page] 
@@ -4042,6 +4513,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get VLR match details (v2)
          * @param {number} matchId 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4054,6 +4526,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get VLR player matches (v2)
          * @param {number} player 
          * @param {number | null} [page] 
          * @param {*} [options] Override http request option.
@@ -4067,6 +4540,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get VLR player (v2)
          * @param {number} player 
          * @param {EsportsV2PlayerTimespan} [timespan] 
          * @param {*} [options] Override http request option.
@@ -4080,6 +4554,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get esports schedule (v1)
          * @param {string | null} [region] 
          * @param {string | null} [league] 
          * @param {*} [options] Override http request option.
@@ -4093,6 +4568,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get VLR team matches (v2)
          * @param {number} teamId 
          * @param {number | null} [page] 
          * @param {*} [options] Override http request option.
@@ -4106,6 +4582,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get VLR team transactions (v2)
          * @param {number} teamId 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4118,6 +4595,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get VLR team (v2)
          * @param {number} teamId 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4130,6 +4608,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get account by PUUID (v1)
          * @param {string} puuid Player UUID
          * @param {boolean} [force] Bypass cache and refresh (optional)
          * @param {*} [options] Override http request option.
@@ -4143,6 +4622,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get account by PUUID (v2)
          * @param {string} puuid Player UUID
          * @param {boolean} [force] Bypass cache and refresh (optional)
          * @param {*} [options] Override http request option.
@@ -4156,6 +4636,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get account (v1)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
          * @param {boolean} [force] Bypass cache and refresh (optional)
@@ -4170,6 +4651,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get account (v2)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
          * @param {boolean} [force] Bypass cache and refresh (optional)
@@ -4184,6 +4666,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get content (v1)
          * @param {string} [locale] Locale code (e.g., en-US, de-DE) - optional
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4196,6 +4679,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get matches by PUUID (v3)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {string} [mode] Game mode filter (optional)
@@ -4212,6 +4696,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get matches by name (v3)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -4229,6 +4714,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get matches by PUUID (v4)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} puuid Player UUID
@@ -4247,6 +4733,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get matches by name (v4)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} name Riot ID name
@@ -4266,6 +4753,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get MMR history by PUUID (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {*} [options] Override http request option.
@@ -4279,6 +4767,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get MMR history by name (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -4293,6 +4782,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get MMR history by PUUID (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} puuid Player UUID
@@ -4307,6 +4797,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get MMR history by name (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} name Riot ID name
@@ -4322,6 +4813,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get MMR by PUUID (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {*} [options] Override http request option.
@@ -4335,6 +4827,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get MMR by name (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -4349,6 +4842,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get MMR by PUUID (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {*} [options] Override http request option.
@@ -4362,6 +4856,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get MMR by name (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -4376,6 +4871,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get MMR by PUUID (v3)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} puuid Player UUID
@@ -4390,6 +4886,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get MMR by name (v3)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} name Riot ID name
@@ -4405,6 +4902,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get leaderboard (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} [season] Season ID (optional)
          * @param {string} [name] Player name to search for (optional)
@@ -4420,6 +4918,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get leaderboard (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} [season] Season ID (optional)
          * @param {string} [name] Player name to search for (optional)
@@ -4436,6 +4935,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get leaderboard (v3)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} [season] Season ID (optional)
@@ -4454,6 +4954,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get match details (v2)
          * @param {string} matchId Match UUID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4466,6 +4967,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get match details (v4)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} matchId Match UUID
          * @param {*} [options] Override http request option.
@@ -4479,19 +4981,22 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get Premier team by ID (v1)
          * @param {string} id Team UUID
          * @param {string} [season] Premier season id (optional)
+         * @param {string} [affinity] Region/affinity for fallback resolution (optional)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async premierById(id: string, season?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PremierTeamV1Response>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.premierById(id, season, options);
+        async premierById(id: string, season?: string, affinity?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PremierTeamV1Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.premierById(id, season, affinity, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['ValorantApi.premierById']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
+         * @summary Get Premier team history by ID (v1)
          * @param {string} id Team UUID
          * @param {string} [season] Premier season id (optional)
          * @param {*} [options] Override http request option.
@@ -4505,20 +5010,23 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get Premier team by name (v1)
          * @param {string} name Team name
          * @param {string} tag Team tag
          * @param {string} [season] Premier season id (optional)
+         * @param {string} [affinity] Region/affinity for fallback resolution (optional)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async premierByName(name: string, tag: string, season?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PremierTeamV1Response>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.premierByName(name, tag, season, options);
+        async premierByName(name: string, tag: string, season?: string, affinity?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PremierTeamV1Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.premierByName(name, tag, season, affinity, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['ValorantApi.premierByName']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
+         * @summary Get Premier team history by name (v1)
          * @param {string} name Team name
          * @param {string} tag Team tag
          * @param {string} [season] Premier season id (optional)
@@ -4533,6 +5041,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get Premier leaderboard (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} [conference] Conference filter (optional)
          * @param {string} [division] Division filter (optional)
@@ -4548,6 +5057,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Search Premier teams (v1)
          * @param {string} [name] Team name to search for (optional)
          * @param {string} [tag] Team tag to search for (optional)
          * @param {string} [id] Team UUID to search for (optional)
@@ -4563,6 +5073,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get queue status (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4575,6 +5086,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get raw Riot API data (v1)
          * @param {RawV1Payload} rawV1Payload 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4587,6 +5099,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get status (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4599,6 +5112,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get featured store items
          * @param {string} version API version (v1, v2)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4611,6 +5125,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get store offers
          * @param {string} version API version (v1, v2)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4623,6 +5138,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get stored matches by name (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -4640,6 +5156,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get stored matches by PUUID (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {string} [mode] Game mode filter (optional)
@@ -4656,6 +5173,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get stored MMR history by name (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} name Riot ID name
          * @param {string} tag Riot ID tag
@@ -4671,6 +5189,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get stored MMR history by PUUID (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} puuid Player UUID
          * @param {number} [size] Number of results (optional)
@@ -4685,6 +5204,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get stored MMR history by name (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} name Riot ID name
@@ -4701,6 +5221,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get stored MMR history by PUUID (v2)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {string} platform Platform (pc, console)
          * @param {string} puuid Player UUID
@@ -4716,6 +5237,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get game version (v1)
          * @param {string} affinity Region/affinity (e.g., na, eu, ap, kr)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4728,6 +5250,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get website content (v1)
          * @param {string} countryCode Country code (e.g., en-us, de-de)
          * @param {string} [category] Category filter (optional)
          * @param {*} [options] Override http request option.
@@ -4741,6 +5264,7 @@ export const ValorantApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get website entry by ID (v1)
          * @param {string} dbId Database ID of the website entry
          * @param {string} countryCode Country code (e.g., en-us, de-de)
          * @param {*} [options] Override http request option.
@@ -4763,6 +5287,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
     return {
         /**
          * 
+         * @summary Generate crosshair image (v1)
          * @param {ValorantApiCrosshairRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4772,6 +5297,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get VLR event matches (v2)
          * @param {ValorantApiEsportsEventV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4781,6 +5307,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get VLR esports events (v2)
          * @param {ValorantApiEsportsEventsV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4790,6 +5317,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get VLR match details (v2)
          * @param {ValorantApiEsportsMatchV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4799,6 +5327,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get VLR player matches (v2)
          * @param {ValorantApiEsportsPlayerMatchesV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4808,6 +5337,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get VLR player (v2)
          * @param {ValorantApiEsportsPlayerV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4817,6 +5347,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get esports schedule (v1)
          * @param {ValorantApiEsportsSchedulesV1Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4826,6 +5357,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get VLR team matches (v2)
          * @param {ValorantApiEsportsTeamMatchesV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4835,6 +5367,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get VLR team transactions (v2)
          * @param {ValorantApiEsportsTeamTransactionsV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4844,6 +5377,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get VLR team (v2)
          * @param {ValorantApiEsportsTeamV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4853,6 +5387,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get account by PUUID (v1)
          * @param {ValorantApiGetAccountByIdV1Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4862,6 +5397,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get account by PUUID (v2)
          * @param {ValorantApiGetAccountByIdV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4871,6 +5407,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get account (v1)
          * @param {ValorantApiGetAccountV1Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4880,6 +5417,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get account (v2)
          * @param {ValorantApiGetAccountV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4889,6 +5427,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get content (v1)
          * @param {ValorantApiGetContentV1Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4898,6 +5437,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get matches by PUUID (v3)
          * @param {ValorantApiGetMatchesV3ByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4907,6 +5447,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get matches by name (v3)
          * @param {ValorantApiGetMatchesV3ByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4916,6 +5457,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get matches by PUUID (v4)
          * @param {ValorantApiGetMatchesV4ByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4925,6 +5467,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get matches by name (v4)
          * @param {ValorantApiGetMatchesV4ByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4934,6 +5477,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get MMR history by PUUID (v1)
          * @param {ValorantApiGetMmrHistoryByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4943,6 +5487,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get MMR history by name (v1)
          * @param {ValorantApiGetMmrHistoryByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4952,6 +5497,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get MMR history by PUUID (v2)
          * @param {ValorantApiGetMmrHistoryV2ByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4961,6 +5507,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get MMR history by name (v2)
          * @param {ValorantApiGetMmrHistoryV2ByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4970,6 +5517,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get MMR by PUUID (v1)
          * @param {ValorantApiGetMmrV1ByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4979,6 +5527,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get MMR by name (v1)
          * @param {ValorantApiGetMmrV1ByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4988,6 +5537,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get MMR by PUUID (v2)
          * @param {ValorantApiGetMmrV2ByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4997,6 +5547,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get MMR by name (v2)
          * @param {ValorantApiGetMmrV2ByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5006,6 +5557,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get MMR by PUUID (v3)
          * @param {ValorantApiGetMmrV3ByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5015,6 +5567,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get MMR by name (v3)
          * @param {ValorantApiGetMmrV3ByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5024,6 +5577,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get leaderboard (v1)
          * @param {ValorantApiLeaderboardV1Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5033,6 +5587,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get leaderboard (v2)
          * @param {ValorantApiLeaderboardV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5042,6 +5597,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get leaderboard (v3)
          * @param {ValorantApiLeaderboardV3Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5051,6 +5607,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get match details (v2)
          * @param {ValorantApiMatchV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5060,6 +5617,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get match details (v4)
          * @param {ValorantApiMatchV4Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5069,15 +5627,17 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get Premier team by ID (v1)
          * @param {ValorantApiPremierByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
         premierById(requestParameters: ValorantApiPremierByIdRequest, options?: RawAxiosRequestConfig): AxiosPromise<PremierTeamV1Response> {
-            return localVarFp.premierById(requestParameters.id, requestParameters.season, options).then((request) => request(axios, basePath));
+            return localVarFp.premierById(requestParameters.id, requestParameters.season, requestParameters.affinity, options).then((request) => request(axios, basePath));
         },
         /**
          * 
+         * @summary Get Premier team history by ID (v1)
          * @param {ValorantApiPremierByIdHistoryRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5087,15 +5647,17 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get Premier team by name (v1)
          * @param {ValorantApiPremierByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
         premierByName(requestParameters: ValorantApiPremierByNameRequest, options?: RawAxiosRequestConfig): AxiosPromise<PremierTeamV1Response> {
-            return localVarFp.premierByName(requestParameters.name, requestParameters.tag, requestParameters.season, options).then((request) => request(axios, basePath));
+            return localVarFp.premierByName(requestParameters.name, requestParameters.tag, requestParameters.season, requestParameters.affinity, options).then((request) => request(axios, basePath));
         },
         /**
          * 
+         * @summary Get Premier team history by name (v1)
          * @param {ValorantApiPremierByNameHistoryRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5105,6 +5667,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get Premier leaderboard (v1)
          * @param {ValorantApiPremierLeaderboardRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5114,6 +5677,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Search Premier teams (v1)
          * @param {ValorantApiPremierSearchRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5123,6 +5687,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get queue status (v1)
          * @param {ValorantApiQueueStatusRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5132,6 +5697,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get raw Riot API data (v1)
          * @param {ValorantApiRawRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5141,6 +5707,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get status (v1)
          * @param {ValorantApiStatusRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5150,6 +5717,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get featured store items
          * @param {ValorantApiStoreFeaturedRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5159,6 +5727,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get store offers
          * @param {ValorantApiStoreOffersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5168,6 +5737,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get stored matches by name (v1)
          * @param {ValorantApiStoredMatchesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5177,6 +5747,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get stored matches by PUUID (v1)
          * @param {ValorantApiStoredMatchesByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5186,6 +5757,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get stored MMR history by name (v1)
          * @param {ValorantApiStoredMmrHistoryRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5195,6 +5767,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get stored MMR history by PUUID (v1)
          * @param {ValorantApiStoredMmrHistoryByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5204,6 +5777,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get stored MMR history by name (v2)
          * @param {ValorantApiStoredMmrHistoryV2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5213,6 +5787,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get stored MMR history by PUUID (v2)
          * @param {ValorantApiStoredMmrHistoryV2ByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5222,6 +5797,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get game version (v1)
          * @param {ValorantApiVersionRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5231,6 +5807,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get website content (v1)
          * @param {ValorantApiWebsiteRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5240,6 +5817,7 @@ export const ValorantApiFactory = function (configuration?: Configuration, baseP
         },
         /**
          * 
+         * @summary Get website entry by ID (v1)
          * @param {ValorantApiWebsiteByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -5893,6 +6471,11 @@ export interface ValorantApiPremierByIdRequest {
      * Premier season id (optional)
      */
     readonly season?: string
+
+    /**
+     * Region/affinity for fallback resolution (optional)
+     */
+    readonly affinity?: string
 }
 
 /**
@@ -5928,6 +6511,11 @@ export interface ValorantApiPremierByNameRequest {
      * Premier season id (optional)
      */
     readonly season?: string
+
+    /**
+     * Region/affinity for fallback resolution (optional)
+     */
+    readonly affinity?: string
 }
 
 /**
@@ -6258,6 +6846,7 @@ export interface ValorantApiWebsiteByIdRequest {
 export class ValorantApi extends BaseAPI {
     /**
      * 
+     * @summary Generate crosshair image (v1)
      * @param {ValorantApiCrosshairRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6268,6 +6857,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get VLR event matches (v2)
      * @param {ValorantApiEsportsEventV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6278,6 +6868,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get VLR esports events (v2)
      * @param {ValorantApiEsportsEventsV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6288,6 +6879,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get VLR match details (v2)
      * @param {ValorantApiEsportsMatchV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6298,6 +6890,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get VLR player matches (v2)
      * @param {ValorantApiEsportsPlayerMatchesV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6308,6 +6901,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get VLR player (v2)
      * @param {ValorantApiEsportsPlayerV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6318,6 +6912,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get esports schedule (v1)
      * @param {ValorantApiEsportsSchedulesV1Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6328,6 +6923,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get VLR team matches (v2)
      * @param {ValorantApiEsportsTeamMatchesV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6338,6 +6934,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get VLR team transactions (v2)
      * @param {ValorantApiEsportsTeamTransactionsV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6348,6 +6945,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get VLR team (v2)
      * @param {ValorantApiEsportsTeamV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6358,6 +6956,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get account by PUUID (v1)
      * @param {ValorantApiGetAccountByIdV1Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6368,6 +6967,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get account by PUUID (v2)
      * @param {ValorantApiGetAccountByIdV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6378,6 +6978,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get account (v1)
      * @param {ValorantApiGetAccountV1Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6388,6 +6989,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get account (v2)
      * @param {ValorantApiGetAccountV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6398,6 +7000,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get content (v1)
      * @param {ValorantApiGetContentV1Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6408,6 +7011,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get matches by PUUID (v3)
      * @param {ValorantApiGetMatchesV3ByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6418,6 +7022,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get matches by name (v3)
      * @param {ValorantApiGetMatchesV3ByNameRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6428,6 +7033,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get matches by PUUID (v4)
      * @param {ValorantApiGetMatchesV4ByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6438,6 +7044,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get matches by name (v4)
      * @param {ValorantApiGetMatchesV4ByNameRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6448,6 +7055,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get MMR history by PUUID (v1)
      * @param {ValorantApiGetMmrHistoryByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6458,6 +7066,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get MMR history by name (v1)
      * @param {ValorantApiGetMmrHistoryByNameRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6468,6 +7077,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get MMR history by PUUID (v2)
      * @param {ValorantApiGetMmrHistoryV2ByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6478,6 +7088,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get MMR history by name (v2)
      * @param {ValorantApiGetMmrHistoryV2ByNameRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6488,6 +7099,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get MMR by PUUID (v1)
      * @param {ValorantApiGetMmrV1ByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6498,6 +7110,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get MMR by name (v1)
      * @param {ValorantApiGetMmrV1ByNameRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6508,6 +7121,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get MMR by PUUID (v2)
      * @param {ValorantApiGetMmrV2ByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6518,6 +7132,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get MMR by name (v2)
      * @param {ValorantApiGetMmrV2ByNameRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6528,6 +7143,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get MMR by PUUID (v3)
      * @param {ValorantApiGetMmrV3ByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6538,6 +7154,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get MMR by name (v3)
      * @param {ValorantApiGetMmrV3ByNameRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6548,6 +7165,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get leaderboard (v1)
      * @param {ValorantApiLeaderboardV1Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6558,6 +7176,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get leaderboard (v2)
      * @param {ValorantApiLeaderboardV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6568,6 +7187,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get leaderboard (v3)
      * @param {ValorantApiLeaderboardV3Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6578,6 +7198,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get match details (v2)
      * @param {ValorantApiMatchV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6588,6 +7209,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get match details (v4)
      * @param {ValorantApiMatchV4Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6598,16 +7220,18 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get Premier team by ID (v1)
      * @param {ValorantApiPremierByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
     public premierById(requestParameters: ValorantApiPremierByIdRequest, options?: RawAxiosRequestConfig) {
-        return ValorantApiFp(this.configuration).premierById(requestParameters.id, requestParameters.season, options).then((request) => request(this.axios, this.basePath));
+        return ValorantApiFp(this.configuration).premierById(requestParameters.id, requestParameters.season, requestParameters.affinity, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
+     * @summary Get Premier team history by ID (v1)
      * @param {ValorantApiPremierByIdHistoryRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6618,16 +7242,18 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get Premier team by name (v1)
      * @param {ValorantApiPremierByNameRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
     public premierByName(requestParameters: ValorantApiPremierByNameRequest, options?: RawAxiosRequestConfig) {
-        return ValorantApiFp(this.configuration).premierByName(requestParameters.name, requestParameters.tag, requestParameters.season, options).then((request) => request(this.axios, this.basePath));
+        return ValorantApiFp(this.configuration).premierByName(requestParameters.name, requestParameters.tag, requestParameters.season, requestParameters.affinity, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
+     * @summary Get Premier team history by name (v1)
      * @param {ValorantApiPremierByNameHistoryRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6638,6 +7264,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get Premier leaderboard (v1)
      * @param {ValorantApiPremierLeaderboardRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6648,6 +7275,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Search Premier teams (v1)
      * @param {ValorantApiPremierSearchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6658,6 +7286,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get queue status (v1)
      * @param {ValorantApiQueueStatusRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6668,6 +7297,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get raw Riot API data (v1)
      * @param {ValorantApiRawRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6678,6 +7308,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get status (v1)
      * @param {ValorantApiStatusRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6688,6 +7319,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get featured store items
      * @param {ValorantApiStoreFeaturedRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6698,6 +7330,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get store offers
      * @param {ValorantApiStoreOffersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6708,6 +7341,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get stored matches by name (v1)
      * @param {ValorantApiStoredMatchesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6718,6 +7352,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get stored matches by PUUID (v1)
      * @param {ValorantApiStoredMatchesByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6728,6 +7363,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get stored MMR history by name (v1)
      * @param {ValorantApiStoredMmrHistoryRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6738,6 +7374,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get stored MMR history by PUUID (v1)
      * @param {ValorantApiStoredMmrHistoryByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6748,6 +7385,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get stored MMR history by name (v2)
      * @param {ValorantApiStoredMmrHistoryV2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6758,6 +7396,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get stored MMR history by PUUID (v2)
      * @param {ValorantApiStoredMmrHistoryV2ByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6768,6 +7407,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get game version (v1)
      * @param {ValorantApiVersionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6778,6 +7418,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get website content (v1)
      * @param {ValorantApiWebsiteRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -6788,6 +7429,7 @@ export class ValorantApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get website entry by ID (v1)
      * @param {ValorantApiWebsiteByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}

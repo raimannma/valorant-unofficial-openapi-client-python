@@ -38,6 +38,7 @@ import com.squareup.moshi.JsonClass
  * @param id 
  * @param losses 
  * @param name 
+ * @param ranked 
  * @param ranking 
  * @param region 
  * @param score 
@@ -69,6 +70,9 @@ data class PremierTeamLiteResponseData (
 
     @Json(name = "name")
     val name: kotlin.String,
+
+    @Json(name = "ranked")
+    val ranked: kotlin.Boolean,
 
     @Json(name = "ranking")
     val ranking: kotlin.Int,

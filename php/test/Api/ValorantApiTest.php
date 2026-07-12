@@ -74,7 +74,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for crosshair
      *
-     * .
+     * Generate crosshair image (v1).
      *
      */
     public function testCrosshair()
@@ -86,7 +86,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for esportsEventV2
      *
-     * .
+     * Get VLR event matches (v2).
      *
      */
     public function testEsportsEventV2()
@@ -98,7 +98,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for esportsEventsV2
      *
-     * .
+     * Get VLR esports events (v2).
      *
      */
     public function testEsportsEventsV2()
@@ -110,7 +110,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for esportsMatchV2
      *
-     * .
+     * Get VLR match details (v2).
      *
      */
     public function testEsportsMatchV2()
@@ -122,7 +122,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for esportsPlayerMatchesV2
      *
-     * .
+     * Get VLR player matches (v2).
      *
      */
     public function testEsportsPlayerMatchesV2()
@@ -134,7 +134,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for esportsPlayerV2
      *
-     * .
+     * Get VLR player (v2).
      *
      */
     public function testEsportsPlayerV2()
@@ -146,7 +146,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for esportsSchedulesV1
      *
-     * .
+     * Get esports schedule (v1).
      *
      */
     public function testEsportsSchedulesV1()
@@ -158,7 +158,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for esportsTeamMatchesV2
      *
-     * .
+     * Get VLR team matches (v2).
      *
      */
     public function testEsportsTeamMatchesV2()
@@ -170,7 +170,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for esportsTeamTransactionsV2
      *
-     * .
+     * Get VLR team transactions (v2).
      *
      */
     public function testEsportsTeamTransactionsV2()
@@ -182,7 +182,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for esportsTeamV2
      *
-     * .
+     * Get VLR team (v2).
      *
      */
     public function testEsportsTeamV2()
@@ -194,7 +194,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getAccountByIdV1
      *
-     * .
+     * Get account by PUUID (v1).
      *
      */
     public function testGetAccountByIdV1()
@@ -206,7 +206,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getAccountByIdV2
      *
-     * .
+     * Get account by PUUID (v2).
      *
      */
     public function testGetAccountByIdV2()
@@ -218,7 +218,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getAccountV1
      *
-     * .
+     * Get account (v1).
      *
      */
     public function testGetAccountV1()
@@ -230,7 +230,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getAccountV2
      *
-     * .
+     * Get account (v2).
      *
      */
     public function testGetAccountV2()
@@ -242,7 +242,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getContentV1
      *
-     * .
+     * Get content (v1).
      *
      */
     public function testGetContentV1()
@@ -254,7 +254,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMatchesV3ById
      *
-     * .
+     * Get matches by PUUID (v3).
      *
      */
     public function testGetMatchesV3ById()
@@ -266,7 +266,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMatchesV3ByName
      *
-     * .
+     * Get matches by name (v3).
      *
      */
     public function testGetMatchesV3ByName()
@@ -278,7 +278,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMatchesV4ById
      *
-     * .
+     * Get matches by PUUID (v4).
      *
      */
     public function testGetMatchesV4ById()
@@ -290,7 +290,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMatchesV4ByName
      *
-     * .
+     * Get matches by name (v4).
      *
      */
     public function testGetMatchesV4ByName()
@@ -302,7 +302,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMmrHistoryById
      *
-     * .
+     * Get MMR history by PUUID (v1).
      *
      */
     public function testGetMmrHistoryById()
@@ -314,7 +314,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMmrHistoryByName
      *
-     * .
+     * Get MMR history by name (v1).
      *
      */
     public function testGetMmrHistoryByName()
@@ -326,7 +326,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMmrHistoryV2ById
      *
-     * .
+     * Get MMR history by PUUID (v2).
      *
      */
     public function testGetMmrHistoryV2ById()
@@ -338,7 +338,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMmrHistoryV2ByName
      *
-     * .
+     * Get MMR history by name (v2).
      *
      */
     public function testGetMmrHistoryV2ByName()
@@ -350,7 +350,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMmrV1ById
      *
-     * .
+     * Get MMR by PUUID (v1).
      *
      */
     public function testGetMmrV1ById()
@@ -362,7 +362,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMmrV1ByName
      *
-     * .
+     * Get MMR by name (v1).
      *
      */
     public function testGetMmrV1ByName()
@@ -374,7 +374,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMmrV2ById
      *
-     * .
+     * Get MMR by PUUID (v2).
      *
      */
     public function testGetMmrV2ById()
@@ -386,7 +386,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMmrV2ByName
      *
-     * .
+     * Get MMR by name (v2).
      *
      */
     public function testGetMmrV2ByName()
@@ -398,7 +398,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMmrV3ById
      *
-     * .
+     * Get MMR by PUUID (v3).
      *
      */
     public function testGetMmrV3ById()
@@ -410,7 +410,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for getMmrV3ByName
      *
-     * .
+     * Get MMR by name (v3).
      *
      */
     public function testGetMmrV3ByName()
@@ -422,7 +422,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for leaderboardV1
      *
-     * .
+     * Get leaderboard (v1).
      *
      */
     public function testLeaderboardV1()
@@ -434,7 +434,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for leaderboardV2
      *
-     * .
+     * Get leaderboard (v2).
      *
      */
     public function testLeaderboardV2()
@@ -446,7 +446,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for leaderboardV3
      *
-     * .
+     * Get leaderboard (v3).
      *
      */
     public function testLeaderboardV3()
@@ -458,7 +458,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for matchV2
      *
-     * .
+     * Get match details (v2).
      *
      */
     public function testMatchV2()
@@ -470,7 +470,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for matchV4
      *
-     * .
+     * Get match details (v4).
      *
      */
     public function testMatchV4()
@@ -482,7 +482,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for premierById
      *
-     * .
+     * Get Premier team by ID (v1).
      *
      */
     public function testPremierById()
@@ -494,7 +494,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for premierByIdHistory
      *
-     * .
+     * Get Premier team history by ID (v1).
      *
      */
     public function testPremierByIdHistory()
@@ -506,7 +506,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for premierByName
      *
-     * .
+     * Get Premier team by name (v1).
      *
      */
     public function testPremierByName()
@@ -518,7 +518,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for premierByNameHistory
      *
-     * .
+     * Get Premier team history by name (v1).
      *
      */
     public function testPremierByNameHistory()
@@ -530,7 +530,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for premierLeaderboard
      *
-     * .
+     * Get Premier leaderboard (v1).
      *
      */
     public function testPremierLeaderboard()
@@ -542,7 +542,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for premierSearch
      *
-     * .
+     * Search Premier teams (v1).
      *
      */
     public function testPremierSearch()
@@ -554,7 +554,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for queueStatus
      *
-     * .
+     * Get queue status (v1).
      *
      */
     public function testQueueStatus()
@@ -566,7 +566,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for raw
      *
-     * .
+     * Get raw Riot API data (v1).
      *
      */
     public function testRaw()
@@ -578,7 +578,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for status
      *
-     * .
+     * Get status (v1).
      *
      */
     public function testStatus()
@@ -590,7 +590,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for storeFeatured
      *
-     * .
+     * Get featured store items.
      *
      */
     public function testStoreFeatured()
@@ -602,7 +602,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for storeOffers
      *
-     * .
+     * Get store offers.
      *
      */
     public function testStoreOffers()
@@ -614,7 +614,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for storedMatches
      *
-     * .
+     * Get stored matches by name (v1).
      *
      */
     public function testStoredMatches()
@@ -626,7 +626,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for storedMatchesById
      *
-     * .
+     * Get stored matches by PUUID (v1).
      *
      */
     public function testStoredMatchesById()
@@ -638,7 +638,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for storedMmrHistory
      *
-     * .
+     * Get stored MMR history by name (v1).
      *
      */
     public function testStoredMmrHistory()
@@ -650,7 +650,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for storedMmrHistoryById
      *
-     * .
+     * Get stored MMR history by PUUID (v1).
      *
      */
     public function testStoredMmrHistoryById()
@@ -662,7 +662,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for storedMmrHistoryV2
      *
-     * .
+     * Get stored MMR history by name (v2).
      *
      */
     public function testStoredMmrHistoryV2()
@@ -674,7 +674,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for storedMmrHistoryV2ById
      *
-     * .
+     * Get stored MMR history by PUUID (v2).
      *
      */
     public function testStoredMmrHistoryV2ById()
@@ -686,7 +686,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for version
      *
-     * .
+     * Get game version (v1).
      *
      */
     public function testVersion()
@@ -698,7 +698,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for website
      *
-     * .
+     * Get website content (v1).
      *
      */
     public function testWebsite()
@@ -710,7 +710,7 @@ class ValorantApiTest extends TestCase
     /**
      * Test case for websiteById
      *
-     * .
+     * Get website entry by ID (v1).
      *
      */
     public function testWebsiteById()

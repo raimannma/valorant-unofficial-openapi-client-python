@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **member** | [**List<PremierTeamMember>**](PremierTeamMember.md) |  | [default to const []]
 **name** | **String** |  | 
 **placement** | [**PremierTeamV1ResponseDataPlacement**](PremierTeamV1ResponseDataPlacement.md) |  | 
+**ranked** | **bool** |  | 
 **stats** | [**PremierTeamV1ResponseDataStats**](PremierTeamV1ResponseDataStats.md) |  | 
 **tag** | **String** |  | 
 

@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List
 from henrikdev_api_client.models.premier_team_v1_response_data_customization import PremierTeamV1ResponseDataCustomization
 from typing import Optional, Set
@@ -35,13 +35,14 @@ class PremierTeamLiteResponseData(BaseModel):
     id: StrictStr
     losses: StrictInt
     name: StrictStr
+    ranked: StrictBool
     ranking: StrictInt
     region: StrictStr
     score: StrictInt
     tag: StrictStr
     updated_at: StrictStr
     wins: StrictInt
-    __properties: ClassVar[List[str]] = ["affinity", "conference", "customization", "division", "id", "losses", "name", "ranking", "region", "score", "tag", "updated_at", "wins"]
+    __properties: ClassVar[List[str]] = ["affinity", "conference", "customization", "division", "id", "losses", "name", "ranked", "ranking", "region", "score", "tag", "updated_at", "wins"]
 
     model_config = ConfigDict(
         validate_by_name=True,
@@ -104,6 +105,7 @@ class PremierTeamLiteResponseData(BaseModel):
             "id": obj.get("id"),
             "losses": obj.get("losses"),
             "name": obj.get("name"),
+            "ranked": obj.get("ranked"),
             "ranking": obj.get("ranking"),
             "region": obj.get("region"),
             "score": obj.get("score"),

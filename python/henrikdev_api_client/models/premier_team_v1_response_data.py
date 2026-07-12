@@ -37,9 +37,10 @@ class PremierTeamV1ResponseData(BaseModel):
     member: List[PremierTeamMember]
     name: StrictStr
     placement: PremierTeamV1ResponseDataPlacement
+    ranked: StrictBool
     stats: PremierTeamV1ResponseDataStats
     tag: StrictStr
-    __properties: ClassVar[List[str]] = ["customization", "enrolled", "id", "member", "name", "placement", "stats", "tag"]
+    __properties: ClassVar[List[str]] = ["customization", "enrolled", "id", "member", "name", "placement", "ranked", "stats", "tag"]
 
     model_config = ConfigDict(
         validate_by_name=True,
@@ -114,6 +115,7 @@ class PremierTeamV1ResponseData(BaseModel):
             "member": [PremierTeamMember.from_dict(_item) for _item in obj["member"]] if obj.get("member") is not None else None,
             "name": obj.get("name"),
             "placement": PremierTeamV1ResponseDataPlacement.from_dict(obj["placement"]) if obj.get("placement") is not None else None,
+            "ranked": obj.get("ranked"),
             "stats": PremierTeamV1ResponseDataStats.from_dict(obj["stats"]) if obj.get("stats") is not None else None,
             "tag": obj.get("tag")
         })

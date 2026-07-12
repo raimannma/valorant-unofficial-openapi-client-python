@@ -4,67 +4,67 @@ All URIs are relative to *https://api.henrikdev.xyz*
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
-| [**crosshair**](ValorantApi.md#crosshair) | **GET** /valorant/v1/crosshair/generate |  |
-| [**esportsEventV2**](ValorantApi.md#esportsEventV2) | **GET** /valorant/v2/esports/vlr/events/{event_id}/matches |  |
-| [**esportsEventsV2**](ValorantApi.md#esportsEventsV2) | **GET** /valorant/v2/esports/vlr/events |  |
-| [**esportsMatchV2**](ValorantApi.md#esportsMatchV2) | **GET** /valorant/v2/esports/vlr/matches/{match_id} |  |
-| [**esportsPlayerMatchesV2**](ValorantApi.md#esportsPlayerMatchesV2) | **GET** /valorant/v2/esports/vlr/players/{player}/matches |  |
-| [**esportsPlayerV2**](ValorantApi.md#esportsPlayerV2) | **GET** /valorant/v2/esports/vlr/players/{player_id} |  |
-| [**esportsSchedulesV1**](ValorantApi.md#esportsSchedulesV1) | **GET** /valorant/v1/esports/schedule |  |
-| [**esportsTeamMatchesV2**](ValorantApi.md#esportsTeamMatchesV2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/matches |  |
-| [**esportsTeamTransactionsV2**](ValorantApi.md#esportsTeamTransactionsV2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/transactions |  |
-| [**esportsTeamV2**](ValorantApi.md#esportsTeamV2) | **GET** /valorant/v2/esports/vlr/teams/{team_id} |  |
-| [**getAccountByIdV1**](ValorantApi.md#getAccountByIdV1) | **GET** /valorant/v1/by-puuid/account/{puuid} |  |
-| [**getAccountByIdV2**](ValorantApi.md#getAccountByIdV2) | **GET** /valorant/v2/by-puuid/account/{puuid} |  |
-| [**getAccountV1**](ValorantApi.md#getAccountV1) | **GET** /valorant/v1/account/{name}/{tag} |  |
-| [**getAccountV2**](ValorantApi.md#getAccountV2) | **GET** /valorant/v2/account/{name}/{tag} |  |
-| [**getContentV1**](ValorantApi.md#getContentV1) | **GET** /valorant/v1/content |  |
-| [**getMatchesV3ById**](ValorantApi.md#getMatchesV3ById) | **GET** /valorant/v3/by-puuid/matches/{affinity}/{puuid} |  |
-| [**getMatchesV3ByName**](ValorantApi.md#getMatchesV3ByName) | **GET** /valorant/v3/matches/{affinity}/{name}/{tag} |  |
-| [**getMatchesV4ById**](ValorantApi.md#getMatchesV4ById) | **GET** /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid} |  |
-| [**getMatchesV4ByName**](ValorantApi.md#getMatchesV4ByName) | **GET** /valorant/v4/matches/{affinity}/{platform}/{name}/{tag} |  |
-| [**getMmrHistoryById**](ValorantApi.md#getMmrHistoryById) | **GET** /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid} |  |
-| [**getMmrHistoryByName**](ValorantApi.md#getMmrHistoryByName) | **GET** /valorant/v1/mmr-history/{affinity}/{name}/{tag} |  |
-| [**getMmrHistoryV2ById**](ValorantApi.md#getMmrHistoryV2ById) | **GET** /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid} |  |
-| [**getMmrHistoryV2ByName**](ValorantApi.md#getMmrHistoryV2ByName) | **GET** /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag} |  |
-| [**getMmrV1ById**](ValorantApi.md#getMmrV1ById) | **GET** /valorant/v1/by-puuid/mmr/{affinity}/{puuid} |  |
-| [**getMmrV1ByName**](ValorantApi.md#getMmrV1ByName) | **GET** /valorant/v1/mmr/{affinity}/{name}/{tag} |  |
-| [**getMmrV2ById**](ValorantApi.md#getMmrV2ById) | **GET** /valorant/v2/by-puuid/mmr/{affinity}/{puuid} |  |
-| [**getMmrV2ByName**](ValorantApi.md#getMmrV2ByName) | **GET** /valorant/v2/mmr/{affinity}/{name}/{tag} |  |
-| [**getMmrV3ById**](ValorantApi.md#getMmrV3ById) | **GET** /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid} |  |
-| [**getMmrV3ByName**](ValorantApi.md#getMmrV3ByName) | **GET** /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag} |  |
-| [**leaderboardV1**](ValorantApi.md#leaderboardV1) | **GET** /valorant/v1/leaderboard/{affinity} |  |
-| [**leaderboardV2**](ValorantApi.md#leaderboardV2) | **GET** /valorant/v2/leaderboard/{affinity} |  |
-| [**leaderboardV3**](ValorantApi.md#leaderboardV3) | **GET** /valorant/v3/leaderboard/{affinity}/{platform} |  |
-| [**matchV2**](ValorantApi.md#matchV2) | **GET** /valorant/v2/match/{match_id} |  |
-| [**matchV4**](ValorantApi.md#matchV4) | **GET** /valorant/v4/match/{affinity}/{match_id} |  |
-| [**premierById**](ValorantApi.md#premierById) | **GET** /valorant/v1/premier/{id} |  |
-| [**premierByIdHistory**](ValorantApi.md#premierByIdHistory) | **GET** /valorant/v1/premier/{id}/history |  |
-| [**premierByName**](ValorantApi.md#premierByName) | **GET** /valorant/v1/premier/{name}/{tag} |  |
-| [**premierByNameHistory**](ValorantApi.md#premierByNameHistory) | **GET** /valorant/v1/premier/{name}/{tag}/history |  |
-| [**premierLeaderboard**](ValorantApi.md#premierLeaderboard) | **GET** /valorant/v1/premier/leaderboard/{affinity} |  |
-| [**premierSearch**](ValorantApi.md#premierSearch) | **GET** /valorant/v1/premier/search |  |
-| [**queueStatus**](ValorantApi.md#queueStatus) | **GET** /valorant/v1/queue-status/{affinity} |  |
-| [**raw**](ValorantApi.md#raw) | **POST** /valorant/v1/raw |  |
-| [**status**](ValorantApi.md#status) | **GET** /valorant/v1/status/{affinity} |  |
-| [**storeFeatured**](ValorantApi.md#storeFeatured) | **GET** /valorant/{version}/store-featured |  |
-| [**storeOffers**](ValorantApi.md#storeOffers) | **GET** /valorant/{version}/store-offers |  |
-| [**storedMatches**](ValorantApi.md#storedMatches) | **GET** /valorant/v1/stored-matches/{affinity}/{name}/{tag} |  |
-| [**storedMatchesById**](ValorantApi.md#storedMatchesById) | **GET** /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid} |  |
-| [**storedMmrHistory**](ValorantApi.md#storedMmrHistory) | **GET** /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag} |  |
-| [**storedMmrHistoryById**](ValorantApi.md#storedMmrHistoryById) | **GET** /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid} |  |
-| [**storedMmrHistoryV2**](ValorantApi.md#storedMmrHistoryV2) | **GET** /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag} |  |
-| [**storedMmrHistoryV2ById**](ValorantApi.md#storedMmrHistoryV2ById) | **GET** /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid} |  |
-| [**version**](ValorantApi.md#version) | **GET** /valorant/v1/version/{affinity} |  |
-| [**website**](ValorantApi.md#website) | **GET** /valorant/v1/website/{country_code} |  |
-| [**websiteById**](ValorantApi.md#websiteById) | **GET** /valorant/v1/website/{country_code}/{db_id} |  |
+| [**crosshair**](ValorantApi.md#crosshair) | **GET** /valorant/v1/crosshair/generate | Generate crosshair image (v1) |
+| [**esportsEventV2**](ValorantApi.md#esportsEventV2) | **GET** /valorant/v2/esports/vlr/events/{event_id}/matches | Get VLR event matches (v2) |
+| [**esportsEventsV2**](ValorantApi.md#esportsEventsV2) | **GET** /valorant/v2/esports/vlr/events | Get VLR esports events (v2) |
+| [**esportsMatchV2**](ValorantApi.md#esportsMatchV2) | **GET** /valorant/v2/esports/vlr/matches/{match_id} | Get VLR match details (v2) |
+| [**esportsPlayerMatchesV2**](ValorantApi.md#esportsPlayerMatchesV2) | **GET** /valorant/v2/esports/vlr/players/{player}/matches | Get VLR player matches (v2) |
+| [**esportsPlayerV2**](ValorantApi.md#esportsPlayerV2) | **GET** /valorant/v2/esports/vlr/players/{player_id} | Get VLR player (v2) |
+| [**esportsSchedulesV1**](ValorantApi.md#esportsSchedulesV1) | **GET** /valorant/v1/esports/schedule | Get esports schedule (v1) |
+| [**esportsTeamMatchesV2**](ValorantApi.md#esportsTeamMatchesV2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/matches | Get VLR team matches (v2) |
+| [**esportsTeamTransactionsV2**](ValorantApi.md#esportsTeamTransactionsV2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/transactions | Get VLR team transactions (v2) |
+| [**esportsTeamV2**](ValorantApi.md#esportsTeamV2) | **GET** /valorant/v2/esports/vlr/teams/{team_id} | Get VLR team (v2) |
+| [**getAccountByIdV1**](ValorantApi.md#getAccountByIdV1) | **GET** /valorant/v1/by-puuid/account/{puuid} | Get account by PUUID (v1) |
+| [**getAccountByIdV2**](ValorantApi.md#getAccountByIdV2) | **GET** /valorant/v2/by-puuid/account/{puuid} | Get account by PUUID (v2) |
+| [**getAccountV1**](ValorantApi.md#getAccountV1) | **GET** /valorant/v1/account/{name}/{tag} | Get account (v1) |
+| [**getAccountV2**](ValorantApi.md#getAccountV2) | **GET** /valorant/v2/account/{name}/{tag} | Get account (v2) |
+| [**getContentV1**](ValorantApi.md#getContentV1) | **GET** /valorant/v1/content | Get content (v1) |
+| [**getMatchesV3ById**](ValorantApi.md#getMatchesV3ById) | **GET** /valorant/v3/by-puuid/matches/{affinity}/{puuid} | Get matches by PUUID (v3) |
+| [**getMatchesV3ByName**](ValorantApi.md#getMatchesV3ByName) | **GET** /valorant/v3/matches/{affinity}/{name}/{tag} | Get matches by name (v3) |
+| [**getMatchesV4ById**](ValorantApi.md#getMatchesV4ById) | **GET** /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid} | Get matches by PUUID (v4) |
+| [**getMatchesV4ByName**](ValorantApi.md#getMatchesV4ByName) | **GET** /valorant/v4/matches/{affinity}/{platform}/{name}/{tag} | Get matches by name (v4) |
+| [**getMmrHistoryById**](ValorantApi.md#getMmrHistoryById) | **GET** /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid} | Get MMR history by PUUID (v1) |
+| [**getMmrHistoryByName**](ValorantApi.md#getMmrHistoryByName) | **GET** /valorant/v1/mmr-history/{affinity}/{name}/{tag} | Get MMR history by name (v1) |
+| [**getMmrHistoryV2ById**](ValorantApi.md#getMmrHistoryV2ById) | **GET** /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid} | Get MMR history by PUUID (v2) |
+| [**getMmrHistoryV2ByName**](ValorantApi.md#getMmrHistoryV2ByName) | **GET** /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag} | Get MMR history by name (v2) |
+| [**getMmrV1ById**](ValorantApi.md#getMmrV1ById) | **GET** /valorant/v1/by-puuid/mmr/{affinity}/{puuid} | Get MMR by PUUID (v1) |
+| [**getMmrV1ByName**](ValorantApi.md#getMmrV1ByName) | **GET** /valorant/v1/mmr/{affinity}/{name}/{tag} | Get MMR by name (v1) |
+| [**getMmrV2ById**](ValorantApi.md#getMmrV2ById) | **GET** /valorant/v2/by-puuid/mmr/{affinity}/{puuid} | Get MMR by PUUID (v2) |
+| [**getMmrV2ByName**](ValorantApi.md#getMmrV2ByName) | **GET** /valorant/v2/mmr/{affinity}/{name}/{tag} | Get MMR by name (v2) |
+| [**getMmrV3ById**](ValorantApi.md#getMmrV3ById) | **GET** /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid} | Get MMR by PUUID (v3) |
+| [**getMmrV3ByName**](ValorantApi.md#getMmrV3ByName) | **GET** /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag} | Get MMR by name (v3) |
+| [**leaderboardV1**](ValorantApi.md#leaderboardV1) | **GET** /valorant/v1/leaderboard/{affinity} | Get leaderboard (v1) |
+| [**leaderboardV2**](ValorantApi.md#leaderboardV2) | **GET** /valorant/v2/leaderboard/{affinity} | Get leaderboard (v2) |
+| [**leaderboardV3**](ValorantApi.md#leaderboardV3) | **GET** /valorant/v3/leaderboard/{affinity}/{platform} | Get leaderboard (v3) |
+| [**matchV2**](ValorantApi.md#matchV2) | **GET** /valorant/v2/match/{match_id} | Get match details (v2) |
+| [**matchV4**](ValorantApi.md#matchV4) | **GET** /valorant/v4/match/{affinity}/{match_id} | Get match details (v4) |
+| [**premierById**](ValorantApi.md#premierById) | **GET** /valorant/v1/premier/{id} | Get Premier team by ID (v1) |
+| [**premierByIdHistory**](ValorantApi.md#premierByIdHistory) | **GET** /valorant/v1/premier/{id}/history | Get Premier team history by ID (v1) |
+| [**premierByName**](ValorantApi.md#premierByName) | **GET** /valorant/v1/premier/{name}/{tag} | Get Premier team by name (v1) |
+| [**premierByNameHistory**](ValorantApi.md#premierByNameHistory) | **GET** /valorant/v1/premier/{name}/{tag}/history | Get Premier team history by name (v1) |
+| [**premierLeaderboard**](ValorantApi.md#premierLeaderboard) | **GET** /valorant/v1/premier/leaderboard/{affinity} | Get Premier leaderboard (v1) |
+| [**premierSearch**](ValorantApi.md#premierSearch) | **GET** /valorant/v1/premier/search | Search Premier teams (v1) |
+| [**queueStatus**](ValorantApi.md#queueStatus) | **GET** /valorant/v1/queue-status/{affinity} | Get queue status (v1) |
+| [**raw**](ValorantApi.md#raw) | **POST** /valorant/v1/raw | Get raw Riot API data (v1) |
+| [**status**](ValorantApi.md#status) | **GET** /valorant/v1/status/{affinity} | Get status (v1) |
+| [**storeFeatured**](ValorantApi.md#storeFeatured) | **GET** /valorant/{version}/store-featured | Get featured store items |
+| [**storeOffers**](ValorantApi.md#storeOffers) | **GET** /valorant/{version}/store-offers | Get store offers |
+| [**storedMatches**](ValorantApi.md#storedMatches) | **GET** /valorant/v1/stored-matches/{affinity}/{name}/{tag} | Get stored matches by name (v1) |
+| [**storedMatchesById**](ValorantApi.md#storedMatchesById) | **GET** /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid} | Get stored matches by PUUID (v1) |
+| [**storedMmrHistory**](ValorantApi.md#storedMmrHistory) | **GET** /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag} | Get stored MMR history by name (v1) |
+| [**storedMmrHistoryById**](ValorantApi.md#storedMmrHistoryById) | **GET** /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid} | Get stored MMR history by PUUID (v1) |
+| [**storedMmrHistoryV2**](ValorantApi.md#storedMmrHistoryV2) | **GET** /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag} | Get stored MMR history by name (v2) |
+| [**storedMmrHistoryV2ById**](ValorantApi.md#storedMmrHistoryV2ById) | **GET** /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid} | Get stored MMR history by PUUID (v2) |
+| [**version**](ValorantApi.md#version) | **GET** /valorant/v1/version/{affinity} | Get game version (v1) |
+| [**website**](ValorantApi.md#website) | **GET** /valorant/v1/website/{country_code} | Get website content (v1) |
+| [**websiteById**](ValorantApi.md#websiteById) | **GET** /valorant/v1/website/{country_code}/{db_id} | Get website entry by ID (v1) |
 
 
 <a id="crosshair"></a>
 # **crosshair**
 > crosshair(id)
 
-
+Generate crosshair image (v1)
 
 ### Example
 ```kotlin
@@ -107,7 +107,7 @@ No authorization required
 # **esportsEventV2**
 > EsportsV2EventResponse esportsEventV2(eventId)
 
-
+Get VLR event matches (v2)
 
 ### Example
 ```kotlin
@@ -151,7 +151,7 @@ No authorization required
 # **esportsEventsV2**
 > EsportsV2EventsResponse esportsEventsV2(region, type, page)
 
-
+Get VLR esports events (v2)
 
 ### Example
 ```kotlin
@@ -199,7 +199,7 @@ No authorization required
 # **esportsMatchV2**
 > EsportsV2MatchesResponse esportsMatchV2(matchId)
 
-
+Get VLR match details (v2)
 
 ### Example
 ```kotlin
@@ -243,7 +243,7 @@ No authorization required
 # **esportsPlayerMatchesV2**
 > EsportsV2PlayerMatchesResponse esportsPlayerMatchesV2(player, page)
 
-
+Get VLR player matches (v2)
 
 ### Example
 ```kotlin
@@ -289,7 +289,7 @@ No authorization required
 # **esportsPlayerV2**
 > EsportsV2PlayerResponse esportsPlayerV2(player, timespan)
 
-
+Get VLR player (v2)
 
 ### Example
 ```kotlin
@@ -335,7 +335,7 @@ No authorization required
 # **esportsSchedulesV1**
 > EsportsV1Response esportsSchedulesV1(region, league)
 
-
+Get esports schedule (v1)
 
 ### Example
 ```kotlin
@@ -381,7 +381,7 @@ No authorization required
 # **esportsTeamMatchesV2**
 > EsportsV2TeamMatchListResponse esportsTeamMatchesV2(teamId, page)
 
-
+Get VLR team matches (v2)
 
 ### Example
 ```kotlin
@@ -427,7 +427,7 @@ No authorization required
 # **esportsTeamTransactionsV2**
 > EsportsV2TeamTransactionsResponse esportsTeamTransactionsV2(teamId)
 
-
+Get VLR team transactions (v2)
 
 ### Example
 ```kotlin
@@ -471,7 +471,7 @@ No authorization required
 # **esportsTeamV2**
 > EsportsV2TeamResponse esportsTeamV2(teamId)
 
-
+Get VLR team (v2)
 
 ### Example
 ```kotlin
@@ -515,7 +515,7 @@ No authorization required
 # **getAccountByIdV1**
 > AccountV1Response getAccountByIdV1(puuid, force)
 
-
+Get account by PUUID (v1)
 
 ### Example
 ```kotlin
@@ -561,7 +561,7 @@ No authorization required
 # **getAccountByIdV2**
 > AccountV2Response getAccountByIdV2(puuid, force)
 
-
+Get account by PUUID (v2)
 
 ### Example
 ```kotlin
@@ -607,7 +607,7 @@ No authorization required
 # **getAccountV1**
 > AccountV1Response getAccountV1(name, tag, force)
 
-
+Get account (v1)
 
 ### Example
 ```kotlin
@@ -655,7 +655,7 @@ No authorization required
 # **getAccountV2**
 > AccountV2Response getAccountV2(name, tag, force)
 
-
+Get account (v2)
 
 ### Example
 ```kotlin
@@ -703,7 +703,7 @@ No authorization required
 # **getContentV1**
 > ContentV1Response getContentV1(locale)
 
-
+Get content (v1)
 
 ### Example
 ```kotlin
@@ -747,7 +747,7 @@ No authorization required
 # **getMatchesV3ById**
 > MatchesV3ListResponse getMatchesV3ById(affinity, puuid, mode, map, size)
 
-
+Get matches by PUUID (v3)
 
 ### Example
 ```kotlin
@@ -799,7 +799,7 @@ No authorization required
 # **getMatchesV3ByName**
 > MatchesV3ListResponse getMatchesV3ByName(affinity, name, tag, mode, map, size)
 
-
+Get matches by name (v3)
 
 ### Example
 ```kotlin
@@ -853,7 +853,7 @@ No authorization required
 # **getMatchesV4ById**
 > MatchesV4HistoryResponse getMatchesV4ById(affinity, platform, puuid, mode, map, size, start)
 
-
+Get matches by PUUID (v4)
 
 ### Example
 ```kotlin
@@ -909,7 +909,7 @@ No authorization required
 # **getMatchesV4ByName**
 > MatchesV4HistoryResponse getMatchesV4ByName(affinity, platform, name, tag, mode, map, size, start)
 
-
+Get matches by name (v4)
 
 ### Example
 ```kotlin
@@ -967,7 +967,7 @@ No authorization required
 # **getMmrHistoryById**
 > MMRHistoryV1Response getMmrHistoryById(affinity, puuid)
 
-
+Get MMR history by PUUID (v1)
 
 ### Example
 ```kotlin
@@ -1013,7 +1013,7 @@ No authorization required
 # **getMmrHistoryByName**
 > MMRHistoryV1Response getMmrHistoryByName(affinity, name, tag)
 
-
+Get MMR history by name (v1)
 
 ### Example
 ```kotlin
@@ -1061,7 +1061,7 @@ No authorization required
 # **getMmrHistoryV2ById**
 > MMRHistoryV2Response getMmrHistoryV2ById(affinity, platform, puuid)
 
-
+Get MMR history by PUUID (v2)
 
 ### Example
 ```kotlin
@@ -1109,7 +1109,7 @@ No authorization required
 # **getMmrHistoryV2ByName**
 > MMRHistoryV2Response getMmrHistoryV2ByName(affinity, platform, name, tag)
 
-
+Get MMR history by name (v2)
 
 ### Example
 ```kotlin
@@ -1159,7 +1159,7 @@ No authorization required
 # **getMmrV1ById**
 > MMRV1Response getMmrV1ById(affinity, puuid)
 
-
+Get MMR by PUUID (v1)
 
 ### Example
 ```kotlin
@@ -1205,7 +1205,7 @@ No authorization required
 # **getMmrV1ByName**
 > MMRV1Response getMmrV1ByName(affinity, name, tag)
 
-
+Get MMR by name (v1)
 
 ### Example
 ```kotlin
@@ -1253,7 +1253,7 @@ No authorization required
 # **getMmrV2ById**
 > MMRV2Response getMmrV2ById(affinity, puuid)
 
-
+Get MMR by PUUID (v2)
 
 ### Example
 ```kotlin
@@ -1299,7 +1299,7 @@ No authorization required
 # **getMmrV2ByName**
 > MMRV2Response getMmrV2ByName(affinity, name, tag)
 
-
+Get MMR by name (v2)
 
 ### Example
 ```kotlin
@@ -1347,7 +1347,7 @@ No authorization required
 # **getMmrV3ById**
 > MMRV3Response getMmrV3ById(affinity, platform, puuid)
 
-
+Get MMR by PUUID (v3)
 
 ### Example
 ```kotlin
@@ -1395,7 +1395,7 @@ No authorization required
 # **getMmrV3ByName**
 > MMRV3Response getMmrV3ByName(affinity, platform, name, tag)
 
-
+Get MMR by name (v3)
 
 ### Example
 ```kotlin
@@ -1445,7 +1445,7 @@ No authorization required
 # **leaderboardV1**
 > kotlin.Any leaderboardV1(affinity, season, name, tag)
 
-
+Get leaderboard (v1)
 
 ### Example
 ```kotlin
@@ -1495,7 +1495,7 @@ No authorization required
 # **leaderboardV2**
 > LeaderboardV2Response leaderboardV2(affinity, season, name, tag, puuid)
 
-
+Get leaderboard (v2)
 
 ### Example
 ```kotlin
@@ -1547,7 +1547,7 @@ No authorization required
 # **leaderboardV3**
 > LeaderboardV3Response leaderboardV3(affinity, platform, season, size, page, name, tag)
 
-
+Get leaderboard (v3)
 
 ### Example
 ```kotlin
@@ -1603,7 +1603,7 @@ No authorization required
 # **matchV2**
 > MatchesV2Response matchV2(matchId)
 
-
+Get match details (v2)
 
 ### Example
 ```kotlin
@@ -1647,7 +1647,7 @@ No authorization required
 # **matchV4**
 > MatchesV4Response matchV4(affinity, matchId)
 
-
+Get match details (v4)
 
 ### Example
 ```kotlin
@@ -1691,9 +1691,9 @@ No authorization required
 
 <a id="premierById"></a>
 # **premierById**
-> PremierTeamV1Response premierById(id, season)
+> PremierTeamV1Response premierById(id, season, affinity)
 
-
+Get Premier team by ID (v1)
 
 ### Example
 ```kotlin
@@ -1704,8 +1704,9 @@ No authorization required
 val apiInstance = ValorantApi()
 val id : kotlin.String = id_example // kotlin.String | Team UUID
 val season : kotlin.String = season_example // kotlin.String | Premier season id (optional)
+val affinity : kotlin.String = affinity_example // kotlin.String | Region/affinity for fallback resolution (optional)
 try {
-    val result : PremierTeamV1Response = apiInstance.premierById(id, season)
+    val result : PremierTeamV1Response = apiInstance.premierById(id, season, affinity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ValorantApi#premierById")
@@ -1718,9 +1719,10 @@ try {
 
 ### Parameters
 | **id** | **kotlin.String**| Team UUID | |
+| **season** | **kotlin.String**| Premier season id (optional) | [optional] |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **season** | **kotlin.String**| Premier season id (optional) | [optional] |
+| **affinity** | **kotlin.String**| Region/affinity for fallback resolution (optional) | [optional] |
 
 ### Return type
 
@@ -1739,7 +1741,7 @@ No authorization required
 # **premierByIdHistory**
 > PremierTeamV1Response premierByIdHistory(id, season)
 
-
+Get Premier team history by ID (v1)
 
 ### Example
 ```kotlin
@@ -1783,9 +1785,9 @@ No authorization required
 
 <a id="premierByName"></a>
 # **premierByName**
-> PremierTeamV1Response premierByName(name, tag, season)
+> PremierTeamV1Response premierByName(name, tag, season, affinity)
 
-
+Get Premier team by name (v1)
 
 ### Example
 ```kotlin
@@ -1797,8 +1799,9 @@ val apiInstance = ValorantApi()
 val name : kotlin.String = name_example // kotlin.String | Team name
 val tag : kotlin.String = tag_example // kotlin.String | Team tag
 val season : kotlin.String = season_example // kotlin.String | Premier season id (optional)
+val affinity : kotlin.String = affinity_example // kotlin.String | Region/affinity for fallback resolution (optional)
 try {
-    val result : PremierTeamV1Response = apiInstance.premierByName(name, tag, season)
+    val result : PremierTeamV1Response = apiInstance.premierByName(name, tag, season, affinity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ValorantApi#premierByName")
@@ -1812,9 +1815,10 @@ try {
 ### Parameters
 | **name** | **kotlin.String**| Team name | |
 | **tag** | **kotlin.String**| Team tag | |
+| **season** | **kotlin.String**| Premier season id (optional) | [optional] |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **season** | **kotlin.String**| Premier season id (optional) | [optional] |
+| **affinity** | **kotlin.String**| Region/affinity for fallback resolution (optional) | [optional] |
 
 ### Return type
 
@@ -1833,7 +1837,7 @@ No authorization required
 # **premierByNameHistory**
 > PremierTeamHistoryV1Response premierByNameHistory(name, tag, season)
 
-
+Get Premier team history by name (v1)
 
 ### Example
 ```kotlin
@@ -1881,7 +1885,7 @@ No authorization required
 # **premierLeaderboard**
 > PremierSearchResponse premierLeaderboard(affinity, conference, division, season)
 
-
+Get Premier leaderboard (v1)
 
 ### Example
 ```kotlin
@@ -1931,7 +1935,7 @@ No authorization required
 # **premierSearch**
 > PremierSearchResponse premierSearch(name, tag, id, season)
 
-
+Search Premier teams (v1)
 
 ### Example
 ```kotlin
@@ -1981,7 +1985,7 @@ No authorization required
 # **queueStatus**
 > QueueStatusV1 queueStatus(affinity)
 
-
+Get queue status (v1)
 
 ### Example
 ```kotlin
@@ -2025,7 +2029,7 @@ No authorization required
 # **raw**
 > RawV1Response raw(rawV1Payload)
 
-
+Get raw Riot API data (v1)
 
 ### Example
 ```kotlin
@@ -2069,7 +2073,7 @@ No authorization required
 # **status**
 > StatusV1 status(affinity)
 
-
+Get status (v1)
 
 ### Example
 ```kotlin
@@ -2113,7 +2117,7 @@ No authorization required
 # **storeFeatured**
 > StoreFeaturedV1 storeFeatured(version)
 
-
+Get featured store items
 
 ### Example
 ```kotlin
@@ -2157,7 +2161,7 @@ No authorization required
 # **storeOffers**
 > StoreOffersV1Response storeOffers(version)
 
-
+Get store offers
 
 ### Example
 ```kotlin
@@ -2201,7 +2205,7 @@ No authorization required
 # **storedMatches**
 > StoredMatchesResponse storedMatches(affinity, name, tag, mode, map, size)
 
-
+Get stored matches by name (v1)
 
 ### Example
 ```kotlin
@@ -2255,7 +2259,7 @@ No authorization required
 # **storedMatchesById**
 > StoredMatchesResponse storedMatchesById(affinity, puuid, mode, map, size)
 
-
+Get stored matches by PUUID (v1)
 
 ### Example
 ```kotlin
@@ -2307,7 +2311,7 @@ No authorization required
 # **storedMmrHistory**
 > StoredMMRResponse storedMmrHistory(affinity, name, tag, size)
 
-
+Get stored MMR history by name (v1)
 
 ### Example
 ```kotlin
@@ -2357,7 +2361,7 @@ No authorization required
 # **storedMmrHistoryById**
 > StoredMMRResponse storedMmrHistoryById(affinity, puuid, size)
 
-
+Get stored MMR history by PUUID (v1)
 
 ### Example
 ```kotlin
@@ -2405,7 +2409,7 @@ No authorization required
 # **storedMmrHistoryV2**
 > StoredMMRV2Response storedMmrHistoryV2(affinity, platform, name, tag, size)
 
-
+Get stored MMR history by name (v2)
 
 ### Example
 ```kotlin
@@ -2457,7 +2461,7 @@ No authorization required
 # **storedMmrHistoryV2ById**
 > StoredMMRV2Response storedMmrHistoryV2ById(affinity, platform, puuid, size)
 
-
+Get stored MMR history by PUUID (v2)
 
 ### Example
 ```kotlin
@@ -2507,7 +2511,7 @@ No authorization required
 # **version**
 > VersionV1Response version(affinity)
 
-
+Get game version (v1)
 
 ### Example
 ```kotlin
@@ -2551,7 +2555,7 @@ No authorization required
 # **website**
 > WebsiteV1Response website(countryCode, category)
 
-
+Get website content (v1)
 
 ### Example
 ```kotlin
@@ -2597,7 +2601,7 @@ No authorization required
 # **websiteById**
 > WebsiteByIdV1Response websiteById(dbId, countryCode)
 
-
+Get website entry by ID (v1)
 
 ### Example
 ```kotlin

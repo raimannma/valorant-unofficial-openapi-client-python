@@ -40,7 +40,7 @@ func (r ApiCrosshairRequest) Execute() (*http.Response, error) {
 }
 
 /*
-Crosshair Method for Crosshair
+Crosshair Generate crosshair image (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @return ApiCrosshairRequest
@@ -151,7 +151,7 @@ func (r ApiEsportsEventV2Request) Execute() (*EsportsV2EventResponse, *http.Resp
 }
 
 /*
-EsportsEventV2 Method for EsportsEventV2
+EsportsEventV2 Get VLR event matches (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param eventId
@@ -293,7 +293,7 @@ func (r ApiEsportsEventsV2Request) Execute() (*EsportsV2EventsResponse, *http.Re
 }
 
 /*
-EsportsEventsV2 Method for EsportsEventsV2
+EsportsEventsV2 Get VLR esports events (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @return ApiEsportsEventsV2Request
@@ -421,7 +421,7 @@ func (r ApiEsportsMatchV2Request) Execute() (*EsportsV2MatchesResponse, *http.Re
 }
 
 /*
-EsportsMatchV2 Method for EsportsMatchV2
+EsportsMatchV2 Get VLR match details (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param matchId
@@ -552,7 +552,7 @@ func (r ApiEsportsPlayerMatchesV2Request) Execute() (*EsportsV2PlayerMatchesResp
 }
 
 /*
-EsportsPlayerMatchesV2 Method for EsportsPlayerMatchesV2
+EsportsPlayerMatchesV2 Get VLR player matches (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param player
@@ -686,7 +686,7 @@ func (r ApiEsportsPlayerV2Request) Execute() (*EsportsV2PlayerResponse, *http.Re
 }
 
 /*
-EsportsPlayerV2 Method for EsportsPlayerV2
+EsportsPlayerV2 Get VLR player (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param player
@@ -825,7 +825,7 @@ func (r ApiEsportsSchedulesV1Request) Execute() (*EsportsV1Response, *http.Respo
 }
 
 /*
-EsportsSchedulesV1 Method for EsportsSchedulesV1
+EsportsSchedulesV1 Get esports schedule (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @return ApiEsportsSchedulesV1Request
@@ -967,7 +967,7 @@ func (r ApiEsportsTeamMatchesV2Request) Execute() (*EsportsV2TeamMatchListRespon
 }
 
 /*
-EsportsTeamMatchesV2 Method for EsportsTeamMatchesV2
+EsportsTeamMatchesV2 Get VLR team matches (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param teamId
@@ -1095,7 +1095,7 @@ func (r ApiEsportsTeamTransactionsV2Request) Execute() (*EsportsV2TeamTransactio
 }
 
 /*
-EsportsTeamTransactionsV2 Method for EsportsTeamTransactionsV2
+EsportsTeamTransactionsV2 Get VLR team transactions (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param teamId
@@ -1220,7 +1220,7 @@ func (r ApiEsportsTeamV2Request) Execute() (*EsportsV2TeamResponse, *http.Respon
 }
 
 /*
-EsportsTeamV2 Method for EsportsTeamV2
+EsportsTeamV2 Get VLR team (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param teamId
@@ -1352,7 +1352,7 @@ func (r ApiGetAccountByIdV1Request) Execute() (*AccountV1Response, *http.Respons
 }
 
 /*
-GetAccountByIdV1 Method for GetAccountByIdV1
+GetAccountByIdV1 Get account by PUUID (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param puuid Player UUID
@@ -1495,7 +1495,7 @@ func (r ApiGetAccountByIdV2Request) Execute() (*AccountV2Response, *http.Respons
 }
 
 /*
-GetAccountByIdV2 Method for GetAccountByIdV2
+GetAccountByIdV2 Get account by PUUID (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param puuid Player UUID
@@ -1639,7 +1639,7 @@ func (r ApiGetAccountV1Request) Execute() (*AccountV1Response, *http.Response, e
 }
 
 /*
-GetAccountV1 Method for GetAccountV1
+GetAccountV1 Get account (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param name Riot ID name
@@ -1786,7 +1786,7 @@ func (r ApiGetAccountV2Request) Execute() (*AccountV2Response, *http.Response, e
 }
 
 /*
-GetAccountV2 Method for GetAccountV2
+GetAccountV2 Get account (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param name Riot ID name
@@ -1931,7 +1931,7 @@ func (r ApiGetContentV1Request) Execute() (*ContentV1Response, *http.Response, e
 }
 
 /*
-GetContentV1 Method for GetContentV1
+GetContentV1 Get content (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @return ApiGetContentV1Request
@@ -2086,7 +2086,7 @@ func (r ApiGetMatchesV3ByIdRequest) Execute() (*MatchesV3ListResponse, *http.Res
 }
 
 /*
-GetMatchesV3ById Method for GetMatchesV3ById
+GetMatchesV3ById Get matches by PUUID (v3)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -2254,7 +2254,7 @@ func (r ApiGetMatchesV3ByNameRequest) Execute() (*MatchesV3ListResponse, *http.R
 }
 
 /*
-GetMatchesV3ByName Method for GetMatchesV3ByName
+GetMatchesV3ByName Get matches by name (v3)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -2432,7 +2432,7 @@ func (r ApiGetMatchesV4ByIdRequest) Execute() (*MatchesV4HistoryResponse, *http.
 }
 
 /*
-GetMatchesV4ById Method for GetMatchesV4ById
+GetMatchesV4ById Get matches by PUUID (v4)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -2614,7 +2614,7 @@ func (r ApiGetMatchesV4ByNameRequest) Execute() (*MatchesV4HistoryResponse, *htt
 }
 
 /*
-GetMatchesV4ByName Method for GetMatchesV4ByName
+GetMatchesV4ByName Get matches by name (v4)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -2769,7 +2769,7 @@ func (r ApiGetMmrHistoryByIdRequest) Execute() (*MMRHistoryV1Response, *http.Res
 }
 
 /*
-GetMmrHistoryById Method for GetMmrHistoryById
+GetMmrHistoryById Get MMR history by PUUID (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -2907,7 +2907,7 @@ func (r ApiGetMmrHistoryByNameRequest) Execute() (*MMRHistoryV1Response, *http.R
 }
 
 /*
-GetMmrHistoryByName Method for GetMmrHistoryByName
+GetMmrHistoryByName Get MMR history by name (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -3048,7 +3048,7 @@ func (r ApiGetMmrHistoryV2ByIdRequest) Execute() (*MMRHistoryV2Response, *http.R
 }
 
 /*
-GetMmrHistoryV2ById Method for GetMmrHistoryV2ById
+GetMmrHistoryV2ById Get MMR history by PUUID (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -3190,7 +3190,7 @@ func (r ApiGetMmrHistoryV2ByNameRequest) Execute() (*MMRHistoryV2Response, *http
 }
 
 /*
-GetMmrHistoryV2ByName Method for GetMmrHistoryV2ByName
+GetMmrHistoryV2ByName Get MMR history by name (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -3333,7 +3333,7 @@ func (r ApiGetMmrV1ByIdRequest) Execute() (*MMRV1Response, *http.Response, error
 }
 
 /*
-GetMmrV1ById Method for GetMmrV1ById
+GetMmrV1ById Get MMR by PUUID (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -3471,7 +3471,7 @@ func (r ApiGetMmrV1ByNameRequest) Execute() (*MMRV1Response, *http.Response, err
 }
 
 /*
-GetMmrV1ByName Method for GetMmrV1ByName
+GetMmrV1ByName Get MMR by name (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -3611,7 +3611,7 @@ func (r ApiGetMmrV2ByIdRequest) Execute() (*MMRV2Response, *http.Response, error
 }
 
 /*
-GetMmrV2ById Method for GetMmrV2ById
+GetMmrV2ById Get MMR by PUUID (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -3749,7 +3749,7 @@ func (r ApiGetMmrV2ByNameRequest) Execute() (*MMRV2Response, *http.Response, err
 }
 
 /*
-GetMmrV2ByName Method for GetMmrV2ByName
+GetMmrV2ByName Get MMR by name (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -3890,7 +3890,7 @@ func (r ApiGetMmrV3ByIdRequest) Execute() (*MMRV3Response, *http.Response, error
 }
 
 /*
-GetMmrV3ById Method for GetMmrV3ById
+GetMmrV3ById Get MMR by PUUID (v3)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -4032,7 +4032,7 @@ func (r ApiGetMmrV3ByNameRequest) Execute() (*MMRV3Response, *http.Response, err
 }
 
 /*
-GetMmrV3ByName Method for GetMmrV3ByName
+GetMmrV3ByName Get MMR by name (v3)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -4195,7 +4195,7 @@ func (r ApiLeaderboardV1Request) Execute() (interface{}, *http.Response, error) 
 }
 
 /*
-LeaderboardV1 Method for LeaderboardV1
+LeaderboardV1 Get leaderboard (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -4365,7 +4365,7 @@ func (r ApiLeaderboardV2Request) Execute() (*LeaderboardV2Response, *http.Respon
 }
 
 /*
-LeaderboardV2 Method for LeaderboardV2
+LeaderboardV2 Get leaderboard (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -4546,7 +4546,7 @@ func (r ApiLeaderboardV3Request) Execute() (*LeaderboardV3Response, *http.Respon
 }
 
 /*
-LeaderboardV3 Method for LeaderboardV3
+LeaderboardV3 Get leaderboard (v3)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -4697,7 +4697,7 @@ func (r ApiMatchV2Request) Execute() (*MatchesV2Response, *http.Response, error)
 }
 
 /*
-MatchV2 Method for MatchV2
+MatchV2 Get match details (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param matchId Match UUID
@@ -4831,7 +4831,7 @@ func (r ApiMatchV4Request) Execute() (*MatchesV4Response, *http.Response, error)
 }
 
 /*
-MatchV4 Method for MatchV4
+MatchV4 Get match details (v4)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -4961,6 +4961,7 @@ type ApiPremierByIdRequest struct {
 	ApiService *ValorantAPIService
 	id string
 	season *string
+	affinity *string
 }
 
 // Premier season id (optional)
@@ -4969,12 +4970,18 @@ func (r ApiPremierByIdRequest) Season(season string) ApiPremierByIdRequest {
 	return r
 }
 
+// Region/affinity for fallback resolution (optional)
+func (r ApiPremierByIdRequest) Affinity(affinity string) ApiPremierByIdRequest {
+	r.affinity = &affinity
+	return r
+}
+
 func (r ApiPremierByIdRequest) Execute() (*PremierTeamV1Response, *http.Response, error) {
 	return r.ApiService.PremierByIdExecute(r)
 }
 
 /*
-PremierById Method for PremierById
+PremierById Get Premier team by ID (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param id Team UUID
@@ -5012,6 +5019,9 @@ func (a *ValorantAPIService) PremierByIdExecute(r ApiPremierByIdRequest) (*Premi
 
 	if r.season != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "season", r.season, "form", "")
+	}
+	if r.affinity != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "affinity", r.affinity, "form", "")
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -5117,7 +5127,7 @@ func (r ApiPremierByIdHistoryRequest) Execute() (*PremierTeamV1Response, *http.R
 }
 
 /*
-PremierByIdHistory Method for PremierByIdHistory
+PremierByIdHistory Get Premier team history by ID (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param id Team UUID
@@ -5248,6 +5258,7 @@ type ApiPremierByNameRequest struct {
 	name string
 	tag string
 	season *string
+	affinity *string
 }
 
 // Premier season id (optional)
@@ -5256,12 +5267,18 @@ func (r ApiPremierByNameRequest) Season(season string) ApiPremierByNameRequest {
 	return r
 }
 
+// Region/affinity for fallback resolution (optional)
+func (r ApiPremierByNameRequest) Affinity(affinity string) ApiPremierByNameRequest {
+	r.affinity = &affinity
+	return r
+}
+
 func (r ApiPremierByNameRequest) Execute() (*PremierTeamV1Response, *http.Response, error) {
 	return r.ApiService.PremierByNameExecute(r)
 }
 
 /*
-PremierByName Method for PremierByName
+PremierByName Get Premier team by name (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param name Team name
@@ -5302,6 +5319,9 @@ func (a *ValorantAPIService) PremierByNameExecute(r ApiPremierByNameRequest) (*P
 
 	if r.season != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "season", r.season, "form", "")
+	}
+	if r.affinity != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "affinity", r.affinity, "form", "")
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -5364,6 +5384,17 @@ func (a *ValorantAPIService) PremierByNameExecute(r ApiPremierByNameRequest) (*P
 					newErr.model = v
 			return localVarReturnValue, localVarHTTPResponse, newErr
 		}
+		if localVarHTTPResponse.StatusCode == 409 {
+			var v SendError
+			err = a.client.decode(&v, localVarBody, localVarHTTPResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
+				return localVarReturnValue, localVarHTTPResponse, newErr
+			}
+					newErr.error = formatErrorMessage(localVarHTTPResponse.Status, &v)
+					newErr.model = v
+			return localVarReturnValue, localVarHTTPResponse, newErr
+		}
 		if localVarHTTPResponse.StatusCode == 500 {
 			var v SendError
 			err = a.client.decode(&v, localVarBody, localVarHTTPResponse.Header.Get("Content-Type"))
@@ -5408,7 +5439,7 @@ func (r ApiPremierByNameHistoryRequest) Execute() (*PremierTeamHistoryV1Response
 }
 
 /*
-PremierByNameHistory Method for PremierByNameHistory
+PremierByNameHistory Get Premier team history by name (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param name Team name
@@ -5536,7 +5567,7 @@ func (r ApiPremierLeaderboardRequest) Execute() (*PremierSearchResponse, *http.R
 }
 
 /*
-PremierLeaderboard Method for PremierLeaderboard
+PremierLeaderboard Get Premier leaderboard (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -5705,7 +5736,7 @@ func (r ApiPremierSearchRequest) Execute() (*PremierSearchResponse, *http.Respon
 }
 
 /*
-PremierSearch Method for PremierSearch
+PremierSearch Search Premier teams (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @return ApiPremierSearchRequest
@@ -5847,7 +5878,7 @@ func (r ApiQueueStatusRequest) Execute() (*QueueStatusV1, *http.Response, error)
 }
 
 /*
-QueueStatus Method for QueueStatus
+QueueStatus Get queue status (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -5985,7 +6016,7 @@ func (r ApiRawRequest) Execute() (*RawV1Response, *http.Response, error) {
 }
 
 /*
-Raw Method for Raw
+Raw Get raw Riot API data (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @return ApiRawRequest
@@ -6120,7 +6151,7 @@ func (r ApiStatusRequest) Execute() (*StatusV1, *http.Response, error) {
 }
 
 /*
-Status Method for Status
+Status Get status (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -6253,7 +6284,7 @@ func (r ApiStoreFeaturedRequest) Execute() (*StoreFeaturedV1, *http.Response, er
 }
 
 /*
-StoreFeatured Method for StoreFeatured
+StoreFeatured Get featured store items
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param version API version (v1, v2)
@@ -6386,7 +6417,7 @@ func (r ApiStoreOffersRequest) Execute() (*StoreOffersV1Response, *http.Response
 }
 
 /*
-StoreOffers Method for StoreOffers
+StoreOffers Get store offers
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param version API version (v1, v2)
@@ -6542,7 +6573,7 @@ func (r ApiStoredMatchesRequest) Execute() (*StoredMatchesResponse, *http.Respon
 }
 
 /*
-StoredMatches Method for StoredMatches
+StoredMatches Get stored matches by name (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -6712,7 +6743,7 @@ func (r ApiStoredMatchesByIdRequest) Execute() (*StoredMatchesResponse, *http.Re
 }
 
 /*
-StoredMatchesById Method for StoredMatchesById
+StoredMatchesById Get stored matches by PUUID (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -6866,7 +6897,7 @@ func (r ApiStoredMmrHistoryRequest) Execute() (*StoredMMRResponse, *http.Respons
 }
 
 /*
-StoredMmrHistory Method for StoredMmrHistory
+StoredMmrHistory Get stored MMR history by name (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -7016,7 +7047,7 @@ func (r ApiStoredMmrHistoryByIdRequest) Execute() (*StoredMMRResponse, *http.Res
 }
 
 /*
-StoredMmrHistoryById Method for StoredMmrHistoryById
+StoredMmrHistoryById Get stored MMR history by PUUID (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -7165,7 +7196,7 @@ func (r ApiStoredMmrHistoryV2Request) Execute() (*StoredMMRV2Response, *http.Res
 }
 
 /*
-StoredMmrHistoryV2 Method for StoredMmrHistoryV2
+StoredMmrHistoryV2 Get stored MMR history by name (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -7319,7 +7350,7 @@ func (r ApiStoredMmrHistoryV2ByIdRequest) Execute() (*StoredMMRV2Response, *http
 }
 
 /*
-StoredMmrHistoryV2ById Method for StoredMmrHistoryV2ById
+StoredMmrHistoryV2ById Get stored MMR history by PUUID (v2)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -7461,7 +7492,7 @@ func (r ApiVersionRequest) Execute() (*VersionV1Response, *http.Response, error)
 }
 
 /*
-Version Method for Version
+Version Get game version (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param affinity Region/affinity (e.g., na, eu, ap, kr)
@@ -7601,7 +7632,7 @@ func (r ApiWebsiteRequest) Execute() (*WebsiteV1Response, *http.Response, error)
 }
 
 /*
-Website Method for Website
+Website Get website content (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param countryCode Country code (e.g., en-us, de-de)
@@ -7738,7 +7769,7 @@ func (r ApiWebsiteByIdRequest) Execute() (*WebsiteByIdV1Response, *http.Response
 }
 
 /*
-WebsiteById Method for WebsiteById
+WebsiteById Get website entry by ID (v1)
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @param dbId Database ID of the website entry

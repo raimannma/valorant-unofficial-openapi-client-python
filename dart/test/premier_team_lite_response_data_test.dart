@@ -51,6 +51,11 @@ void main() {
       // TODO
     });
 
+    // bool ranked
+    test('to test the property `ranked`', () async {
+      // TODO
+    });
+
     // int ranking
     test('to test the property `ranking`', () async {
       // TODO

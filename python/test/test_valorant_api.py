@@ -29,324 +29,378 @@ class TestValorantApi(unittest.TestCase):
     def test_crosshair(self) -> None:
         """Test case for crosshair
 
+        Generate crosshair image (v1)
         """
         pass
 
     def test_esports_event_v2(self) -> None:
         """Test case for esports_event_v2
 
+        Get VLR event matches (v2)
         """
         pass
 
     def test_esports_events_v2(self) -> None:
         """Test case for esports_events_v2
 
+        Get VLR esports events (v2)
         """
         pass
 
     def test_esports_match_v2(self) -> None:
         """Test case for esports_match_v2
 
+        Get VLR match details (v2)
         """
         pass
 
     def test_esports_player_matches_v2(self) -> None:
         """Test case for esports_player_matches_v2
 
+        Get VLR player matches (v2)
         """
         pass
 
     def test_esports_player_v2(self) -> None:
         """Test case for esports_player_v2
 
+        Get VLR player (v2)
         """
         pass
 
     def test_esports_schedules_v1(self) -> None:
         """Test case for esports_schedules_v1
 
+        Get esports schedule (v1)
         """
         pass
 
     def test_esports_team_matches_v2(self) -> None:
         """Test case for esports_team_matches_v2
 
+        Get VLR team matches (v2)
         """
         pass
 
     def test_esports_team_transactions_v2(self) -> None:
         """Test case for esports_team_transactions_v2
 
+        Get VLR team transactions (v2)
         """
         pass
 
     def test_esports_team_v2(self) -> None:
         """Test case for esports_team_v2
 
+        Get VLR team (v2)
         """
         pass
 
     def test_get_account_by_id_v1(self) -> None:
         """Test case for get_account_by_id_v1
 
+        Get account by PUUID (v1)
         """
         pass
 
     def test_get_account_by_id_v2(self) -> None:
         """Test case for get_account_by_id_v2
 
+        Get account by PUUID (v2)
         """
         pass
 
     def test_get_account_v1(self) -> None:
         """Test case for get_account_v1
 
+        Get account (v1)
         """
         pass
 
     def test_get_account_v2(self) -> None:
         """Test case for get_account_v2
 
+        Get account (v2)
         """
         pass
 
     def test_get_content_v1(self) -> None:
         """Test case for get_content_v1
 
+        Get content (v1)
         """
         pass
 
     def test_get_matches_v3_by_id(self) -> None:
         """Test case for get_matches_v3_by_id
 
+        Get matches by PUUID (v3)
         """
         pass
 
     def test_get_matches_v3_by_name(self) -> None:
         """Test case for get_matches_v3_by_name
 
+        Get matches by name (v3)
         """
         pass
 
     def test_get_matches_v4_by_id(self) -> None:
         """Test case for get_matches_v4_by_id
 
+        Get matches by PUUID (v4)
         """
         pass
 
     def test_get_matches_v4_by_name(self) -> None:
         """Test case for get_matches_v4_by_name
 
+        Get matches by name (v4)
         """
         pass
 
     def test_get_mmr_history_by_id(self) -> None:
         """Test case for get_mmr_history_by_id
 
+        Get MMR history by PUUID (v1)
         """
         pass
 
     def test_get_mmr_history_by_name(self) -> None:
         """Test case for get_mmr_history_by_name
 
+        Get MMR history by name (v1)
         """
         pass
 
     def test_get_mmr_history_v2_by_id(self) -> None:
         """Test case for get_mmr_history_v2_by_id
 
+        Get MMR history by PUUID (v2)
         """
         pass
 
     def test_get_mmr_history_v2_by_name(self) -> None:
         """Test case for get_mmr_history_v2_by_name
 
+        Get MMR history by name (v2)
         """
         pass
 
     def test_get_mmr_v1_by_id(self) -> None:
         """Test case for get_mmr_v1_by_id
 
+        Get MMR by PUUID (v1)
         """
         pass
 
     def test_get_mmr_v1_by_name(self) -> None:
         """Test case for get_mmr_v1_by_name
 
+        Get MMR by name (v1)
         """
         pass
 
     def test_get_mmr_v2_by_id(self) -> None:
         """Test case for get_mmr_v2_by_id
 
+        Get MMR by PUUID (v2)
         """
         pass
 
     def test_get_mmr_v2_by_name(self) -> None:
         """Test case for get_mmr_v2_by_name
 
+        Get MMR by name (v2)
         """
         pass
 
     def test_get_mmr_v3_by_id(self) -> None:
         """Test case for get_mmr_v3_by_id
 
+        Get MMR by PUUID (v3)
         """
         pass
 
     def test_get_mmr_v3_by_name(self) -> None:
         """Test case for get_mmr_v3_by_name
 
+        Get MMR by name (v3)
         """
         pass
 
     def test_leaderboard_v1(self) -> None:
         """Test case for leaderboard_v1
 
+        Get leaderboard (v1)
         """
         pass
 
     def test_leaderboard_v2(self) -> None:
         """Test case for leaderboard_v2
 
+        Get leaderboard (v2)
         """
         pass
 
     def test_leaderboard_v3(self) -> None:
         """Test case for leaderboard_v3
 
+        Get leaderboard (v3)
         """
         pass
 
     def test_match_v2(self) -> None:
         """Test case for match_v2
 
+        Get match details (v2)
         """
         pass
 
     def test_match_v4(self) -> None:
         """Test case for match_v4
 
+        Get match details (v4)
         """
         pass
 
     def test_premier_by_id(self) -> None:
         """Test case for premier_by_id
 
+        Get Premier team by ID (v1)
         """
         pass
 
     def test_premier_by_id_history(self) -> None:
         """Test case for premier_by_id_history
 
+        Get Premier team history by ID (v1)
         """
         pass
 
     def test_premier_by_name(self) -> None:
         """Test case for premier_by_name
 
+        Get Premier team by name (v1)
         """
         pass
 
     def test_premier_by_name_history(self) -> None:
         """Test case for premier_by_name_history
 
+        Get Premier team history by name (v1)
         """
         pass
 
     def test_premier_leaderboard(self) -> None:
         """Test case for premier_leaderboard
 
+        Get Premier leaderboard (v1)
         """
         pass
 
     def test_premier_search(self) -> None:
         """Test case for premier_search
 
+        Search Premier teams (v1)
         """
         pass
 
     def test_queue_status(self) -> None:
         """Test case for queue_status
 
+        Get queue status (v1)
         """
         pass
 
     def test_raw(self) -> None:
         """Test case for raw
 
+        Get raw Riot API data (v1)
         """
         pass
 
     def test_status(self) -> None:
         """Test case for status
 
+        Get status (v1)
         """
         pass
 
     def test_store_featured(self) -> None:
         """Test case for store_featured
 
+        Get featured store items
         """
         pass
 
     def test_store_offers(self) -> None:
         """Test case for store_offers
 
+        Get store offers
         """
         pass
 
     def test_stored_matches(self) -> None:
         """Test case for stored_matches
 
+        Get stored matches by name (v1)
         """
         pass
 
     def test_stored_matches_by_id(self) -> None:
         """Test case for stored_matches_by_id
 
+        Get stored matches by PUUID (v1)
         """
         pass
 
     def test_stored_mmr_history(self) -> None:
         """Test case for stored_mmr_history
 
+        Get stored MMR history by name (v1)
         """
         pass
 
     def test_stored_mmr_history_by_id(self) -> None:
         """Test case for stored_mmr_history_by_id
 
+        Get stored MMR history by PUUID (v1)
         """
         pass
 
     def test_stored_mmr_history_v2(self) -> None:
         """Test case for stored_mmr_history_v2
 
+        Get stored MMR history by name (v2)
         """
         pass
 
     def test_stored_mmr_history_v2_by_id(self) -> None:
         """Test case for stored_mmr_history_v2_by_id
 
+        Get stored MMR history by PUUID (v2)
         """
         pass
 
     def test_version(self) -> None:
         """Test case for version
 
+        Get game version (v1)
         """
         pass
 
     def test_website(self) -> None:
         """Test case for website
 
+        Get website content (v1)
         """
         pass
 
     def test_website_by_id(self) -> None:
         """Test case for website_by_id
 
+        Get website entry by ID (v1)
         """
         pass
 

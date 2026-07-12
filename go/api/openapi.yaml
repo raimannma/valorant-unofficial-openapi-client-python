@@ -10,6 +10,8 @@ servers:
 tags:
 - description: Valorant public API endpoints
   name: valorant
+- description: Premium account and webhook endpoints
+  name: premium
 paths:
   /valorant/v1/account/{name}/{tag}:
     get:
@@ -64,6 +66,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get account (v1)
       tags:
       - valorant
   /valorant/v1/by-puuid/account/{puuid}:
@@ -111,6 +114,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get account by PUUID (v1)
       tags:
       - valorant
   /valorant/v2/account/{name}/{tag}:
@@ -166,6 +170,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get account (v2)
       tags:
       - valorant
   /valorant/v2/by-puuid/account/{puuid}:
@@ -213,6 +218,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get account by PUUID (v2)
       tags:
       - valorant
   /valorant/v1/mmr/{affinity}/{name}/{tag}:
@@ -268,6 +274,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get MMR by name (v1)
       tags:
       - valorant
   /valorant/v1/by-puuid/mmr/{affinity}/{puuid}:
@@ -315,6 +322,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get MMR by PUUID (v1)
       tags:
       - valorant
   /valorant/v2/mmr/{affinity}/{name}/{tag}:
@@ -370,6 +378,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get MMR by name (v2)
       tags:
       - valorant
   /valorant/v2/by-puuid/mmr/{affinity}/{puuid}:
@@ -417,6 +426,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get MMR by PUUID (v2)
       tags:
       - valorant
   /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag}:
@@ -480,6 +490,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get MMR by name (v3)
       tags:
       - valorant
   /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid}:
@@ -535,6 +546,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get MMR by PUUID (v3)
       tags:
       - valorant
   /valorant/v1/mmr-history/{affinity}/{name}/{tag}:
@@ -590,6 +602,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get MMR history by name (v1)
       tags:
       - valorant
   /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid}:
@@ -637,6 +650,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get MMR history by PUUID (v1)
       tags:
       - valorant
   /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag}:
@@ -700,6 +714,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get MMR history by name (v2)
       tags:
       - valorant
   /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid}:
@@ -755,6 +770,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get MMR history by PUUID (v2)
       tags:
       - valorant
   /valorant/v3/matches/{affinity}/{name}/{tag}:
@@ -835,6 +851,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get matches by name (v3)
       tags:
       - valorant
   /valorant/v3/by-puuid/matches/{affinity}/{puuid}:
@@ -907,6 +924,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get matches by PUUID (v3)
       tags:
       - valorant
   /valorant/v4/matches/{affinity}/{platform}/{name}/{tag}:
@@ -1004,6 +1022,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get matches by name (v4)
       tags:
       - valorant
   /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid}:
@@ -1093,6 +1112,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get matches by PUUID (v4)
       tags:
       - valorant
   /valorant/v2/match/{match_id}:
@@ -1132,6 +1152,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get match details (v2)
       tags:
       - valorant
   /valorant/v4/match/{affinity}/{match_id}:
@@ -1179,6 +1200,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get match details (v4)
       tags:
       - valorant
   /valorant/v1/leaderboard/{affinity}:
@@ -1241,6 +1263,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get leaderboard (v1)
       tags:
       - valorant
   /valorant/v2/leaderboard/{affinity}:
@@ -1312,6 +1335,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get leaderboard (v2)
       tags:
       - valorant
   /valorant/v3/leaderboard/{affinity}/{platform}:
@@ -1401,6 +1425,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get leaderboard (v3)
       tags:
       - valorant
   /valorant/v1/premier/search:
@@ -1464,6 +1489,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Search Premier teams (v1)
       tags:
       - valorant
   /valorant/v1/premier/leaderboard/{affinity}:
@@ -1527,6 +1553,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get Premier leaderboard (v1)
       tags:
       - valorant
   /valorant/v1/premier/{name}/{tag}:
@@ -1557,6 +1584,14 @@ paths:
         schema:
           type: string
         style: form
+      - description: Region/affinity for fallback resolution (optional)
+        explode: true
+        in: query
+        name: affinity
+        required: false
+        schema:
+          type: string
+        style: form
       responses:
         "200":
           content:
@@ -1576,12 +1611,19 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Team not found
+        "409":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Multiple teams match this name and tag
         "500":
           content:
             application/json:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get Premier team by name (v1)
       tags:
       - valorant
   /valorant/v1/premier/{id}:
@@ -1600,6 +1642,14 @@ paths:
         explode: true
         in: query
         name: season
+        required: false
+        schema:
+          type: string
+        style: form
+      - description: Region/affinity for fallback resolution (optional)
+        explode: true
+        in: query
+        name: affinity
         required: false
         schema:
           type: string
@@ -1629,6 +1679,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get Premier team by ID (v1)
       tags:
       - valorant
   /valorant/v1/premier/{name}/{tag}/history:
@@ -1668,6 +1719,7 @@ paths:
           description: Premier team history retrieved successfully
         "400":
           description: Client error
+      summary: Get Premier team history by name (v1)
       tags:
       - valorant
   /valorant/v1/premier/{id}/history:
@@ -1715,6 +1767,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get Premier team history by ID (v1)
       tags:
       - valorant
   /valorant/v1/esports/schedule:
@@ -1762,6 +1815,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get esports schedule (v1)
       tags:
       - valorant
   /valorant/v2/esports/vlr/events:
@@ -1810,6 +1864,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get VLR esports events (v2)
       tags:
       - valorant
   /valorant/v2/esports/vlr/events/{event_id}/matches:
@@ -1844,6 +1899,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get VLR event matches (v2)
       tags:
       - valorant
   /valorant/v2/esports/vlr/matches/{match_id}:
@@ -1878,6 +1934,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get VLR match details (v2)
       tags:
       - valorant
   /valorant/v2/esports/vlr/teams/{team_id}:
@@ -1912,6 +1969,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get VLR team (v2)
       tags:
       - valorant
   /valorant/v2/esports/vlr/teams/{team_id}/matches:
@@ -1956,6 +2014,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get VLR team matches (v2)
       tags:
       - valorant
   /valorant/v2/esports/vlr/teams/{team_id}/transactions:
@@ -1990,6 +2049,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get VLR team transactions (v2)
       tags:
       - valorant
   /valorant/v2/esports/vlr/players/{player_id}:
@@ -2031,6 +2091,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get VLR player (v2)
       tags:
       - valorant
   /valorant/v2/esports/vlr/players/{player}/matches:
@@ -2075,6 +2136,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get VLR player matches (v2)
       tags:
       - valorant
   /valorant/v1/stored-matches/{affinity}/{name}/{tag}:
@@ -2155,6 +2217,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get stored matches by name (v1)
       tags:
       - valorant
   /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid}:
@@ -2227,6 +2290,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get stored matches by PUUID (v1)
       tags:
       - valorant
   /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag}:
@@ -2291,6 +2355,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get stored MMR history by name (v1)
       tags:
       - valorant
   /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid}:
@@ -2347,6 +2412,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get stored MMR history by PUUID (v1)
       tags:
       - valorant
   /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag}:
@@ -2419,6 +2485,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get stored MMR history by name (v2)
       tags:
       - valorant
   /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid}:
@@ -2483,6 +2550,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get stored MMR history by PUUID (v2)
       tags:
       - valorant
   /valorant/v1/content:
@@ -2522,6 +2590,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get content (v1)
       tags:
       - valorant
   /valorant/{version}/store-featured:
@@ -2561,6 +2630,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get featured store items
       tags:
       - valorant
   /valorant/{version}/store-offers:
@@ -2600,6 +2670,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get store offers
       tags:
       - valorant
   /valorant/v1/crosshair/generate:
@@ -2631,6 +2702,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Generate crosshair image (v1)
       tags:
       - valorant
   /valorant/v1/status/{affinity}:
@@ -2670,6 +2742,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get status (v1)
       tags:
       - valorant
   /valorant/v1/queue-status/{affinity}:
@@ -2709,6 +2782,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get queue status (v1)
       tags:
       - valorant
   /valorant/v1/version/{affinity}:
@@ -2748,6 +2822,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get game version (v1)
       tags:
       - valorant
   /valorant/v1/website/{country_code}:
@@ -2795,6 +2870,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get website content (v1)
       tags:
       - valorant
   /valorant/v1/website/{country_code}/{db_id}:
@@ -2842,6 +2918,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get website entry by ID (v1)
       tags:
       - valorant
   /valorant/v1/raw:
@@ -2878,8 +2955,178 @@ paths:
               schema:
                 $ref: "#/components/schemas/SendError"
           description: Internal Server Error
+      summary: Get raw Riot API data (v1)
       tags:
       - valorant
+  /public/v1/premium/webhook:
+    get:
+      operationId: get_webhook_settings
+      responses:
+        "200":
+          description: Premium webhook settings and tracked users retrieved successfully
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Unauthorized
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Internal Server Error
+      security:
+      - api_key_header: []
+      - api_key_query: []
+      summary: Get premium webhook settings
+      tags:
+      - premium
+  /public/v1/premium/webhook/users:
+    post:
+      operationId: add_webhook_user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PremiumWebhookUserAddRequest"
+        required: true
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PremiumWebhookUserMutationResponse"
+          description: Tracked user added successfully
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Bad Request
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Unauthorized
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Premium plan required
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Internal Server Error
+      security:
+      - api_key_header: []
+      - api_key_query: []
+      summary: Add premium webhook user
+      tags:
+      - premium
+  /public/v1/premium/webhook/users/{id}:
+    delete:
+      operationId: delete_webhook_user
+      parameters:
+      - description: Tracked user id
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PremiumWebhookDeleteResponse"
+          description: Tracked user removed successfully
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Bad Request
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Unauthorized
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Tracked user not found
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Internal Server Error
+      security:
+      - api_key_header: []
+      - api_key_query: []
+      summary: Delete premium webhook user
+      tags:
+      - premium
+    put:
+      operationId: update_webhook_user
+      parameters:
+      - description: Tracked user id
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PremiumWebhookUserUpdateRequest"
+        required: true
+      responses:
+        "200":
+          description: Tracked user updated successfully
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Bad Request
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Unauthorized
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Tracked user not found
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendError"
+          description: Internal Server Error
+      security:
+      - api_key_header: []
+      - api_key_query: []
+      summary: Update premium webhook user
+      tags:
+      - premium
 components:
   schemas:
     APIError:
@@ -17331,6 +17578,7 @@ components:
           id: id
           losses: 6
           name: name
+          ranked: true
           ranking: 1
           region: region
           score: 5
@@ -17349,6 +17597,7 @@ components:
           id: id
           losses: 6
           name: name
+          ranked: true
           ranking: 1
           region: region
           score: 5
@@ -17524,6 +17773,7 @@ components:
         id: id
         losses: 6
         name: name
+        ranked: true
         ranking: 1
         region: region
         score: 5
@@ -17547,6 +17797,8 @@ components:
           type: integer
         name:
           type: string
+        ranked:
+          type: boolean
         ranking:
           format: int32
           type: integer
@@ -17570,6 +17822,7 @@ components:
       - id
       - losses
       - name
+      - ranked
       - ranking
       - region
       - score
@@ -17616,6 +17869,7 @@ components:
             division: 0
             place: 6
             points: 1
+          ranked: true
           stats:
             losses: 5
             matches: 5
@@ -17657,6 +17911,7 @@ components:
           division: 0
           place: 6
           points: 1
+        ranked: true
         stats:
           losses: 5
           matches: 5
@@ -17680,6 +17935,8 @@ components:
           type: string
         placement:
           $ref: "#/components/schemas/PremierTeamV1ResponseDataPlacement"
+        ranked:
+          type: boolean
         stats:
           $ref: "#/components/schemas/PremierTeamV1ResponseDataStats"
         tag:
@@ -17691,6 +17948,7 @@ components:
       - member
       - name
       - placement
+      - ranked
       - stats
       - tag
     PremierTeamV1ResponseDataCustomization:
@@ -17769,6 +18027,164 @@ components:
       - rounds_lost
       - rounds_won
       - wins
+    PremiumWebhookDeleteData:
+      example:
+        deleted: true
+      properties:
+        deleted:
+          type: boolean
+      required:
+      - deleted
+    PremiumWebhookDeleteResponse:
+      example:
+        data:
+          deleted: true
+      properties:
+        data:
+          $ref: "#/components/schemas/PremiumWebhookDeleteData"
+      required:
+      - data
+    PremiumWebhookEvent:
+      enum:
+      - MATCH
+      - MMR
+      type: string
+    PremiumWebhookUserAddRequest:
+      example:
+        enabled: true
+        events:
+        - MATCH
+        - MATCH
+        name: name
+        puuid: puuid
+        tag: tag
+      properties:
+        enabled:
+          type: boolean
+        events:
+          items:
+            $ref: "#/components/schemas/PremiumWebhookEvent"
+          type: array
+          default: null
+        name:
+          nullable: true
+          type: string
+        puuid:
+          nullable: true
+          type: string
+        tag:
+          nullable: true
+          type: string
+    PremiumWebhookUserMutationData:
+      example:
+        success: true
+        user:
+          created_at: 0
+          enabled: true
+          events:
+          - MATCH
+          - MATCH
+          id: id
+          last_checked_at: 6
+          last_match: last_match
+          last_mmr: 1
+          puuid: puuid
+          region: region
+          updated_at: 5
+      properties:
+        success:
+          type: boolean
+        user:
+          $ref: "#/components/schemas/PremiumWebhookUserResponse"
+      required:
+      - success
+      - user
+    PremiumWebhookUserMutationResponse:
+      example:
+        data:
+          success: true
+          user:
+            created_at: 0
+            enabled: true
+            events:
+            - MATCH
+            - MATCH
+            id: id
+            last_checked_at: 6
+            last_match: last_match
+            last_mmr: 1
+            puuid: puuid
+            region: region
+            updated_at: 5
+      properties:
+        data:
+          $ref: "#/components/schemas/PremiumWebhookUserMutationData"
+      required:
+      - data
+    PremiumWebhookUserResponse:
+      example:
+        created_at: 0
+        enabled: true
+        events:
+        - MATCH
+        - MATCH
+        id: id
+        last_checked_at: 6
+        last_match: last_match
+        last_mmr: 1
+        puuid: puuid
+        region: region
+        updated_at: 5
+      properties:
+        created_at:
+          format: int64
+          type: integer
+        enabled:
+          type: boolean
+        events:
+          items:
+            $ref: "#/components/schemas/PremiumWebhookEvent"
+          type: array
+          default: null
+        id:
+          type: string
+        last_checked_at:
+          format: int64
+          nullable: true
+          type: integer
+        last_match:
+          nullable: true
+          type: string
+        last_mmr:
+          format: int32
+          nullable: true
+          type: integer
+        puuid:
+          type: string
+        region:
+          type: string
+        updated_at:
+          format: int64
+          type: integer
+      required:
+      - created_at
+      - enabled
+      - events
+      - id
+      - puuid
+      - region
+      - updated_at
+    PremiumWebhookUserUpdateRequest:
+      example:
+        events:
+        - MATCH
+        - MATCH
+      properties:
+        events:
+          items:
+            $ref: "#/components/schemas/PremiumWebhookEvent"
+          type: array
+          default: null
     QueueStatusV1:
       example:
         data:

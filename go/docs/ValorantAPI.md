@@ -4,60 +4,60 @@ All URIs are relative to *https://api.henrikdev.xyz*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**Crosshair**](ValorantAPI.md#Crosshair) | **Get** /valorant/v1/crosshair/generate | 
-[**EsportsEventV2**](ValorantAPI.md#EsportsEventV2) | **Get** /valorant/v2/esports/vlr/events/{event_id}/matches | 
-[**EsportsEventsV2**](ValorantAPI.md#EsportsEventsV2) | **Get** /valorant/v2/esports/vlr/events | 
-[**EsportsMatchV2**](ValorantAPI.md#EsportsMatchV2) | **Get** /valorant/v2/esports/vlr/matches/{match_id} | 
-[**EsportsPlayerMatchesV2**](ValorantAPI.md#EsportsPlayerMatchesV2) | **Get** /valorant/v2/esports/vlr/players/{player}/matches | 
-[**EsportsPlayerV2**](ValorantAPI.md#EsportsPlayerV2) | **Get** /valorant/v2/esports/vlr/players/{player_id} | 
-[**EsportsSchedulesV1**](ValorantAPI.md#EsportsSchedulesV1) | **Get** /valorant/v1/esports/schedule | 
-[**EsportsTeamMatchesV2**](ValorantAPI.md#EsportsTeamMatchesV2) | **Get** /valorant/v2/esports/vlr/teams/{team_id}/matches | 
-[**EsportsTeamTransactionsV2**](ValorantAPI.md#EsportsTeamTransactionsV2) | **Get** /valorant/v2/esports/vlr/teams/{team_id}/transactions | 
-[**EsportsTeamV2**](ValorantAPI.md#EsportsTeamV2) | **Get** /valorant/v2/esports/vlr/teams/{team_id} | 
-[**GetAccountByIdV1**](ValorantAPI.md#GetAccountByIdV1) | **Get** /valorant/v1/by-puuid/account/{puuid} | 
-[**GetAccountByIdV2**](ValorantAPI.md#GetAccountByIdV2) | **Get** /valorant/v2/by-puuid/account/{puuid} | 
-[**GetAccountV1**](ValorantAPI.md#GetAccountV1) | **Get** /valorant/v1/account/{name}/{tag} | 
-[**GetAccountV2**](ValorantAPI.md#GetAccountV2) | **Get** /valorant/v2/account/{name}/{tag} | 
-[**GetContentV1**](ValorantAPI.md#GetContentV1) | **Get** /valorant/v1/content | 
-[**GetMatchesV3ById**](ValorantAPI.md#GetMatchesV3ById) | **Get** /valorant/v3/by-puuid/matches/{affinity}/{puuid} | 
-[**GetMatchesV3ByName**](ValorantAPI.md#GetMatchesV3ByName) | **Get** /valorant/v3/matches/{affinity}/{name}/{tag} | 
-[**GetMatchesV4ById**](ValorantAPI.md#GetMatchesV4ById) | **Get** /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid} | 
-[**GetMatchesV4ByName**](ValorantAPI.md#GetMatchesV4ByName) | **Get** /valorant/v4/matches/{affinity}/{platform}/{name}/{tag} | 
-[**GetMmrHistoryById**](ValorantAPI.md#GetMmrHistoryById) | **Get** /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid} | 
-[**GetMmrHistoryByName**](ValorantAPI.md#GetMmrHistoryByName) | **Get** /valorant/v1/mmr-history/{affinity}/{name}/{tag} | 
-[**GetMmrHistoryV2ById**](ValorantAPI.md#GetMmrHistoryV2ById) | **Get** /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid} | 
-[**GetMmrHistoryV2ByName**](ValorantAPI.md#GetMmrHistoryV2ByName) | **Get** /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag} | 
-[**GetMmrV1ById**](ValorantAPI.md#GetMmrV1ById) | **Get** /valorant/v1/by-puuid/mmr/{affinity}/{puuid} | 
-[**GetMmrV1ByName**](ValorantAPI.md#GetMmrV1ByName) | **Get** /valorant/v1/mmr/{affinity}/{name}/{tag} | 
-[**GetMmrV2ById**](ValorantAPI.md#GetMmrV2ById) | **Get** /valorant/v2/by-puuid/mmr/{affinity}/{puuid} | 
-[**GetMmrV2ByName**](ValorantAPI.md#GetMmrV2ByName) | **Get** /valorant/v2/mmr/{affinity}/{name}/{tag} | 
-[**GetMmrV3ById**](ValorantAPI.md#GetMmrV3ById) | **Get** /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid} | 
-[**GetMmrV3ByName**](ValorantAPI.md#GetMmrV3ByName) | **Get** /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag} | 
-[**LeaderboardV1**](ValorantAPI.md#LeaderboardV1) | **Get** /valorant/v1/leaderboard/{affinity} | 
-[**LeaderboardV2**](ValorantAPI.md#LeaderboardV2) | **Get** /valorant/v2/leaderboard/{affinity} | 
-[**LeaderboardV3**](ValorantAPI.md#LeaderboardV3) | **Get** /valorant/v3/leaderboard/{affinity}/{platform} | 
-[**MatchV2**](ValorantAPI.md#MatchV2) | **Get** /valorant/v2/match/{match_id} | 
-[**MatchV4**](ValorantAPI.md#MatchV4) | **Get** /valorant/v4/match/{affinity}/{match_id} | 
-[**PremierById**](ValorantAPI.md#PremierById) | **Get** /valorant/v1/premier/{id} | 
-[**PremierByIdHistory**](ValorantAPI.md#PremierByIdHistory) | **Get** /valorant/v1/premier/{id}/history | 
-[**PremierByName**](ValorantAPI.md#PremierByName) | **Get** /valorant/v1/premier/{name}/{tag} | 
-[**PremierByNameHistory**](ValorantAPI.md#PremierByNameHistory) | **Get** /valorant/v1/premier/{name}/{tag}/history | 
-[**PremierLeaderboard**](ValorantAPI.md#PremierLeaderboard) | **Get** /valorant/v1/premier/leaderboard/{affinity} | 
-[**PremierSearch**](ValorantAPI.md#PremierSearch) | **Get** /valorant/v1/premier/search | 
-[**QueueStatus**](ValorantAPI.md#QueueStatus) | **Get** /valorant/v1/queue-status/{affinity} | 
-[**Raw**](ValorantAPI.md#Raw) | **Post** /valorant/v1/raw | 
-[**Status**](ValorantAPI.md#Status) | **Get** /valorant/v1/status/{affinity} | 
-[**StoreFeatured**](ValorantAPI.md#StoreFeatured) | **Get** /valorant/{version}/store-featured | 
-[**StoreOffers**](ValorantAPI.md#StoreOffers) | **Get** /valorant/{version}/store-offers | 
-[**StoredMatches**](ValorantAPI.md#StoredMatches) | **Get** /valorant/v1/stored-matches/{affinity}/{name}/{tag} | 
-[**StoredMatchesById**](ValorantAPI.md#StoredMatchesById) | **Get** /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid} | 
-[**StoredMmrHistory**](ValorantAPI.md#StoredMmrHistory) | **Get** /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag} | 
-[**StoredMmrHistoryById**](ValorantAPI.md#StoredMmrHistoryById) | **Get** /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid} | 
-[**StoredMmrHistoryV2**](ValorantAPI.md#StoredMmrHistoryV2) | **Get** /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag} | 
-[**StoredMmrHistoryV2ById**](ValorantAPI.md#StoredMmrHistoryV2ById) | **Get** /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid} | 
-[**Version**](ValorantAPI.md#Version) | **Get** /valorant/v1/version/{affinity} | 
-[**Website**](ValorantAPI.md#Website) | **Get** /valorant/v1/website/{country_code} | 
-[**WebsiteById**](ValorantAPI.md#WebsiteById) | **Get** /valorant/v1/website/{country_code}/{db_id} | 
+[**Crosshair**](ValorantAPI.md#Crosshair) | **Get** /valorant/v1/crosshair/generate | Generate crosshair image (v1)
+[**EsportsEventV2**](ValorantAPI.md#EsportsEventV2) | **Get** /valorant/v2/esports/vlr/events/{event_id}/matches | Get VLR event matches (v2)
+[**EsportsEventsV2**](ValorantAPI.md#EsportsEventsV2) | **Get** /valorant/v2/esports/vlr/events | Get VLR esports events (v2)
+[**EsportsMatchV2**](ValorantAPI.md#EsportsMatchV2) | **Get** /valorant/v2/esports/vlr/matches/{match_id} | Get VLR match details (v2)
+[**EsportsPlayerMatchesV2**](ValorantAPI.md#EsportsPlayerMatchesV2) | **Get** /valorant/v2/esports/vlr/players/{player}/matches | Get VLR player matches (v2)
+[**EsportsPlayerV2**](ValorantAPI.md#EsportsPlayerV2) | **Get** /valorant/v2/esports/vlr/players/{player_id} | Get VLR player (v2)
+[**EsportsSchedulesV1**](ValorantAPI.md#EsportsSchedulesV1) | **Get** /valorant/v1/esports/schedule | Get esports schedule (v1)
+[**EsportsTeamMatchesV2**](ValorantAPI.md#EsportsTeamMatchesV2) | **Get** /valorant/v2/esports/vlr/teams/{team_id}/matches | Get VLR team matches (v2)
+[**EsportsTeamTransactionsV2**](ValorantAPI.md#EsportsTeamTransactionsV2) | **Get** /valorant/v2/esports/vlr/teams/{team_id}/transactions | Get VLR team transactions (v2)
+[**EsportsTeamV2**](ValorantAPI.md#EsportsTeamV2) | **Get** /valorant/v2/esports/vlr/teams/{team_id} | Get VLR team (v2)
+[**GetAccountByIdV1**](ValorantAPI.md#GetAccountByIdV1) | **Get** /valorant/v1/by-puuid/account/{puuid} | Get account by PUUID (v1)
+[**GetAccountByIdV2**](ValorantAPI.md#GetAccountByIdV2) | **Get** /valorant/v2/by-puuid/account/{puuid} | Get account by PUUID (v2)
+[**GetAccountV1**](ValorantAPI.md#GetAccountV1) | **Get** /valorant/v1/account/{name}/{tag} | Get account (v1)
+[**GetAccountV2**](ValorantAPI.md#GetAccountV2) | **Get** /valorant/v2/account/{name}/{tag} | Get account (v2)
+[**GetContentV1**](ValorantAPI.md#GetContentV1) | **Get** /valorant/v1/content | Get content (v1)
+[**GetMatchesV3ById**](ValorantAPI.md#GetMatchesV3ById) | **Get** /valorant/v3/by-puuid/matches/{affinity}/{puuid} | Get matches by PUUID (v3)
+[**GetMatchesV3ByName**](ValorantAPI.md#GetMatchesV3ByName) | **Get** /valorant/v3/matches/{affinity}/{name}/{tag} | Get matches by name (v3)
+[**GetMatchesV4ById**](ValorantAPI.md#GetMatchesV4ById) | **Get** /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid} | Get matches by PUUID (v4)
+[**GetMatchesV4ByName**](ValorantAPI.md#GetMatchesV4ByName) | **Get** /valorant/v4/matches/{affinity}/{platform}/{name}/{tag} | Get matches by name (v4)
+[**GetMmrHistoryById**](ValorantAPI.md#GetMmrHistoryById) | **Get** /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid} | Get MMR history by PUUID (v1)
+[**GetMmrHistoryByName**](ValorantAPI.md#GetMmrHistoryByName) | **Get** /valorant/v1/mmr-history/{affinity}/{name}/{tag} | Get MMR history by name (v1)
+[**GetMmrHistoryV2ById**](ValorantAPI.md#GetMmrHistoryV2ById) | **Get** /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid} | Get MMR history by PUUID (v2)
+[**GetMmrHistoryV2ByName**](ValorantAPI.md#GetMmrHistoryV2ByName) | **Get** /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag} | Get MMR history by name (v2)
+[**GetMmrV1ById**](ValorantAPI.md#GetMmrV1ById) | **Get** /valorant/v1/by-puuid/mmr/{affinity}/{puuid} | Get MMR by PUUID (v1)
+[**GetMmrV1ByName**](ValorantAPI.md#GetMmrV1ByName) | **Get** /valorant/v1/mmr/{affinity}/{name}/{tag} | Get MMR by name (v1)
+[**GetMmrV2ById**](ValorantAPI.md#GetMmrV2ById) | **Get** /valorant/v2/by-puuid/mmr/{affinity}/{puuid} | Get MMR by PUUID (v2)
+[**GetMmrV2ByName**](ValorantAPI.md#GetMmrV2ByName) | **Get** /valorant/v2/mmr/{affinity}/{name}/{tag} | Get MMR by name (v2)
+[**GetMmrV3ById**](ValorantAPI.md#GetMmrV3ById) | **Get** /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid} | Get MMR by PUUID (v3)
+[**GetMmrV3ByName**](ValorantAPI.md#GetMmrV3ByName) | **Get** /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag} | Get MMR by name (v3)
+[**LeaderboardV1**](ValorantAPI.md#LeaderboardV1) | **Get** /valorant/v1/leaderboard/{affinity} | Get leaderboard (v1)
+[**LeaderboardV2**](ValorantAPI.md#LeaderboardV2) | **Get** /valorant/v2/leaderboard/{affinity} | Get leaderboard (v2)
+[**LeaderboardV3**](ValorantAPI.md#LeaderboardV3) | **Get** /valorant/v3/leaderboard/{affinity}/{platform} | Get leaderboard (v3)
+[**MatchV2**](ValorantAPI.md#MatchV2) | **Get** /valorant/v2/match/{match_id} | Get match details (v2)
+[**MatchV4**](ValorantAPI.md#MatchV4) | **Get** /valorant/v4/match/{affinity}/{match_id} | Get match details (v4)
+[**PremierById**](ValorantAPI.md#PremierById) | **Get** /valorant/v1/premier/{id} | Get Premier team by ID (v1)
+[**PremierByIdHistory**](ValorantAPI.md#PremierByIdHistory) | **Get** /valorant/v1/premier/{id}/history | Get Premier team history by ID (v1)
+[**PremierByName**](ValorantAPI.md#PremierByName) | **Get** /valorant/v1/premier/{name}/{tag} | Get Premier team by name (v1)
+[**PremierByNameHistory**](ValorantAPI.md#PremierByNameHistory) | **Get** /valorant/v1/premier/{name}/{tag}/history | Get Premier team history by name (v1)
+[**PremierLeaderboard**](ValorantAPI.md#PremierLeaderboard) | **Get** /valorant/v1/premier/leaderboard/{affinity} | Get Premier leaderboard (v1)
+[**PremierSearch**](ValorantAPI.md#PremierSearch) | **Get** /valorant/v1/premier/search | Search Premier teams (v1)
+[**QueueStatus**](ValorantAPI.md#QueueStatus) | **Get** /valorant/v1/queue-status/{affinity} | Get queue status (v1)
+[**Raw**](ValorantAPI.md#Raw) | **Post** /valorant/v1/raw | Get raw Riot API data (v1)
+[**Status**](ValorantAPI.md#Status) | **Get** /valorant/v1/status/{affinity} | Get status (v1)
+[**StoreFeatured**](ValorantAPI.md#StoreFeatured) | **Get** /valorant/{version}/store-featured | Get featured store items
+[**StoreOffers**](ValorantAPI.md#StoreOffers) | **Get** /valorant/{version}/store-offers | Get store offers
+[**StoredMatches**](ValorantAPI.md#StoredMatches) | **Get** /valorant/v1/stored-matches/{affinity}/{name}/{tag} | Get stored matches by name (v1)
+[**StoredMatchesById**](ValorantAPI.md#StoredMatchesById) | **Get** /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid} | Get stored matches by PUUID (v1)
+[**StoredMmrHistory**](ValorantAPI.md#StoredMmrHistory) | **Get** /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag} | Get stored MMR history by name (v1)
+[**StoredMmrHistoryById**](ValorantAPI.md#StoredMmrHistoryById) | **Get** /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid} | Get stored MMR history by PUUID (v1)
+[**StoredMmrHistoryV2**](ValorantAPI.md#StoredMmrHistoryV2) | **Get** /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag} | Get stored MMR history by name (v2)
+[**StoredMmrHistoryV2ById**](ValorantAPI.md#StoredMmrHistoryV2ById) | **Get** /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid} | Get stored MMR history by PUUID (v2)
+[**Version**](ValorantAPI.md#Version) | **Get** /valorant/v1/version/{affinity} | Get game version (v1)
+[**Website**](ValorantAPI.md#Website) | **Get** /valorant/v1/website/{country_code} | Get website content (v1)
+[**WebsiteById**](ValorantAPI.md#WebsiteById) | **Get** /valorant/v1/website/{country_code}/{db_id} | Get website entry by ID (v1)
 
 
 
@@ -65,7 +65,7 @@ Method | HTTP request | Description
 
 > Crosshair(ctx).Id(id).Execute()
 
-
+Generate crosshair image (v1)
 
 ### Example
 
@@ -127,7 +127,7 @@ No authorization required
 
 > EsportsV2EventResponse EsportsEventV2(ctx, eventId).Execute()
 
-
+Get VLR event matches (v2)
 
 ### Example
 
@@ -195,7 +195,7 @@ No authorization required
 
 > EsportsV2EventsResponse EsportsEventsV2(ctx).Region(region).Type_(type_).Page(page).Execute()
 
-
+Get VLR esports events (v2)
 
 ### Example
 
@@ -263,7 +263,7 @@ No authorization required
 
 > EsportsV2MatchesResponse EsportsMatchV2(ctx, matchId).Execute()
 
-
+Get VLR match details (v2)
 
 ### Example
 
@@ -331,7 +331,7 @@ No authorization required
 
 > EsportsV2PlayerMatchesResponse EsportsPlayerMatchesV2(ctx, player).Page(page).Execute()
 
-
+Get VLR player matches (v2)
 
 ### Example
 
@@ -401,7 +401,7 @@ No authorization required
 
 > EsportsV2PlayerResponse EsportsPlayerV2(ctx, player).Timespan(timespan).Execute()
 
-
+Get VLR player (v2)
 
 ### Example
 
@@ -471,7 +471,7 @@ No authorization required
 
 > EsportsV1Response EsportsSchedulesV1(ctx).Region(region).League(league).Execute()
 
-
+Get esports schedule (v1)
 
 ### Example
 
@@ -537,7 +537,7 @@ No authorization required
 
 > EsportsV2TeamMatchListResponse EsportsTeamMatchesV2(ctx, teamId).Page(page).Execute()
 
-
+Get VLR team matches (v2)
 
 ### Example
 
@@ -607,7 +607,7 @@ No authorization required
 
 > EsportsV2TeamTransactionsResponse EsportsTeamTransactionsV2(ctx, teamId).Execute()
 
-
+Get VLR team transactions (v2)
 
 ### Example
 
@@ -675,7 +675,7 @@ No authorization required
 
 > EsportsV2TeamResponse EsportsTeamV2(ctx, teamId).Execute()
 
-
+Get VLR team (v2)
 
 ### Example
 
@@ -743,7 +743,7 @@ No authorization required
 
 > AccountV1Response GetAccountByIdV1(ctx, puuid).Force(force).Execute()
 
-
+Get account by PUUID (v1)
 
 ### Example
 
@@ -813,7 +813,7 @@ No authorization required
 
 > AccountV2Response GetAccountByIdV2(ctx, puuid).Force(force).Execute()
 
-
+Get account by PUUID (v2)
 
 ### Example
 
@@ -883,7 +883,7 @@ No authorization required
 
 > AccountV1Response GetAccountV1(ctx, name, tag).Force(force).Execute()
 
-
+Get account (v1)
 
 ### Example
 
@@ -956,7 +956,7 @@ No authorization required
 
 > AccountV2Response GetAccountV2(ctx, name, tag).Force(force).Execute()
 
-
+Get account (v2)
 
 ### Example
 
@@ -1029,7 +1029,7 @@ No authorization required
 
 > ContentV1Response GetContentV1(ctx).Locale(locale).Execute()
 
-
+Get content (v1)
 
 ### Example
 
@@ -1093,7 +1093,7 @@ No authorization required
 
 > MatchesV3ListResponse GetMatchesV3ById(ctx, affinity, puuid).Mode(mode).Map_(map_).Size(size).Execute()
 
-
+Get matches by PUUID (v3)
 
 ### Example
 
@@ -1170,7 +1170,7 @@ No authorization required
 
 > MatchesV3ListResponse GetMatchesV3ByName(ctx, affinity, name, tag).Mode(mode).Map_(map_).Size(size).Execute()
 
-
+Get matches by name (v3)
 
 ### Example
 
@@ -1250,7 +1250,7 @@ No authorization required
 
 > MatchesV4HistoryResponse GetMatchesV4ById(ctx, affinity, platform, puuid).Mode(mode).Map_(map_).Size(size).Start(start).Execute()
 
-
+Get matches by PUUID (v4)
 
 ### Example
 
@@ -1332,7 +1332,7 @@ No authorization required
 
 > MatchesV4HistoryResponse GetMatchesV4ByName(ctx, affinity, platform, name, tag).Mode(mode).Map_(map_).Size(size).Start(start).Execute()
 
-
+Get matches by name (v4)
 
 ### Example
 
@@ -1417,7 +1417,7 @@ No authorization required
 
 > MMRHistoryV1Response GetMmrHistoryById(ctx, affinity, puuid).Execute()
 
-
+Get MMR history by PUUID (v1)
 
 ### Example
 
@@ -1488,7 +1488,7 @@ No authorization required
 
 > MMRHistoryV1Response GetMmrHistoryByName(ctx, affinity, name, tag).Execute()
 
-
+Get MMR history by name (v1)
 
 ### Example
 
@@ -1562,7 +1562,7 @@ No authorization required
 
 > MMRHistoryV2Response GetMmrHistoryV2ById(ctx, affinity, platform, puuid).Execute()
 
-
+Get MMR history by PUUID (v2)
 
 ### Example
 
@@ -1636,7 +1636,7 @@ No authorization required
 
 > MMRHistoryV2Response GetMmrHistoryV2ByName(ctx, affinity, platform, name, tag).Execute()
 
-
+Get MMR history by name (v2)
 
 ### Example
 
@@ -1713,7 +1713,7 @@ No authorization required
 
 > MMRV1Response GetMmrV1ById(ctx, affinity, puuid).Execute()
 
-
+Get MMR by PUUID (v1)
 
 ### Example
 
@@ -1784,7 +1784,7 @@ No authorization required
 
 > MMRV1Response GetMmrV1ByName(ctx, affinity, name, tag).Execute()
 
-
+Get MMR by name (v1)
 
 ### Example
 
@@ -1858,7 +1858,7 @@ No authorization required
 
 > MMRV2Response GetMmrV2ById(ctx, affinity, puuid).Execute()
 
-
+Get MMR by PUUID (v2)
 
 ### Example
 
@@ -1929,7 +1929,7 @@ No authorization required
 
 > MMRV2Response GetMmrV2ByName(ctx, affinity, name, tag).Execute()
 
-
+Get MMR by name (v2)
 
 ### Example
 
@@ -2003,7 +2003,7 @@ No authorization required
 
 > MMRV3Response GetMmrV3ById(ctx, affinity, platform, puuid).Execute()
 
-
+Get MMR by PUUID (v3)
 
 ### Example
 
@@ -2077,7 +2077,7 @@ No authorization required
 
 > MMRV3Response GetMmrV3ByName(ctx, affinity, platform, name, tag).Execute()
 
-
+Get MMR by name (v3)
 
 ### Example
 
@@ -2154,7 +2154,7 @@ No authorization required
 
 > interface{} LeaderboardV1(ctx, affinity).Season(season).Name(name).Tag(tag).Execute()
 
-
+Get leaderboard (v1)
 
 ### Example
 
@@ -2228,7 +2228,7 @@ No authorization required
 
 > LeaderboardV2Response LeaderboardV2(ctx, affinity).Season(season).Name(name).Tag(tag).Puuid(puuid).Execute()
 
-
+Get leaderboard (v2)
 
 ### Example
 
@@ -2304,7 +2304,7 @@ No authorization required
 
 > LeaderboardV3Response LeaderboardV3(ctx, affinity, platform).Season(season).Size(size).Page(page).Name(name).Tag(tag).Execute()
 
-
+Get leaderboard (v3)
 
 ### Example
 
@@ -2385,7 +2385,7 @@ No authorization required
 
 > MatchesV2Response MatchV2(ctx, matchId).Execute()
 
-
+Get match details (v2)
 
 ### Example
 
@@ -2453,7 +2453,7 @@ No authorization required
 
 > MatchesV4Response MatchV4(ctx, affinity, matchId).Execute()
 
-
+Get match details (v4)
 
 ### Example
 
@@ -2522,9 +2522,9 @@ No authorization required
 
 ## PremierById
 
-> PremierTeamV1Response PremierById(ctx, id).Season(season).Execute()
+> PremierTeamV1Response PremierById(ctx, id).Season(season).Affinity(affinity).Execute()
 
-
+Get Premier team by ID (v1)
 
 ### Example
 
@@ -2541,10 +2541,11 @@ import (
 func main() {
 	id := "id_example" // string | Team UUID
 	season := "season_example" // string | Premier season id (optional) (optional)
+	affinity := "affinity_example" // string | Region/affinity for fallback resolution (optional) (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ValorantAPI.PremierById(context.Background(), id).Season(season).Execute()
+	resp, r, err := apiClient.ValorantAPI.PremierById(context.Background(), id).Season(season).Affinity(affinity).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ValorantAPI.PremierById``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2571,6 +2572,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
  **season** | **string** | Premier season id (optional) | 
+ **affinity** | **string** | Region/affinity for fallback resolution (optional) | 
 
 ### Return type
 
@@ -2594,7 +2596,7 @@ No authorization required
 
 > PremierTeamV1Response PremierByIdHistory(ctx, id).Season(season).Execute()
 
-
+Get Premier team history by ID (v1)
 
 ### Example
 
@@ -2662,9 +2664,9 @@ No authorization required
 
 ## PremierByName
 
-> PremierTeamV1Response PremierByName(ctx, name, tag).Season(season).Execute()
+> PremierTeamV1Response PremierByName(ctx, name, tag).Season(season).Affinity(affinity).Execute()
 
-
+Get Premier team by name (v1)
 
 ### Example
 
@@ -2682,10 +2684,11 @@ func main() {
 	name := "name_example" // string | Team name
 	tag := "tag_example" // string | Team tag
 	season := "season_example" // string | Premier season id (optional) (optional)
+	affinity := "affinity_example" // string | Region/affinity for fallback resolution (optional) (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ValorantAPI.PremierByName(context.Background(), name, tag).Season(season).Execute()
+	resp, r, err := apiClient.ValorantAPI.PremierByName(context.Background(), name, tag).Season(season).Affinity(affinity).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ValorantAPI.PremierByName``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2714,6 +2717,7 @@ Name | Type | Description  | Notes
 
 
  **season** | **string** | Premier season id (optional) | 
+ **affinity** | **string** | Region/affinity for fallback resolution (optional) | 
 
 ### Return type
 
@@ -2737,7 +2741,7 @@ No authorization required
 
 > PremierTeamHistoryV1Response PremierByNameHistory(ctx, name, tag).Season(season).Execute()
 
-
+Get Premier team history by name (v1)
 
 ### Example
 
@@ -2810,7 +2814,7 @@ No authorization required
 
 > PremierSearchResponse PremierLeaderboard(ctx, affinity).Conference(conference).Division(division).Season(season).Execute()
 
-
+Get Premier leaderboard (v1)
 
 ### Example
 
@@ -2884,7 +2888,7 @@ No authorization required
 
 > PremierSearchResponse PremierSearch(ctx).Name(name).Tag(tag).Id(id).Season(season).Execute()
 
-
+Search Premier teams (v1)
 
 ### Example
 
@@ -2954,7 +2958,7 @@ No authorization required
 
 > QueueStatusV1 QueueStatus(ctx, affinity).Execute()
 
-
+Get queue status (v1)
 
 ### Example
 
@@ -3022,7 +3026,7 @@ No authorization required
 
 > RawV1Response Raw(ctx).RawV1Payload(rawV1Payload).Execute()
 
-
+Get raw Riot API data (v1)
 
 ### Example
 
@@ -3086,7 +3090,7 @@ No authorization required
 
 > StatusV1 Status(ctx, affinity).Execute()
 
-
+Get status (v1)
 
 ### Example
 
@@ -3154,7 +3158,7 @@ No authorization required
 
 > StoreFeaturedV1 StoreFeatured(ctx, version).Execute()
 
-
+Get featured store items
 
 ### Example
 
@@ -3222,7 +3226,7 @@ No authorization required
 
 > StoreOffersV1Response StoreOffers(ctx, version).Execute()
 
-
+Get store offers
 
 ### Example
 
@@ -3290,7 +3294,7 @@ No authorization required
 
 > StoredMatchesResponse StoredMatches(ctx, affinity, name, tag).Mode(mode).Map_(map_).Size(size).Execute()
 
-
+Get stored matches by name (v1)
 
 ### Example
 
@@ -3370,7 +3374,7 @@ No authorization required
 
 > StoredMatchesResponse StoredMatchesById(ctx, affinity, puuid).Mode(mode).Map_(map_).Size(size).Execute()
 
-
+Get stored matches by PUUID (v1)
 
 ### Example
 
@@ -3447,7 +3451,7 @@ No authorization required
 
 > StoredMMRResponse StoredMmrHistory(ctx, affinity, name, tag).Size(size).Execute()
 
-
+Get stored MMR history by name (v1)
 
 ### Example
 
@@ -3523,7 +3527,7 @@ No authorization required
 
 > StoredMMRResponse StoredMmrHistoryById(ctx, affinity, puuid).Size(size).Execute()
 
-
+Get stored MMR history by PUUID (v1)
 
 ### Example
 
@@ -3596,7 +3600,7 @@ No authorization required
 
 > StoredMMRV2Response StoredMmrHistoryV2(ctx, affinity, platform, name, tag).Size(size).Execute()
 
-
+Get stored MMR history by name (v2)
 
 ### Example
 
@@ -3675,7 +3679,7 @@ No authorization required
 
 > StoredMMRV2Response StoredMmrHistoryV2ById(ctx, affinity, platform, puuid).Size(size).Execute()
 
-
+Get stored MMR history by PUUID (v2)
 
 ### Example
 
@@ -3751,7 +3755,7 @@ No authorization required
 
 > VersionV1Response Version(ctx, affinity).Execute()
 
-
+Get game version (v1)
 
 ### Example
 
@@ -3819,7 +3823,7 @@ No authorization required
 
 > WebsiteV1Response Website(ctx, countryCode).Category(category).Execute()
 
-
+Get website content (v1)
 
 ### Example
 
@@ -3889,7 +3893,7 @@ No authorization required
 
 > WebsiteByIdV1Response WebsiteById(ctx, dbId, countryCode).Execute()
 
-
+Get website entry by ID (v1)
 
 ### Example
 

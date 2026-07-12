@@ -143,6 +143,15 @@ class PremierTeamLiteResponseDataTest extends TestCase
     }
 
     /**
+     * Test attribute "ranked"
+     */
+    public function testPropertyRanked()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
      * Test attribute "ranking"
      */
     public function testPropertyRanking()

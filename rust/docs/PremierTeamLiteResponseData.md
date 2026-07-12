@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **id** | **String** |  | 
 **losses** | **i32** |  | 
 **name** | **String** |  | 
+**ranked** | **bool** |  | 
 **ranking** | **i32** |  | 
 **region** | **String** |  | 
 **score** | **i32** |  | 

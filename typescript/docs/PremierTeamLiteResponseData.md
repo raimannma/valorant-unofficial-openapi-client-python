@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **id** | **string** |  | [default to undefined]
 **losses** | **number** |  | [default to undefined]
 **name** | **string** |  | [default to undefined]
+**ranked** | **boolean** |  | [default to undefined]
 **ranking** | **number** |  | [default to undefined]
 **region** | **string** |  | [default to undefined]
 **score** | **number** |  | [default to undefined]
@@ -32,6 +33,7 @@ const instance: PremierTeamLiteResponseData = {
     id,
     losses,
     name,
+    ranked,
     ranking,
     region,
     score,

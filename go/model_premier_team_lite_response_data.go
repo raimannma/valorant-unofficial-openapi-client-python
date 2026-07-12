@@ -28,6 +28,7 @@ type PremierTeamLiteResponseData struct {
 	Id string `json:"id"`
 	Losses int32 `json:"losses"`
 	Name string `json:"name"`
+	Ranked bool `json:"ranked"`
 	Ranking int32 `json:"ranking"`
 	Region string `json:"region"`
 	Score int32 `json:"score"`
@@ -42,7 +43,7 @@ type _PremierTeamLiteResponseData PremierTeamLiteResponseData
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewPremierTeamLiteResponseData(affinity string, conference string, customization PremierTeamV1ResponseDataCustomization, division int32, id string, losses int32, name string, ranking int32, region string, score int32, tag string, updatedAt string, wins int32) *PremierTeamLiteResponseData {
+func NewPremierTeamLiteResponseData(affinity string, conference string, customization PremierTeamV1ResponseDataCustomization, division int32, id string, losses int32, name string, ranked bool, ranking int32, region string, score int32, tag string, updatedAt string, wins int32) *PremierTeamLiteResponseData {
 	this := PremierTeamLiteResponseData{}
 	this.Affinity = affinity
 	this.Conference = conference
@@ -51,6 +52,7 @@ func NewPremierTeamLiteResponseData(affinity string, conference string, customiz
 	this.Id = id
 	this.Losses = losses
 	this.Name = name
+	this.Ranked = ranked
 	this.Ranking = ranking
 	this.Region = region
 	this.Score = score
@@ -236,6 +238,30 @@ func (o *PremierTeamLiteResponseData) SetName(v string) {
 	o.Name = v
 }
 
+// GetRanked returns the Ranked field value
+func (o *PremierTeamLiteResponseData) GetRanked() bool {
+	if o == nil {
+		var ret bool
+		return ret
+	}
+
+	return o.Ranked
+}
+
+// GetRankedOk returns a tuple with the Ranked field value
+// and a boolean to check if the value has been set.
+func (o *PremierTeamLiteResponseData) GetRankedOk() (*bool, bool) {
+	if o == nil {
+		return nil, false
+	}
+	return &o.Ranked, true
+}
+
+// SetRanked sets field value
+func (o *PremierTeamLiteResponseData) SetRanked(v bool) {
+	o.Ranked = v
+}
+
 // GetRanking returns the Ranking field value
 func (o *PremierTeamLiteResponseData) GetRanking() int32 {
 	if o == nil {
@@ -397,6 +423,7 @@ func (o PremierTeamLiteResponseData) ToMap() (map[string]interface{}, error) {
 	toSerialize["id"] = o.Id
 	toSerialize["losses"] = o.Losses
 	toSerialize["name"] = o.Name
+	toSerialize["ranked"] = o.Ranked
 	toSerialize["ranking"] = o.Ranking
 	toSerialize["region"] = o.Region
 	toSerialize["score"] = o.Score
@@ -418,6 +445,7 @@ func (o *PremierTeamLiteResponseData) UnmarshalJSON(data []byte) (err error) {
 		"id",
 		"losses",
 		"name",
+		"ranked",
 		"ranking",
 		"region",
 		"score",

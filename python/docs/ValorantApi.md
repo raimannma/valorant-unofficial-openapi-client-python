@@ -4,64 +4,66 @@ All URIs are relative to *https://api.henrikdev.xyz*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**crosshair**](ValorantApi.md#crosshair) | **GET** /valorant/v1/crosshair/generate | 
-[**esports_event_v2**](ValorantApi.md#esports_event_v2) | **GET** /valorant/v2/esports/vlr/events/{event_id}/matches | 
-[**esports_events_v2**](ValorantApi.md#esports_events_v2) | **GET** /valorant/v2/esports/vlr/events | 
-[**esports_match_v2**](ValorantApi.md#esports_match_v2) | **GET** /valorant/v2/esports/vlr/matches/{match_id} | 
-[**esports_player_matches_v2**](ValorantApi.md#esports_player_matches_v2) | **GET** /valorant/v2/esports/vlr/players/{player}/matches | 
-[**esports_player_v2**](ValorantApi.md#esports_player_v2) | **GET** /valorant/v2/esports/vlr/players/{player_id} | 
-[**esports_schedules_v1**](ValorantApi.md#esports_schedules_v1) | **GET** /valorant/v1/esports/schedule | 
-[**esports_team_matches_v2**](ValorantApi.md#esports_team_matches_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/matches | 
-[**esports_team_transactions_v2**](ValorantApi.md#esports_team_transactions_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/transactions | 
-[**esports_team_v2**](ValorantApi.md#esports_team_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id} | 
-[**get_account_by_id_v1**](ValorantApi.md#get_account_by_id_v1) | **GET** /valorant/v1/by-puuid/account/{puuid} | 
-[**get_account_by_id_v2**](ValorantApi.md#get_account_by_id_v2) | **GET** /valorant/v2/by-puuid/account/{puuid} | 
-[**get_account_v1**](ValorantApi.md#get_account_v1) | **GET** /valorant/v1/account/{name}/{tag} | 
-[**get_account_v2**](ValorantApi.md#get_account_v2) | **GET** /valorant/v2/account/{name}/{tag} | 
-[**get_content_v1**](ValorantApi.md#get_content_v1) | **GET** /valorant/v1/content | 
-[**get_matches_v3_by_id**](ValorantApi.md#get_matches_v3_by_id) | **GET** /valorant/v3/by-puuid/matches/{affinity}/{puuid} | 
-[**get_matches_v3_by_name**](ValorantApi.md#get_matches_v3_by_name) | **GET** /valorant/v3/matches/{affinity}/{name}/{tag} | 
-[**get_matches_v4_by_id**](ValorantApi.md#get_matches_v4_by_id) | **GET** /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid} | 
-[**get_matches_v4_by_name**](ValorantApi.md#get_matches_v4_by_name) | **GET** /valorant/v4/matches/{affinity}/{platform}/{name}/{tag} | 
-[**get_mmr_history_by_id**](ValorantApi.md#get_mmr_history_by_id) | **GET** /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid} | 
-[**get_mmr_history_by_name**](ValorantApi.md#get_mmr_history_by_name) | **GET** /valorant/v1/mmr-history/{affinity}/{name}/{tag} | 
-[**get_mmr_history_v2_by_id**](ValorantApi.md#get_mmr_history_v2_by_id) | **GET** /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid} | 
-[**get_mmr_history_v2_by_name**](ValorantApi.md#get_mmr_history_v2_by_name) | **GET** /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag} | 
-[**get_mmr_v1_by_id**](ValorantApi.md#get_mmr_v1_by_id) | **GET** /valorant/v1/by-puuid/mmr/{affinity}/{puuid} | 
-[**get_mmr_v1_by_name**](ValorantApi.md#get_mmr_v1_by_name) | **GET** /valorant/v1/mmr/{affinity}/{name}/{tag} | 
-[**get_mmr_v2_by_id**](ValorantApi.md#get_mmr_v2_by_id) | **GET** /valorant/v2/by-puuid/mmr/{affinity}/{puuid} | 
-[**get_mmr_v2_by_name**](ValorantApi.md#get_mmr_v2_by_name) | **GET** /valorant/v2/mmr/{affinity}/{name}/{tag} | 
-[**get_mmr_v3_by_id**](ValorantApi.md#get_mmr_v3_by_id) | **GET** /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid} | 
-[**get_mmr_v3_by_name**](ValorantApi.md#get_mmr_v3_by_name) | **GET** /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag} | 
-[**leaderboard_v1**](ValorantApi.md#leaderboard_v1) | **GET** /valorant/v1/leaderboard/{affinity} | 
-[**leaderboard_v2**](ValorantApi.md#leaderboard_v2) | **GET** /valorant/v2/leaderboard/{affinity} | 
-[**leaderboard_v3**](ValorantApi.md#leaderboard_v3) | **GET** /valorant/v3/leaderboard/{affinity}/{platform} | 
-[**match_v2**](ValorantApi.md#match_v2) | **GET** /valorant/v2/match/{match_id} | 
-[**match_v4**](ValorantApi.md#match_v4) | **GET** /valorant/v4/match/{affinity}/{match_id} | 
-[**premier_by_id**](ValorantApi.md#premier_by_id) | **GET** /valorant/v1/premier/{id} | 
-[**premier_by_id_history**](ValorantApi.md#premier_by_id_history) | **GET** /valorant/v1/premier/{id}/history | 
-[**premier_by_name**](ValorantApi.md#premier_by_name) | **GET** /valorant/v1/premier/{name}/{tag} | 
-[**premier_by_name_history**](ValorantApi.md#premier_by_name_history) | **GET** /valorant/v1/premier/{name}/{tag}/history | 
-[**premier_leaderboard**](ValorantApi.md#premier_leaderboard) | **GET** /valorant/v1/premier/leaderboard/{affinity} | 
-[**premier_search**](ValorantApi.md#premier_search) | **GET** /valorant/v1/premier/search | 
-[**queue_status**](ValorantApi.md#queue_status) | **GET** /valorant/v1/queue-status/{affinity} | 
-[**raw**](ValorantApi.md#raw) | **POST** /valorant/v1/raw | 
-[**status**](ValorantApi.md#status) | **GET** /valorant/v1/status/{affinity} | 
-[**store_featured**](ValorantApi.md#store_featured) | **GET** /valorant/{version}/store-featured | 
-[**store_offers**](ValorantApi.md#store_offers) | **GET** /valorant/{version}/store-offers | 
-[**stored_matches**](ValorantApi.md#stored_matches) | **GET** /valorant/v1/stored-matches/{affinity}/{name}/{tag} | 
-[**stored_matches_by_id**](ValorantApi.md#stored_matches_by_id) | **GET** /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid} | 
-[**stored_mmr_history**](ValorantApi.md#stored_mmr_history) | **GET** /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag} | 
-[**stored_mmr_history_by_id**](ValorantApi.md#stored_mmr_history_by_id) | **GET** /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid} | 
-[**stored_mmr_history_v2**](ValorantApi.md#stored_mmr_history_v2) | **GET** /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag} | 
-[**stored_mmr_history_v2_by_id**](ValorantApi.md#stored_mmr_history_v2_by_id) | **GET** /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid} | 
-[**version**](ValorantApi.md#version) | **GET** /valorant/v1/version/{affinity} | 
-[**website**](ValorantApi.md#website) | **GET** /valorant/v1/website/{country_code} | 
-[**website_by_id**](ValorantApi.md#website_by_id) | **GET** /valorant/v1/website/{country_code}/{db_id} | 
+[**crosshair**](ValorantApi.md#crosshair) | **GET** /valorant/v1/crosshair/generate | Generate crosshair image (v1)
+[**esports_event_v2**](ValorantApi.md#esports_event_v2) | **GET** /valorant/v2/esports/vlr/events/{event_id}/matches | Get VLR event matches (v2)
+[**esports_events_v2**](ValorantApi.md#esports_events_v2) | **GET** /valorant/v2/esports/vlr/events | Get VLR esports events (v2)
+[**esports_match_v2**](ValorantApi.md#esports_match_v2) | **GET** /valorant/v2/esports/vlr/matches/{match_id} | Get VLR match details (v2)
+[**esports_player_matches_v2**](ValorantApi.md#esports_player_matches_v2) | **GET** /valorant/v2/esports/vlr/players/{player}/matches | Get VLR player matches (v2)
+[**esports_player_v2**](ValorantApi.md#esports_player_v2) | **GET** /valorant/v2/esports/vlr/players/{player_id} | Get VLR player (v2)
+[**esports_schedules_v1**](ValorantApi.md#esports_schedules_v1) | **GET** /valorant/v1/esports/schedule | Get esports schedule (v1)
+[**esports_team_matches_v2**](ValorantApi.md#esports_team_matches_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/matches | Get VLR team matches (v2)
+[**esports_team_transactions_v2**](ValorantApi.md#esports_team_transactions_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id}/transactions | Get VLR team transactions (v2)
+[**esports_team_v2**](ValorantApi.md#esports_team_v2) | **GET** /valorant/v2/esports/vlr/teams/{team_id} | Get VLR team (v2)
+[**get_account_by_id_v1**](ValorantApi.md#get_account_by_id_v1) | **GET** /valorant/v1/by-puuid/account/{puuid} | Get account by PUUID (v1)
+[**get_account_by_id_v2**](ValorantApi.md#get_account_by_id_v2) | **GET** /valorant/v2/by-puuid/account/{puuid} | Get account by PUUID (v2)
+[**get_account_v1**](ValorantApi.md#get_account_v1) | **GET** /valorant/v1/account/{name}/{tag} | Get account (v1)
+[**get_account_v2**](ValorantApi.md#get_account_v2) | **GET** /valorant/v2/account/{name}/{tag} | Get account (v2)
+[**get_content_v1**](ValorantApi.md#get_content_v1) | **GET** /valorant/v1/content | Get content (v1)
+[**get_matches_v3_by_id**](ValorantApi.md#get_matches_v3_by_id) | **GET** /valorant/v3/by-puuid/matches/{affinity}/{puuid} | Get matches by PUUID (v3)
+[**get_matches_v3_by_name**](ValorantApi.md#get_matches_v3_by_name) | **GET** /valorant/v3/matches/{affinity}/{name}/{tag} | Get matches by name (v3)
+[**get_matches_v4_by_id**](ValorantApi.md#get_matches_v4_by_id) | **GET** /valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid} | Get matches by PUUID (v4)
+[**get_matches_v4_by_name**](ValorantApi.md#get_matches_v4_by_name) | **GET** /valorant/v4/matches/{affinity}/{platform}/{name}/{tag} | Get matches by name (v4)
+[**get_mmr_history_by_id**](ValorantApi.md#get_mmr_history_by_id) | **GET** /valorant/v1/by-puuid/mmr-history/{affinity}/{puuid} | Get MMR history by PUUID (v1)
+[**get_mmr_history_by_name**](ValorantApi.md#get_mmr_history_by_name) | **GET** /valorant/v1/mmr-history/{affinity}/{name}/{tag} | Get MMR history by name (v1)
+[**get_mmr_history_v2_by_id**](ValorantApi.md#get_mmr_history_v2_by_id) | **GET** /valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid} | Get MMR history by PUUID (v2)
+[**get_mmr_history_v2_by_name**](ValorantApi.md#get_mmr_history_v2_by_name) | **GET** /valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag} | Get MMR history by name (v2)
+[**get_mmr_v1_by_id**](ValorantApi.md#get_mmr_v1_by_id) | **GET** /valorant/v1/by-puuid/mmr/{affinity}/{puuid} | Get MMR by PUUID (v1)
+[**get_mmr_v1_by_name**](ValorantApi.md#get_mmr_v1_by_name) | **GET** /valorant/v1/mmr/{affinity}/{name}/{tag} | Get MMR by name (v1)
+[**get_mmr_v2_by_id**](ValorantApi.md#get_mmr_v2_by_id) | **GET** /valorant/v2/by-puuid/mmr/{affinity}/{puuid} | Get MMR by PUUID (v2)
+[**get_mmr_v2_by_name**](ValorantApi.md#get_mmr_v2_by_name) | **GET** /valorant/v2/mmr/{affinity}/{name}/{tag} | Get MMR by name (v2)
+[**get_mmr_v3_by_id**](ValorantApi.md#get_mmr_v3_by_id) | **GET** /valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid} | Get MMR by PUUID (v3)
+[**get_mmr_v3_by_name**](ValorantApi.md#get_mmr_v3_by_name) | **GET** /valorant/v3/mmr/{affinity}/{platform}/{name}/{tag} | Get MMR by name (v3)
+[**leaderboard_v1**](ValorantApi.md#leaderboard_v1) | **GET** /valorant/v1/leaderboard/{affinity} | Get leaderboard (v1)
+[**leaderboard_v2**](ValorantApi.md#leaderboard_v2) | **GET** /valorant/v2/leaderboard/{affinity} | Get leaderboard (v2)
+[**leaderboard_v3**](ValorantApi.md#leaderboard_v3) | **GET** /valorant/v3/leaderboard/{affinity}/{platform} | Get leaderboard (v3)
+[**match_v2**](ValorantApi.md#match_v2) | **GET** /valorant/v2/match/{match_id} | Get match details (v2)
+[**match_v4**](ValorantApi.md#match_v4) | **GET** /valorant/v4/match/{affinity}/{match_id} | Get match details (v4)
+[**premier_by_id**](ValorantApi.md#premier_by_id) | **GET** /valorant/v1/premier/{id} | Get Premier team by ID (v1)
+[**premier_by_id_history**](ValorantApi.md#premier_by_id_history) | **GET** /valorant/v1/premier/{id}/history | Get Premier team history by ID (v1)
+[**premier_by_name**](ValorantApi.md#premier_by_name) | **GET** /valorant/v1/premier/{name}/{tag} | Get Premier team by name (v1)
+[**premier_by_name_history**](ValorantApi.md#premier_by_name_history) | **GET** /valorant/v1/premier/{name}/{tag}/history | Get Premier team history by name (v1)
+[**premier_leaderboard**](ValorantApi.md#premier_leaderboard) | **GET** /valorant/v1/premier/leaderboard/{affinity} | Get Premier leaderboard (v1)
+[**premier_search**](ValorantApi.md#premier_search) | **GET** /valorant/v1/premier/search | Search Premier teams (v1)
+[**queue_status**](ValorantApi.md#queue_status) | **GET** /valorant/v1/queue-status/{affinity} | Get queue status (v1)
+[**raw**](ValorantApi.md#raw) | **POST** /valorant/v1/raw | Get raw Riot API data (v1)
+[**status**](ValorantApi.md#status) | **GET** /valorant/v1/status/{affinity} | Get status (v1)
+[**store_featured**](ValorantApi.md#store_featured) | **GET** /valorant/{version}/store-featured | Get featured store items
+[**store_offers**](ValorantApi.md#store_offers) | **GET** /valorant/{version}/store-offers | Get store offers
+[**stored_matches**](ValorantApi.md#stored_matches) | **GET** /valorant/v1/stored-matches/{affinity}/{name}/{tag} | Get stored matches by name (v1)
+[**stored_matches_by_id**](ValorantApi.md#stored_matches_by_id) | **GET** /valorant/v1/by-puuid/stored-matches/{affinity}/{puuid} | Get stored matches by PUUID (v1)
+[**stored_mmr_history**](ValorantApi.md#stored_mmr_history) | **GET** /valorant/v1/stored-mmr-history/{affinity}/{name}/{tag} | Get stored MMR history by name (v1)
+[**stored_mmr_history_by_id**](ValorantApi.md#stored_mmr_history_by_id) | **GET** /valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid} | Get stored MMR history by PUUID (v1)
+[**stored_mmr_history_v2**](ValorantApi.md#stored_mmr_history_v2) | **GET** /valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag} | Get stored MMR history by name (v2)
+[**stored_mmr_history_v2_by_id**](ValorantApi.md#stored_mmr_history_v2_by_id) | **GET** /valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid} | Get stored MMR history by PUUID (v2)
+[**version**](ValorantApi.md#version) | **GET** /valorant/v1/version/{affinity} | Get game version (v1)
+[**website**](ValorantApi.md#website) | **GET** /valorant/v1/website/{country_code} | Get website content (v1)
+[**website_by_id**](ValorantApi.md#website_by_id) | **GET** /valorant/v1/website/{country_code}/{db_id} | Get website entry by ID (v1)
 
 
 # **crosshair**
 > crosshair(id=id)
+
+Generate crosshair image (v1)
 
 ### Example
 
@@ -85,6 +87,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     id = 'id_example' # str | Crosshair code (optional)
 
     try:
+        # Generate crosshair image (v1)
         api_instance.crosshair(id=id)
     except Exception as e:
         print("Exception when calling ValorantApi->crosshair: %s\n" % e)
@@ -125,6 +128,8 @@ No authorization required
 # **esports_event_v2**
 > EsportsV2EventResponse esports_event_v2(event_id)
 
+Get VLR event matches (v2)
+
 ### Example
 
 
@@ -148,6 +153,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     event_id = 56 # int | 
 
     try:
+        # Get VLR event matches (v2)
         api_response = api_instance.esports_event_v2(event_id)
         print("The response of ValorantApi->esports_event_v2:\n")
         pprint(api_response)
@@ -190,6 +196,8 @@ No authorization required
 # **esports_events_v2**
 > EsportsV2EventsResponse esports_events_v2(region=region, type=type, page=page)
 
+Get VLR esports events (v2)
+
 ### Example
 
 
@@ -217,6 +225,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     page = 56 # int |  (optional)
 
     try:
+        # Get VLR esports events (v2)
         api_response = api_instance.esports_events_v2(region=region, type=type, page=page)
         print("The response of ValorantApi->esports_events_v2:\n")
         pprint(api_response)
@@ -261,6 +270,8 @@ No authorization required
 # **esports_match_v2**
 > EsportsV2MatchesResponse esports_match_v2(match_id)
 
+Get VLR match details (v2)
+
 ### Example
 
 
@@ -284,6 +295,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     match_id = 56 # int | 
 
     try:
+        # Get VLR match details (v2)
         api_response = api_instance.esports_match_v2(match_id)
         print("The response of ValorantApi->esports_match_v2:\n")
         pprint(api_response)
@@ -326,6 +338,8 @@ No authorization required
 # **esports_player_matches_v2**
 > EsportsV2PlayerMatchesResponse esports_player_matches_v2(player, page=page)
 
+Get VLR player matches (v2)
+
 ### Example
 
 
@@ -350,6 +364,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     page = 56 # int |  (optional)
 
     try:
+        # Get VLR player matches (v2)
         api_response = api_instance.esports_player_matches_v2(player, page=page)
         print("The response of ValorantApi->esports_player_matches_v2:\n")
         pprint(api_response)
@@ -393,6 +408,8 @@ No authorization required
 # **esports_player_v2**
 > EsportsV2PlayerResponse esports_player_v2(player, timespan=timespan)
 
+Get VLR player (v2)
+
 ### Example
 
 
@@ -418,6 +435,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     timespan = henrikdev_api_client.EsportsV2PlayerTimespan() # EsportsV2PlayerTimespan |  (optional)
 
     try:
+        # Get VLR player (v2)
         api_response = api_instance.esports_player_v2(player, timespan=timespan)
         print("The response of ValorantApi->esports_player_v2:\n")
         pprint(api_response)
@@ -461,6 +479,8 @@ No authorization required
 # **esports_schedules_v1**
 > EsportsV1Response esports_schedules_v1(region=region, league=league)
 
+Get esports schedule (v1)
+
 ### Example
 
 
@@ -485,6 +505,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     league = 'league_example' # str |  (optional)
 
     try:
+        # Get esports schedule (v1)
         api_response = api_instance.esports_schedules_v1(region=region, league=league)
         print("The response of ValorantApi->esports_schedules_v1:\n")
         pprint(api_response)
@@ -529,6 +550,8 @@ No authorization required
 # **esports_team_matches_v2**
 > EsportsV2TeamMatchListResponse esports_team_matches_v2(team_id, page=page)
 
+Get VLR team matches (v2)
+
 ### Example
 
 
@@ -553,6 +576,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     page = 56 # int |  (optional)
 
     try:
+        # Get VLR team matches (v2)
         api_response = api_instance.esports_team_matches_v2(team_id, page=page)
         print("The response of ValorantApi->esports_team_matches_v2:\n")
         pprint(api_response)
@@ -596,6 +620,8 @@ No authorization required
 # **esports_team_transactions_v2**
 > EsportsV2TeamTransactionsResponse esports_team_transactions_v2(team_id)
 
+Get VLR team transactions (v2)
+
 ### Example
 
 
@@ -619,6 +645,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     team_id = 56 # int | 
 
     try:
+        # Get VLR team transactions (v2)
         api_response = api_instance.esports_team_transactions_v2(team_id)
         print("The response of ValorantApi->esports_team_transactions_v2:\n")
         pprint(api_response)
@@ -661,6 +688,8 @@ No authorization required
 # **esports_team_v2**
 > EsportsV2TeamResponse esports_team_v2(team_id)
 
+Get VLR team (v2)
+
 ### Example
 
 
@@ -684,6 +713,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     team_id = 56 # int | 
 
     try:
+        # Get VLR team (v2)
         api_response = api_instance.esports_team_v2(team_id)
         print("The response of ValorantApi->esports_team_v2:\n")
         pprint(api_response)
@@ -726,6 +756,8 @@ No authorization required
 # **get_account_by_id_v1**
 > AccountV1Response get_account_by_id_v1(puuid, force=force)
 
+Get account by PUUID (v1)
+
 ### Example
 
 
@@ -750,6 +782,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     force = True # bool | Bypass cache and refresh (optional) (optional)
 
     try:
+        # Get account by PUUID (v1)
         api_response = api_instance.get_account_by_id_v1(puuid, force=force)
         print("The response of ValorantApi->get_account_by_id_v1:\n")
         pprint(api_response)
@@ -794,6 +827,8 @@ No authorization required
 # **get_account_by_id_v2**
 > AccountV2Response get_account_by_id_v2(puuid, force=force)
 
+Get account by PUUID (v2)
+
 ### Example
 
 
@@ -818,6 +853,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     force = True # bool | Bypass cache and refresh (optional) (optional)
 
     try:
+        # Get account by PUUID (v2)
         api_response = api_instance.get_account_by_id_v2(puuid, force=force)
         print("The response of ValorantApi->get_account_by_id_v2:\n")
         pprint(api_response)
@@ -862,6 +898,8 @@ No authorization required
 # **get_account_v1**
 > AccountV1Response get_account_v1(name, tag, force=force)
 
+Get account (v1)
+
 ### Example
 
 
@@ -887,6 +925,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     force = True # bool | Bypass cache and refresh (optional) (optional)
 
     try:
+        # Get account (v1)
         api_response = api_instance.get_account_v1(name, tag, force=force)
         print("The response of ValorantApi->get_account_v1:\n")
         pprint(api_response)
@@ -932,6 +971,8 @@ No authorization required
 # **get_account_v2**
 > AccountV2Response get_account_v2(name, tag, force=force)
 
+Get account (v2)
+
 ### Example
 
 
@@ -957,6 +998,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     force = True # bool | Bypass cache and refresh (optional) (optional)
 
     try:
+        # Get account (v2)
         api_response = api_instance.get_account_v2(name, tag, force=force)
         print("The response of ValorantApi->get_account_v2:\n")
         pprint(api_response)
@@ -1002,6 +1044,8 @@ No authorization required
 # **get_content_v1**
 > ContentV1Response get_content_v1(locale=locale)
 
+Get content (v1)
+
 ### Example
 
 
@@ -1025,6 +1069,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     locale = 'locale_example' # str | Locale code (e.g., en-US, de-DE) - optional (optional)
 
     try:
+        # Get content (v1)
         api_response = api_instance.get_content_v1(locale=locale)
         print("The response of ValorantApi->get_content_v1:\n")
         pprint(api_response)
@@ -1068,6 +1113,8 @@ No authorization required
 # **get_matches_v3_by_id**
 > MatchesV3ListResponse get_matches_v3_by_id(affinity, puuid, mode=mode, map=map, size=size)
 
+Get matches by PUUID (v3)
+
 ### Example
 
 
@@ -1095,6 +1142,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     size = 56 # int | Number of results (optional) (optional)
 
     try:
+        # Get matches by PUUID (v3)
         api_response = api_instance.get_matches_v3_by_id(affinity, puuid, mode=mode, map=map, size=size)
         print("The response of ValorantApi->get_matches_v3_by_id:\n")
         pprint(api_response)
@@ -1142,6 +1190,8 @@ No authorization required
 # **get_matches_v3_by_name**
 > MatchesV3ListResponse get_matches_v3_by_name(affinity, name, tag, mode=mode, map=map, size=size)
 
+Get matches by name (v3)
+
 ### Example
 
 
@@ -1171,6 +1221,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     size = 56 # int | Number of results (optional) (optional)
 
     try:
+        # Get matches by name (v3)
         api_response = api_instance.get_matches_v3_by_name(affinity, name, tag, mode=mode, map=map, size=size)
         print("The response of ValorantApi->get_matches_v3_by_name:\n")
         pprint(api_response)
@@ -1219,6 +1270,8 @@ No authorization required
 # **get_matches_v4_by_id**
 > MatchesV4HistoryResponse get_matches_v4_by_id(affinity, platform, puuid, mode=mode, map=map, size=size, start=start)
 
+Get matches by PUUID (v4)
+
 ### Example
 
 
@@ -1248,6 +1301,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     start = 56 # int | Start index for pagination (optional) (optional)
 
     try:
+        # Get matches by PUUID (v4)
         api_response = api_instance.get_matches_v4_by_id(affinity, platform, puuid, mode=mode, map=map, size=size, start=start)
         print("The response of ValorantApi->get_matches_v4_by_id:\n")
         pprint(api_response)
@@ -1297,6 +1351,8 @@ No authorization required
 # **get_matches_v4_by_name**
 > MatchesV4HistoryResponse get_matches_v4_by_name(affinity, platform, name, tag, mode=mode, map=map, size=size, start=start)
 
+Get matches by name (v4)
+
 ### Example
 
 
@@ -1327,6 +1383,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     start = 56 # int | Start index for pagination (optional) (optional)
 
     try:
+        # Get matches by name (v4)
         api_response = api_instance.get_matches_v4_by_name(affinity, platform, name, tag, mode=mode, map=map, size=size, start=start)
         print("The response of ValorantApi->get_matches_v4_by_name:\n")
         pprint(api_response)
@@ -1377,6 +1434,8 @@ No authorization required
 # **get_mmr_history_by_id**
 > MMRHistoryV1Response get_mmr_history_by_id(affinity, puuid)
 
+Get MMR history by PUUID (v1)
+
 ### Example
 
 
@@ -1401,6 +1460,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     puuid = 'puuid_example' # str | Player UUID
 
     try:
+        # Get MMR history by PUUID (v1)
         api_response = api_instance.get_mmr_history_by_id(affinity, puuid)
         print("The response of ValorantApi->get_mmr_history_by_id:\n")
         pprint(api_response)
@@ -1445,6 +1505,8 @@ No authorization required
 # **get_mmr_history_by_name**
 > MMRHistoryV1Response get_mmr_history_by_name(affinity, name, tag)
 
+Get MMR history by name (v1)
+
 ### Example
 
 
@@ -1470,6 +1532,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     tag = 'tag_example' # str | Riot ID tag
 
     try:
+        # Get MMR history by name (v1)
         api_response = api_instance.get_mmr_history_by_name(affinity, name, tag)
         print("The response of ValorantApi->get_mmr_history_by_name:\n")
         pprint(api_response)
@@ -1515,6 +1578,8 @@ No authorization required
 # **get_mmr_history_v2_by_id**
 > MMRHistoryV2Response get_mmr_history_v2_by_id(affinity, platform, puuid)
 
+Get MMR history by PUUID (v2)
+
 ### Example
 
 
@@ -1540,6 +1605,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     puuid = 'puuid_example' # str | Player UUID
 
     try:
+        # Get MMR history by PUUID (v2)
         api_response = api_instance.get_mmr_history_v2_by_id(affinity, platform, puuid)
         print("The response of ValorantApi->get_mmr_history_v2_by_id:\n")
         pprint(api_response)
@@ -1585,6 +1651,8 @@ No authorization required
 # **get_mmr_history_v2_by_name**
 > MMRHistoryV2Response get_mmr_history_v2_by_name(affinity, platform, name, tag)
 
+Get MMR history by name (v2)
+
 ### Example
 
 
@@ -1611,6 +1679,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     tag = 'tag_example' # str | Riot ID tag
 
     try:
+        # Get MMR history by name (v2)
         api_response = api_instance.get_mmr_history_v2_by_name(affinity, platform, name, tag)
         print("The response of ValorantApi->get_mmr_history_v2_by_name:\n")
         pprint(api_response)
@@ -1657,6 +1726,8 @@ No authorization required
 # **get_mmr_v1_by_id**
 > MMRV1Response get_mmr_v1_by_id(affinity, puuid)
 
+Get MMR by PUUID (v1)
+
 ### Example
 
 
@@ -1681,6 +1752,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     puuid = 'puuid_example' # str | Player UUID
 
     try:
+        # Get MMR by PUUID (v1)
         api_response = api_instance.get_mmr_v1_by_id(affinity, puuid)
         print("The response of ValorantApi->get_mmr_v1_by_id:\n")
         pprint(api_response)
@@ -1725,6 +1797,8 @@ No authorization required
 # **get_mmr_v1_by_name**
 > MMRV1Response get_mmr_v1_by_name(affinity, name, tag)
 
+Get MMR by name (v1)
+
 ### Example
 
 
@@ -1750,6 +1824,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     tag = 'tag_example' # str | Riot ID tag
 
     try:
+        # Get MMR by name (v1)
         api_response = api_instance.get_mmr_v1_by_name(affinity, name, tag)
         print("The response of ValorantApi->get_mmr_v1_by_name:\n")
         pprint(api_response)
@@ -1795,6 +1870,8 @@ No authorization required
 # **get_mmr_v2_by_id**
 > MMRV2Response get_mmr_v2_by_id(affinity, puuid)
 
+Get MMR by PUUID (v2)
+
 ### Example
 
 
@@ -1819,6 +1896,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     puuid = 'puuid_example' # str | Player UUID
 
     try:
+        # Get MMR by PUUID (v2)
         api_response = api_instance.get_mmr_v2_by_id(affinity, puuid)
         print("The response of ValorantApi->get_mmr_v2_by_id:\n")
         pprint(api_response)
@@ -1863,6 +1941,8 @@ No authorization required
 # **get_mmr_v2_by_name**
 > MMRV2Response get_mmr_v2_by_name(affinity, name, tag)
 
+Get MMR by name (v2)
+
 ### Example
 
 
@@ -1888,6 +1968,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     tag = 'tag_example' # str | Riot ID tag
 
     try:
+        # Get MMR by name (v2)
         api_response = api_instance.get_mmr_v2_by_name(affinity, name, tag)
         print("The response of ValorantApi->get_mmr_v2_by_name:\n")
         pprint(api_response)
@@ -1933,6 +2014,8 @@ No authorization required
 # **get_mmr_v3_by_id**
 > MMRV3Response get_mmr_v3_by_id(affinity, platform, puuid)
 
+Get MMR by PUUID (v3)
+
 ### Example
 
 
@@ -1958,6 +2041,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     puuid = 'puuid_example' # str | Player UUID
 
     try:
+        # Get MMR by PUUID (v3)
         api_response = api_instance.get_mmr_v3_by_id(affinity, platform, puuid)
         print("The response of ValorantApi->get_mmr_v3_by_id:\n")
         pprint(api_response)
@@ -2003,6 +2087,8 @@ No authorization required
 # **get_mmr_v3_by_name**
 > MMRV3Response get_mmr_v3_by_name(affinity, platform, name, tag)
 
+Get MMR by name (v3)
+
 ### Example
 
 
@@ -2029,6 +2115,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     tag = 'tag_example' # str | Riot ID tag
 
     try:
+        # Get MMR by name (v3)
         api_response = api_instance.get_mmr_v3_by_name(affinity, platform, name, tag)
         print("The response of ValorantApi->get_mmr_v3_by_name:\n")
         pprint(api_response)
@@ -2075,6 +2162,8 @@ No authorization required
 # **leaderboard_v1**
 > object leaderboard_v1(affinity, season=season, name=name, tag=tag)
 
+Get leaderboard (v1)
+
 ### Example
 
 
@@ -2100,6 +2189,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     tag = 'tag_example' # str | Player tag to search for (optional) (optional)
 
     try:
+        # Get leaderboard (v1)
         api_response = api_instance.leaderboard_v1(affinity, season=season, name=name, tag=tag)
         print("The response of ValorantApi->leaderboard_v1:\n")
         pprint(api_response)
@@ -2146,6 +2236,8 @@ No authorization required
 # **leaderboard_v2**
 > LeaderboardV2Response leaderboard_v2(affinity, season=season, name=name, tag=tag, puuid=puuid)
 
+Get leaderboard (v2)
+
 ### Example
 
 
@@ -2173,6 +2265,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     puuid = 'puuid_example' # str | Player UUID to search for (optional) (optional)
 
     try:
+        # Get leaderboard (v2)
         api_response = api_instance.leaderboard_v2(affinity, season=season, name=name, tag=tag, puuid=puuid)
         print("The response of ValorantApi->leaderboard_v2:\n")
         pprint(api_response)
@@ -2220,6 +2313,8 @@ No authorization required
 # **leaderboard_v3**
 > LeaderboardV3Response leaderboard_v3(affinity, platform, season=season, size=size, page=page, name=name, tag=tag)
 
+Get leaderboard (v3)
+
 ### Example
 
 
@@ -2249,6 +2344,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     tag = 'tag_example' # str | Player tag to search for (optional) (optional)
 
     try:
+        # Get leaderboard (v3)
         api_response = api_instance.leaderboard_v3(affinity, platform, season=season, size=size, page=page, name=name, tag=tag)
         print("The response of ValorantApi->leaderboard_v3:\n")
         pprint(api_response)
@@ -2298,6 +2394,8 @@ No authorization required
 # **match_v2**
 > MatchesV2Response match_v2(match_id)
 
+Get match details (v2)
+
 ### Example
 
 
@@ -2321,6 +2419,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     match_id = 'match_id_example' # str | Match UUID
 
     try:
+        # Get match details (v2)
         api_response = api_instance.match_v2(match_id)
         print("The response of ValorantApi->match_v2:\n")
         pprint(api_response)
@@ -2364,6 +2463,8 @@ No authorization required
 # **match_v4**
 > MatchesV4Response match_v4(affinity, match_id)
 
+Get match details (v4)
+
 ### Example
 
 
@@ -2388,6 +2489,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     match_id = 'match_id_example' # str | Match UUID
 
     try:
+        # Get match details (v4)
         api_response = api_instance.match_v4(affinity, match_id)
         print("The response of ValorantApi->match_v4:\n")
         pprint(api_response)
@@ -2430,7 +2532,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **premier_by_id**
-> PremierTeamV1Response premier_by_id(id, season=season)
+> PremierTeamV1Response premier_by_id(id, season=season, affinity=affinity)
+
+Get Premier team by ID (v1)
 
 ### Example
 
@@ -2454,9 +2558,11 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     api_instance = henrikdev_api_client.ValorantApi(api_client)
     id = 'id_example' # str | Team UUID
     season = 'season_example' # str | Premier season id (optional) (optional)
+    affinity = 'affinity_example' # str | Region/affinity for fallback resolution (optional) (optional)
 
     try:
-        api_response = api_instance.premier_by_id(id, season=season)
+        # Get Premier team by ID (v1)
+        api_response = api_instance.premier_by_id(id, season=season, affinity=affinity)
         print("The response of ValorantApi->premier_by_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -2472,6 +2578,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Team UUID | 
  **season** | **str**| Premier season id (optional) | [optional] 
+ **affinity** | **str**| Region/affinity for fallback resolution (optional) | [optional] 
 
 ### Return type
 
@@ -2500,6 +2607,8 @@ No authorization required
 # **premier_by_id_history**
 > PremierTeamV1Response premier_by_id_history(id, season=season)
 
+Get Premier team history by ID (v1)
+
 ### Example
 
 
@@ -2524,6 +2633,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     season = 'season_example' # str | Premier season id (optional) (optional)
 
     try:
+        # Get Premier team history by ID (v1)
         api_response = api_instance.premier_by_id_history(id, season=season)
         print("The response of ValorantApi->premier_by_id_history:\n")
         pprint(api_response)
@@ -2566,7 +2676,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **premier_by_name**
-> PremierTeamV1Response premier_by_name(name, tag, season=season)
+> PremierTeamV1Response premier_by_name(name, tag, season=season, affinity=affinity)
+
+Get Premier team by name (v1)
 
 ### Example
 
@@ -2591,9 +2703,11 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     name = 'name_example' # str | Team name
     tag = 'tag_example' # str | Team tag
     season = 'season_example' # str | Premier season id (optional) (optional)
+    affinity = 'affinity_example' # str | Region/affinity for fallback resolution (optional) (optional)
 
     try:
-        api_response = api_instance.premier_by_name(name, tag, season=season)
+        # Get Premier team by name (v1)
+        api_response = api_instance.premier_by_name(name, tag, season=season, affinity=affinity)
         print("The response of ValorantApi->premier_by_name:\n")
         pprint(api_response)
     except Exception as e:
@@ -2610,6 +2724,7 @@ Name | Type | Description  | Notes
  **name** | **str**| Team name | 
  **tag** | **str**| Team tag | 
  **season** | **str**| Premier season id (optional) | [optional] 
+ **affinity** | **str**| Region/affinity for fallback resolution (optional) | [optional] 
 
 ### Return type
 
@@ -2631,12 +2746,15 @@ No authorization required
 **200** | Premier team data retrieved successfully |  -  |
 **400** | Bad Request |  -  |
 **404** | Team not found |  -  |
+**409** | Multiple teams match this name and tag |  -  |
 **500** | Internal Server Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **premier_by_name_history**
 > PremierTeamHistoryV1Response premier_by_name_history(name, tag, season=season)
+
+Get Premier team history by name (v1)
 
 ### Example
 
@@ -2663,6 +2781,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     season = 'season_example' # str | Premier season id (optional) (optional)
 
     try:
+        # Get Premier team history by name (v1)
         api_response = api_instance.premier_by_name_history(name, tag, season=season)
         print("The response of ValorantApi->premier_by_name_history:\n")
         pprint(api_response)
@@ -2706,6 +2825,8 @@ No authorization required
 # **premier_leaderboard**
 > PremierSearchResponse premier_leaderboard(affinity, conference=conference, division=division, season=season)
 
+Get Premier leaderboard (v1)
+
 ### Example
 
 
@@ -2732,6 +2853,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     season = 'season_example' # str | Premier season id (optional) (optional)
 
     try:
+        # Get Premier leaderboard (v1)
         api_response = api_instance.premier_leaderboard(affinity, conference=conference, division=division, season=season)
         print("The response of ValorantApi->premier_leaderboard:\n")
         pprint(api_response)
@@ -2778,6 +2900,8 @@ No authorization required
 # **premier_search**
 > PremierSearchResponse premier_search(name=name, tag=tag, id=id, season=season)
 
+Search Premier teams (v1)
+
 ### Example
 
 
@@ -2804,6 +2928,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     season = 'season_example' # str | Premier season id (optional) (optional)
 
     try:
+        # Search Premier teams (v1)
         api_response = api_instance.premier_search(name=name, tag=tag, id=id, season=season)
         print("The response of ValorantApi->premier_search:\n")
         pprint(api_response)
@@ -2850,6 +2975,8 @@ No authorization required
 # **queue_status**
 > QueueStatusV1 queue_status(affinity)
 
+Get queue status (v1)
+
 ### Example
 
 
@@ -2873,6 +3000,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     affinity = 'affinity_example' # str | Region/affinity (e.g., na, eu, ap, kr)
 
     try:
+        # Get queue status (v1)
         api_response = api_instance.queue_status(affinity)
         print("The response of ValorantApi->queue_status:\n")
         pprint(api_response)
@@ -2916,6 +3044,8 @@ No authorization required
 # **raw**
 > RawV1Response raw(raw_v1_payload)
 
+Get raw Riot API data (v1)
+
 ### Example
 
 
@@ -2940,6 +3070,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     raw_v1_payload = henrikdev_api_client.RawV1Payload() # RawV1Payload | 
 
     try:
+        # Get raw Riot API data (v1)
         api_response = api_instance.raw(raw_v1_payload)
         print("The response of ValorantApi->raw:\n")
         pprint(api_response)
@@ -2983,6 +3114,8 @@ No authorization required
 # **status**
 > StatusV1 status(affinity)
 
+Get status (v1)
+
 ### Example
 
 
@@ -3006,6 +3139,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     affinity = 'affinity_example' # str | Region/affinity (e.g., na, eu, ap, kr)
 
     try:
+        # Get status (v1)
         api_response = api_instance.status(affinity)
         print("The response of ValorantApi->status:\n")
         pprint(api_response)
@@ -3049,6 +3183,8 @@ No authorization required
 # **store_featured**
 > StoreFeaturedV1 store_featured(version)
 
+Get featured store items
+
 ### Example
 
 
@@ -3072,6 +3208,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     version = 'version_example' # str | API version (v1, v2)
 
     try:
+        # Get featured store items
         api_response = api_instance.store_featured(version)
         print("The response of ValorantApi->store_featured:\n")
         pprint(api_response)
@@ -3115,6 +3252,8 @@ No authorization required
 # **store_offers**
 > StoreOffersV1Response store_offers(version)
 
+Get store offers
+
 ### Example
 
 
@@ -3138,6 +3277,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     version = 'version_example' # str | API version (v1, v2)
 
     try:
+        # Get store offers
         api_response = api_instance.store_offers(version)
         print("The response of ValorantApi->store_offers:\n")
         pprint(api_response)
@@ -3181,6 +3321,8 @@ No authorization required
 # **stored_matches**
 > StoredMatchesResponse stored_matches(affinity, name, tag, mode=mode, map=map, size=size)
 
+Get stored matches by name (v1)
+
 ### Example
 
 
@@ -3209,6 +3351,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     size = 56 # int | Number of results (optional) (optional)
 
     try:
+        # Get stored matches by name (v1)
         api_response = api_instance.stored_matches(affinity, name, tag, mode=mode, map=map, size=size)
         print("The response of ValorantApi->stored_matches:\n")
         pprint(api_response)
@@ -3257,6 +3400,8 @@ No authorization required
 # **stored_matches_by_id**
 > StoredMatchesResponse stored_matches_by_id(affinity, puuid, mode=mode, map=map, size=size)
 
+Get stored matches by PUUID (v1)
+
 ### Example
 
 
@@ -3284,6 +3429,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     size = 56 # int | Number of results (optional) (optional)
 
     try:
+        # Get stored matches by PUUID (v1)
         api_response = api_instance.stored_matches_by_id(affinity, puuid, mode=mode, map=map, size=size)
         print("The response of ValorantApi->stored_matches_by_id:\n")
         pprint(api_response)
@@ -3331,6 +3477,8 @@ No authorization required
 # **stored_mmr_history**
 > StoredMMRResponse stored_mmr_history(affinity, name, tag, size=size)
 
+Get stored MMR history by name (v1)
+
 ### Example
 
 
@@ -3357,6 +3505,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     size = 56 # int | Number of results (optional) (optional)
 
     try:
+        # Get stored MMR history by name (v1)
         api_response = api_instance.stored_mmr_history(affinity, name, tag, size=size)
         print("The response of ValorantApi->stored_mmr_history:\n")
         pprint(api_response)
@@ -3403,6 +3552,8 @@ No authorization required
 # **stored_mmr_history_by_id**
 > StoredMMRResponse stored_mmr_history_by_id(affinity, puuid, size=size)
 
+Get stored MMR history by PUUID (v1)
+
 ### Example
 
 
@@ -3428,6 +3579,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     size = 56 # int | Number of results (optional) (optional)
 
     try:
+        # Get stored MMR history by PUUID (v1)
         api_response = api_instance.stored_mmr_history_by_id(affinity, puuid, size=size)
         print("The response of ValorantApi->stored_mmr_history_by_id:\n")
         pprint(api_response)
@@ -3473,6 +3625,8 @@ No authorization required
 # **stored_mmr_history_v2**
 > StoredMMRV2Response stored_mmr_history_v2(affinity, platform, name, tag, size=size)
 
+Get stored MMR history by name (v2)
+
 ### Example
 
 
@@ -3500,6 +3654,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     size = 56 # int | Number of results (optional) (optional)
 
     try:
+        # Get stored MMR history by name (v2)
         api_response = api_instance.stored_mmr_history_v2(affinity, platform, name, tag, size=size)
         print("The response of ValorantApi->stored_mmr_history_v2:\n")
         pprint(api_response)
@@ -3547,6 +3702,8 @@ No authorization required
 # **stored_mmr_history_v2_by_id**
 > StoredMMRV2Response stored_mmr_history_v2_by_id(affinity, platform, puuid, size=size)
 
+Get stored MMR history by PUUID (v2)
+
 ### Example
 
 
@@ -3573,6 +3730,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     size = 56 # int | Number of results (optional) (optional)
 
     try:
+        # Get stored MMR history by PUUID (v2)
         api_response = api_instance.stored_mmr_history_v2_by_id(affinity, platform, puuid, size=size)
         print("The response of ValorantApi->stored_mmr_history_v2_by_id:\n")
         pprint(api_response)
@@ -3619,6 +3777,8 @@ No authorization required
 # **version**
 > VersionV1Response version(affinity)
 
+Get game version (v1)
+
 ### Example
 
 
@@ -3642,6 +3802,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     affinity = 'affinity_example' # str | Region/affinity (e.g., na, eu, ap, kr)
 
     try:
+        # Get game version (v1)
         api_response = api_instance.version(affinity)
         print("The response of ValorantApi->version:\n")
         pprint(api_response)
@@ -3685,6 +3846,8 @@ No authorization required
 # **website**
 > WebsiteV1Response website(country_code, category=category)
 
+Get website content (v1)
+
 ### Example
 
 
@@ -3709,6 +3872,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     category = 'category_example' # str | Category filter (optional) (optional)
 
     try:
+        # Get website content (v1)
         api_response = api_instance.website(country_code, category=category)
         print("The response of ValorantApi->website:\n")
         pprint(api_response)
@@ -3753,6 +3917,8 @@ No authorization required
 # **website_by_id**
 > WebsiteByIdV1Response website_by_id(db_id, country_code)
 
+Get website entry by ID (v1)
+
 ### Example
 
 
@@ -3777,6 +3943,7 @@ with henrikdev_api_client.ApiClient(configuration) as api_client:
     country_code = 'country_code_example' # str | Country code (e.g., en-us, de-de)
 
     try:
+        # Get website entry by ID (v1)
         api_response = api_instance.website_by_id(db_id, country_code)
         print("The response of ValorantApi->website_by_id:\n")
         pprint(api_response)

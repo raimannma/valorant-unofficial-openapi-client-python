@@ -96,7 +96,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> None:
-        """crosshair
+        """Generate crosshair image (v1)
 
 
         :param id: Crosshair code
@@ -164,7 +164,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[None]:
-        """crosshair
+        """Generate crosshair image (v1)
 
 
         :param id: Crosshair code
@@ -232,7 +232,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """crosshair
+        """Generate crosshair image (v1)
 
 
         :param id: Crosshair code
@@ -362,7 +362,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> EsportsV2EventResponse:
-        """esports_event_v2
+        """Get VLR event matches (v2)
 
 
         :param event_id: (required)
@@ -430,7 +430,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[EsportsV2EventResponse]:
-        """esports_event_v2
+        """Get VLR event matches (v2)
 
 
         :param event_id: (required)
@@ -498,7 +498,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """esports_event_v2
+        """Get VLR event matches (v2)
 
 
         :param event_id: (required)
@@ -627,7 +627,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> EsportsV2EventsResponse:
-        """esports_events_v2
+        """Get VLR esports events (v2)
 
 
         :param region:
@@ -703,7 +703,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[EsportsV2EventsResponse]:
-        """esports_events_v2
+        """Get VLR esports events (v2)
 
 
         :param region:
@@ -779,7 +779,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """esports_events_v2
+        """Get VLR esports events (v2)
 
 
         :param region:
@@ -924,7 +924,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> EsportsV2MatchesResponse:
-        """esports_match_v2
+        """Get VLR match details (v2)
 
 
         :param match_id: (required)
@@ -992,7 +992,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[EsportsV2MatchesResponse]:
-        """esports_match_v2
+        """Get VLR match details (v2)
 
 
         :param match_id: (required)
@@ -1060,7 +1060,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """esports_match_v2
+        """Get VLR match details (v2)
 
 
         :param match_id: (required)
@@ -1188,7 +1188,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> EsportsV2PlayerMatchesResponse:
-        """esports_player_matches_v2
+        """Get VLR player matches (v2)
 
 
         :param player: (required)
@@ -1260,7 +1260,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[EsportsV2PlayerMatchesResponse]:
-        """esports_player_matches_v2
+        """Get VLR player matches (v2)
 
 
         :param player: (required)
@@ -1332,7 +1332,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """esports_player_matches_v2
+        """Get VLR player matches (v2)
 
 
         :param player: (required)
@@ -1468,7 +1468,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> EsportsV2PlayerResponse:
-        """esports_player_v2
+        """Get VLR player (v2)
 
 
         :param player: (required)
@@ -1540,7 +1540,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[EsportsV2PlayerResponse]:
-        """esports_player_v2
+        """Get VLR player (v2)
 
 
         :param player: (required)
@@ -1612,7 +1612,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """esports_player_v2
+        """Get VLR player (v2)
 
 
         :param player: (required)
@@ -1748,7 +1748,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> EsportsV1Response:
-        """esports_schedules_v1
+        """Get esports schedule (v1)
 
 
         :param region:
@@ -1821,7 +1821,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[EsportsV1Response]:
-        """esports_schedules_v1
+        """Get esports schedule (v1)
 
 
         :param region:
@@ -1894,7 +1894,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """esports_schedules_v1
+        """Get esports schedule (v1)
 
 
         :param region:
@@ -2033,7 +2033,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> EsportsV2TeamMatchListResponse:
-        """esports_team_matches_v2
+        """Get VLR team matches (v2)
 
 
         :param team_id: (required)
@@ -2105,7 +2105,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[EsportsV2TeamMatchListResponse]:
-        """esports_team_matches_v2
+        """Get VLR team matches (v2)
 
 
         :param team_id: (required)
@@ -2177,7 +2177,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """esports_team_matches_v2
+        """Get VLR team matches (v2)
 
 
         :param team_id: (required)
@@ -2312,7 +2312,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> EsportsV2TeamTransactionsResponse:
-        """esports_team_transactions_v2
+        """Get VLR team transactions (v2)
 
 
         :param team_id: (required)
@@ -2380,7 +2380,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[EsportsV2TeamTransactionsResponse]:
-        """esports_team_transactions_v2
+        """Get VLR team transactions (v2)
 
 
         :param team_id: (required)
@@ -2448,7 +2448,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """esports_team_transactions_v2
+        """Get VLR team transactions (v2)
 
 
         :param team_id: (required)
@@ -2575,7 +2575,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> EsportsV2TeamResponse:
-        """esports_team_v2
+        """Get VLR team (v2)
 
 
         :param team_id: (required)
@@ -2643,7 +2643,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[EsportsV2TeamResponse]:
-        """esports_team_v2
+        """Get VLR team (v2)
 
 
         :param team_id: (required)
@@ -2711,7 +2711,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """esports_team_v2
+        """Get VLR team (v2)
 
 
         :param team_id: (required)
@@ -2839,7 +2839,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> AccountV1Response:
-        """get_account_by_id_v1
+        """Get account by PUUID (v1)
 
 
         :param puuid: Player UUID (required)
@@ -2912,7 +2912,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[AccountV1Response]:
-        """get_account_by_id_v1
+        """Get account by PUUID (v1)
 
 
         :param puuid: Player UUID (required)
@@ -2985,7 +2985,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_account_by_id_v1
+        """Get account by PUUID (v1)
 
 
         :param puuid: Player UUID (required)
@@ -3122,7 +3122,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> AccountV2Response:
-        """get_account_by_id_v2
+        """Get account by PUUID (v2)
 
 
         :param puuid: Player UUID (required)
@@ -3195,7 +3195,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[AccountV2Response]:
-        """get_account_by_id_v2
+        """Get account by PUUID (v2)
 
 
         :param puuid: Player UUID (required)
@@ -3268,7 +3268,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_account_by_id_v2
+        """Get account by PUUID (v2)
 
 
         :param puuid: Player UUID (required)
@@ -3406,7 +3406,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> AccountV1Response:
-        """get_account_v1
+        """Get account (v1)
 
 
         :param name: Riot ID name (required)
@@ -3483,7 +3483,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[AccountV1Response]:
-        """get_account_v1
+        """Get account (v1)
 
 
         :param name: Riot ID name (required)
@@ -3560,7 +3560,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_account_v1
+        """Get account (v1)
 
 
         :param name: Riot ID name (required)
@@ -3704,7 +3704,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> AccountV2Response:
-        """get_account_v2
+        """Get account (v2)
 
 
         :param name: Riot ID name (required)
@@ -3781,7 +3781,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[AccountV2Response]:
-        """get_account_v2
+        """Get account (v2)
 
 
         :param name: Riot ID name (required)
@@ -3858,7 +3858,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_account_v2
+        """Get account (v2)
 
 
         :param name: Riot ID name (required)
@@ -4000,7 +4000,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ContentV1Response:
-        """get_content_v1
+        """Get content (v1)
 
 
         :param locale: Locale code (e.g., en-US, de-DE) - optional
@@ -4069,7 +4069,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[ContentV1Response]:
-        """get_content_v1
+        """Get content (v1)
 
 
         :param locale: Locale code (e.g., en-US, de-DE) - optional
@@ -4138,7 +4138,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_content_v1
+        """Get content (v1)
 
 
         :param locale: Locale code (e.g., en-US, de-DE) - optional
@@ -4272,7 +4272,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MatchesV3ListResponse:
-        """get_matches_v3_by_id
+        """Get matches by PUUID (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -4357,7 +4357,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MatchesV3ListResponse]:
-        """get_matches_v3_by_id
+        """Get matches by PUUID (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -4442,7 +4442,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_matches_v3_by_id
+        """Get matches by PUUID (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -4605,7 +4605,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MatchesV3ListResponse:
-        """get_matches_v3_by_name
+        """Get matches by name (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -4694,7 +4694,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MatchesV3ListResponse]:
-        """get_matches_v3_by_name
+        """Get matches by name (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -4783,7 +4783,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_matches_v3_by_name
+        """Get matches by name (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -4953,7 +4953,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MatchesV4HistoryResponse:
-        """get_matches_v4_by_id
+        """Get matches by PUUID (v4)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -5046,7 +5046,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MatchesV4HistoryResponse]:
-        """get_matches_v4_by_id
+        """Get matches by PUUID (v4)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -5139,7 +5139,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_matches_v4_by_id
+        """Get matches by PUUID (v4)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -5318,7 +5318,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MatchesV4HistoryResponse:
-        """get_matches_v4_by_name
+        """Get matches by name (v4)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -5415,7 +5415,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MatchesV4HistoryResponse]:
-        """get_matches_v4_by_name
+        """Get matches by name (v4)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -5512,7 +5512,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_matches_v4_by_name
+        """Get matches by name (v4)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -5691,7 +5691,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MMRHistoryV1Response:
-        """get_mmr_history_by_id
+        """Get MMR history by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -5764,7 +5764,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MMRHistoryV1Response]:
-        """get_mmr_history_by_id
+        """Get MMR history by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -5837,7 +5837,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_mmr_history_by_id
+        """Get MMR history by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -5973,7 +5973,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MMRHistoryV1Response:
-        """get_mmr_history_by_name
+        """Get MMR history by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -6050,7 +6050,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MMRHistoryV1Response]:
-        """get_mmr_history_by_name
+        """Get MMR history by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -6127,7 +6127,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_mmr_history_by_name
+        """Get MMR history by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -6269,7 +6269,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MMRHistoryV2Response:
-        """get_mmr_history_v2_by_id
+        """Get MMR history by PUUID (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -6346,7 +6346,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MMRHistoryV2Response]:
-        """get_mmr_history_v2_by_id
+        """Get MMR history by PUUID (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -6423,7 +6423,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_mmr_history_v2_by_id
+        """Get MMR history by PUUID (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -6566,7 +6566,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MMRHistoryV2Response:
-        """get_mmr_history_v2_by_name
+        """Get MMR history by name (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -6647,7 +6647,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MMRHistoryV2Response]:
-        """get_mmr_history_v2_by_name
+        """Get MMR history by name (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -6728,7 +6728,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_mmr_history_v2_by_name
+        """Get MMR history by name (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -6875,7 +6875,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MMRV1Response:
-        """get_mmr_v1_by_id
+        """Get MMR by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -6948,7 +6948,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MMRV1Response]:
-        """get_mmr_v1_by_id
+        """Get MMR by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -7021,7 +7021,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_mmr_v1_by_id
+        """Get MMR by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -7157,7 +7157,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MMRV1Response:
-        """get_mmr_v1_by_name
+        """Get MMR by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -7234,7 +7234,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MMRV1Response]:
-        """get_mmr_v1_by_name
+        """Get MMR by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -7311,7 +7311,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_mmr_v1_by_name
+        """Get MMR by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -7452,7 +7452,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MMRV2Response:
-        """get_mmr_v2_by_id
+        """Get MMR by PUUID (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -7525,7 +7525,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MMRV2Response]:
-        """get_mmr_v2_by_id
+        """Get MMR by PUUID (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -7598,7 +7598,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_mmr_v2_by_id
+        """Get MMR by PUUID (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -7734,7 +7734,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MMRV2Response:
-        """get_mmr_v2_by_name
+        """Get MMR by name (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -7811,7 +7811,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MMRV2Response]:
-        """get_mmr_v2_by_name
+        """Get MMR by name (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -7888,7 +7888,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_mmr_v2_by_name
+        """Get MMR by name (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -8030,7 +8030,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MMRV3Response:
-        """get_mmr_v3_by_id
+        """Get MMR by PUUID (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -8107,7 +8107,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MMRV3Response]:
-        """get_mmr_v3_by_id
+        """Get MMR by PUUID (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -8184,7 +8184,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_mmr_v3_by_id
+        """Get MMR by PUUID (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -8327,7 +8327,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MMRV3Response:
-        """get_mmr_v3_by_name
+        """Get MMR by name (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -8408,7 +8408,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MMRV3Response]:
-        """get_mmr_v3_by_name
+        """Get MMR by name (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -8489,7 +8489,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """get_mmr_v3_by_name
+        """Get MMR by name (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -8638,7 +8638,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> object:
-        """leaderboard_v1
+        """Get leaderboard (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -8719,7 +8719,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[object]:
-        """leaderboard_v1
+        """Get leaderboard (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -8800,7 +8800,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """leaderboard_v1
+        """Get leaderboard (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -8956,7 +8956,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> LeaderboardV2Response:
-        """leaderboard_v2
+        """Get leaderboard (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -9041,7 +9041,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[LeaderboardV2Response]:
-        """leaderboard_v2
+        """Get leaderboard (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -9126,7 +9126,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """leaderboard_v2
+        """Get leaderboard (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -9292,7 +9292,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> LeaderboardV3Response:
-        """leaderboard_v3
+        """Get leaderboard (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -9385,7 +9385,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[LeaderboardV3Response]:
-        """leaderboard_v3
+        """Get leaderboard (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -9478,7 +9478,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """leaderboard_v3
+        """Get leaderboard (v3)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -9652,7 +9652,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MatchesV2Response:
-        """match_v2
+        """Get match details (v2)
 
 
         :param match_id: Match UUID (required)
@@ -9721,7 +9721,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MatchesV2Response]:
-        """match_v2
+        """Get match details (v2)
 
 
         :param match_id: Match UUID (required)
@@ -9790,7 +9790,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """match_v2
+        """Get match details (v2)
 
 
         :param match_id: Match UUID (required)
@@ -9919,7 +9919,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> MatchesV4Response:
-        """match_v4
+        """Get match details (v4)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -9992,7 +9992,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[MatchesV4Response]:
-        """match_v4
+        """Get match details (v4)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -10065,7 +10065,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """match_v4
+        """Get match details (v4)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -10187,6 +10187,7 @@ class ValorantApi:
         self,
         id: Annotated[StrictStr, Field(description="Team UUID")],
         season: Annotated[Optional[StrictStr], Field(description="Premier season id (optional)")] = None,
+        affinity: Annotated[Optional[StrictStr], Field(description="Region/affinity for fallback resolution (optional)")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -10200,13 +10201,15 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> PremierTeamV1Response:
-        """premier_by_id
+        """Get Premier team by ID (v1)
 
 
         :param id: Team UUID (required)
         :type id: str
         :param season: Premier season id (optional)
         :type season: str
+        :param affinity: Region/affinity for fallback resolution (optional)
+        :type affinity: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -10232,6 +10235,7 @@ class ValorantApi:
         _param = self._premier_by_id_serialize(
             id=id,
             season=season,
+            affinity=affinity,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -10260,6 +10264,7 @@ class ValorantApi:
         self,
         id: Annotated[StrictStr, Field(description="Team UUID")],
         season: Annotated[Optional[StrictStr], Field(description="Premier season id (optional)")] = None,
+        affinity: Annotated[Optional[StrictStr], Field(description="Region/affinity for fallback resolution (optional)")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -10273,13 +10278,15 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[PremierTeamV1Response]:
-        """premier_by_id
+        """Get Premier team by ID (v1)
 
 
         :param id: Team UUID (required)
         :type id: str
         :param season: Premier season id (optional)
         :type season: str
+        :param affinity: Region/affinity for fallback resolution (optional)
+        :type affinity: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -10305,6 +10312,7 @@ class ValorantApi:
         _param = self._premier_by_id_serialize(
             id=id,
             season=season,
+            affinity=affinity,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -10333,6 +10341,7 @@ class ValorantApi:
         self,
         id: Annotated[StrictStr, Field(description="Team UUID")],
         season: Annotated[Optional[StrictStr], Field(description="Premier season id (optional)")] = None,
+        affinity: Annotated[Optional[StrictStr], Field(description="Region/affinity for fallback resolution (optional)")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -10346,13 +10355,15 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """premier_by_id
+        """Get Premier team by ID (v1)
 
 
         :param id: Team UUID (required)
         :type id: str
         :param season: Premier season id (optional)
         :type season: str
+        :param affinity: Region/affinity for fallback resolution (optional)
+        :type affinity: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -10378,6 +10389,7 @@ class ValorantApi:
         _param = self._premier_by_id_serialize(
             id=id,
             season=season,
+            affinity=affinity,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -10401,6 +10413,7 @@ class ValorantApi:
         self,
         id,
         season,
+        affinity,
         _request_auth,
         _content_type,
         _headers,
@@ -10428,6 +10441,10 @@ class ValorantApi:
         if season is not None:
             
             _query_params.append(('season', season))
+            
+        if affinity is not None:
+            
+            _query_params.append(('affinity', affinity))
             
         # process the header parameters
         # process the form parameters
@@ -10483,7 +10500,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> PremierTeamV1Response:
-        """premier_by_id_history
+        """Get Premier team history by ID (v1)
 
 
         :param id: Team UUID (required)
@@ -10556,7 +10573,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[PremierTeamV1Response]:
-        """premier_by_id_history
+        """Get Premier team history by ID (v1)
 
 
         :param id: Team UUID (required)
@@ -10629,7 +10646,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """premier_by_id_history
+        """Get Premier team history by ID (v1)
 
 
         :param id: Team UUID (required)
@@ -10754,6 +10771,7 @@ class ValorantApi:
         name: Annotated[StrictStr, Field(description="Team name")],
         tag: Annotated[StrictStr, Field(description="Team tag")],
         season: Annotated[Optional[StrictStr], Field(description="Premier season id (optional)")] = None,
+        affinity: Annotated[Optional[StrictStr], Field(description="Region/affinity for fallback resolution (optional)")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -10767,7 +10785,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> PremierTeamV1Response:
-        """premier_by_name
+        """Get Premier team by name (v1)
 
 
         :param name: Team name (required)
@@ -10776,6 +10794,8 @@ class ValorantApi:
         :type tag: str
         :param season: Premier season id (optional)
         :type season: str
+        :param affinity: Region/affinity for fallback resolution (optional)
+        :type affinity: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -10802,6 +10822,7 @@ class ValorantApi:
             name=name,
             tag=tag,
             season=season,
+            affinity=affinity,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -10812,6 +10833,7 @@ class ValorantApi:
             '200': "PremierTeamV1Response",
             '400': "SendError",
             '404': "SendError",
+            '409': "SendError",
             '500': "SendError",
         }
         response_data = self.api_client.call_api(
@@ -10831,6 +10853,7 @@ class ValorantApi:
         name: Annotated[StrictStr, Field(description="Team name")],
         tag: Annotated[StrictStr, Field(description="Team tag")],
         season: Annotated[Optional[StrictStr], Field(description="Premier season id (optional)")] = None,
+        affinity: Annotated[Optional[StrictStr], Field(description="Region/affinity for fallback resolution (optional)")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -10844,7 +10867,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[PremierTeamV1Response]:
-        """premier_by_name
+        """Get Premier team by name (v1)
 
 
         :param name: Team name (required)
@@ -10853,6 +10876,8 @@ class ValorantApi:
         :type tag: str
         :param season: Premier season id (optional)
         :type season: str
+        :param affinity: Region/affinity for fallback resolution (optional)
+        :type affinity: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -10879,6 +10904,7 @@ class ValorantApi:
             name=name,
             tag=tag,
             season=season,
+            affinity=affinity,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -10889,6 +10915,7 @@ class ValorantApi:
             '200': "PremierTeamV1Response",
             '400': "SendError",
             '404': "SendError",
+            '409': "SendError",
             '500': "SendError",
         }
         response_data = self.api_client.call_api(
@@ -10908,6 +10935,7 @@ class ValorantApi:
         name: Annotated[StrictStr, Field(description="Team name")],
         tag: Annotated[StrictStr, Field(description="Team tag")],
         season: Annotated[Optional[StrictStr], Field(description="Premier season id (optional)")] = None,
+        affinity: Annotated[Optional[StrictStr], Field(description="Region/affinity for fallback resolution (optional)")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -10921,7 +10949,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """premier_by_name
+        """Get Premier team by name (v1)
 
 
         :param name: Team name (required)
@@ -10930,6 +10958,8 @@ class ValorantApi:
         :type tag: str
         :param season: Premier season id (optional)
         :type season: str
+        :param affinity: Region/affinity for fallback resolution (optional)
+        :type affinity: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -10956,6 +10986,7 @@ class ValorantApi:
             name=name,
             tag=tag,
             season=season,
+            affinity=affinity,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -10966,6 +10997,7 @@ class ValorantApi:
             '200': "PremierTeamV1Response",
             '400': "SendError",
             '404': "SendError",
+            '409': "SendError",
             '500': "SendError",
         }
         response_data = self.api_client.call_api(
@@ -10980,6 +11012,7 @@ class ValorantApi:
         name,
         tag,
         season,
+        affinity,
         _request_auth,
         _content_type,
         _headers,
@@ -11009,6 +11042,10 @@ class ValorantApi:
         if season is not None:
             
             _query_params.append(('season', season))
+            
+        if affinity is not None:
+            
+            _query_params.append(('affinity', affinity))
             
         # process the header parameters
         # process the form parameters
@@ -11065,7 +11102,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> PremierTeamHistoryV1Response:
-        """premier_by_name_history
+        """Get Premier team history by name (v1)
 
 
         :param name: Team name (required)
@@ -11140,7 +11177,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[PremierTeamHistoryV1Response]:
-        """premier_by_name_history
+        """Get Premier team history by name (v1)
 
 
         :param name: Team name (required)
@@ -11215,7 +11252,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """premier_by_name_history
+        """Get Premier team history by name (v1)
 
 
         :param name: Team name (required)
@@ -11358,7 +11395,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> PremierSearchResponse:
-        """premier_leaderboard
+        """Get Premier leaderboard (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -11439,7 +11476,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[PremierSearchResponse]:
-        """premier_leaderboard
+        """Get Premier leaderboard (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -11520,7 +11557,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """premier_leaderboard
+        """Get Premier leaderboard (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -11675,7 +11712,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> PremierSearchResponse:
-        """premier_search
+        """Search Premier teams (v1)
 
 
         :param name: Team name to search for (optional)
@@ -11756,7 +11793,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[PremierSearchResponse]:
-        """premier_search
+        """Search Premier teams (v1)
 
 
         :param name: Team name to search for (optional)
@@ -11837,7 +11874,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """premier_search
+        """Search Premier teams (v1)
 
 
         :param name: Team name to search for (optional)
@@ -11991,7 +12028,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> QueueStatusV1:
-        """queue_status
+        """Get queue status (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -12060,7 +12097,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[QueueStatusV1]:
-        """queue_status
+        """Get queue status (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -12129,7 +12166,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """queue_status
+        """Get queue status (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -12257,7 +12294,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RawV1Response:
-        """raw
+        """Get raw Riot API data (v1)
 
 
         :param raw_v1_payload: (required)
@@ -12326,7 +12363,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[RawV1Response]:
-        """raw
+        """Get raw Riot API data (v1)
 
 
         :param raw_v1_payload: (required)
@@ -12395,7 +12432,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """raw
+        """Get raw Riot API data (v1)
 
 
         :param raw_v1_payload: (required)
@@ -12536,7 +12573,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> StatusV1:
-        """status
+        """Get status (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -12605,7 +12642,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[StatusV1]:
-        """status
+        """Get status (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -12674,7 +12711,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """status
+        """Get status (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -12802,7 +12839,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> StoreFeaturedV1:
-        """store_featured
+        """Get featured store items
 
 
         :param version: API version (v1, v2) (required)
@@ -12871,7 +12908,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[StoreFeaturedV1]:
-        """store_featured
+        """Get featured store items
 
 
         :param version: API version (v1, v2) (required)
@@ -12940,7 +12977,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """store_featured
+        """Get featured store items
 
 
         :param version: API version (v1, v2) (required)
@@ -13068,7 +13105,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> StoreOffersV1Response:
-        """store_offers
+        """Get store offers
 
 
         :param version: API version (v1, v2) (required)
@@ -13137,7 +13174,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[StoreOffersV1Response]:
-        """store_offers
+        """Get store offers
 
 
         :param version: API version (v1, v2) (required)
@@ -13206,7 +13243,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """store_offers
+        """Get store offers
 
 
         :param version: API version (v1, v2) (required)
@@ -13339,7 +13376,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> StoredMatchesResponse:
-        """stored_matches
+        """Get stored matches by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -13428,7 +13465,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[StoredMatchesResponse]:
-        """stored_matches
+        """Get stored matches by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -13517,7 +13554,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """stored_matches
+        """Get stored matches by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -13685,7 +13722,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> StoredMatchesResponse:
-        """stored_matches_by_id
+        """Get stored matches by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -13770,7 +13807,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[StoredMatchesResponse]:
-        """stored_matches_by_id
+        """Get stored matches by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -13855,7 +13892,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """stored_matches_by_id
+        """Get stored matches by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -14016,7 +14053,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> StoredMMRResponse:
-        """stored_mmr_history
+        """Get stored MMR history by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -14097,7 +14134,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[StoredMMRResponse]:
-        """stored_mmr_history
+        """Get stored MMR history by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -14178,7 +14215,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """stored_mmr_history
+        """Get stored MMR history by name (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -14328,7 +14365,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> StoredMMRResponse:
-        """stored_mmr_history_by_id
+        """Get stored MMR history by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -14405,7 +14442,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[StoredMMRResponse]:
-        """stored_mmr_history_by_id
+        """Get stored MMR history by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -14482,7 +14519,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """stored_mmr_history_by_id
+        """Get stored MMR history by PUUID (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -14628,7 +14665,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> StoredMMRV2Response:
-        """stored_mmr_history_v2
+        """Get stored MMR history by name (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -14713,7 +14750,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[StoredMMRV2Response]:
-        """stored_mmr_history_v2
+        """Get stored MMR history by name (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -14798,7 +14835,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """stored_mmr_history_v2
+        """Get stored MMR history by name (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -14955,7 +14992,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> StoredMMRV2Response:
-        """stored_mmr_history_v2_by_id
+        """Get stored MMR history by PUUID (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -15036,7 +15073,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[StoredMMRV2Response]:
-        """stored_mmr_history_v2_by_id
+        """Get stored MMR history by PUUID (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -15117,7 +15154,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """stored_mmr_history_v2_by_id
+        """Get stored MMR history by PUUID (v2)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -15265,7 +15302,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> VersionV1Response:
-        """version
+        """Get game version (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -15334,7 +15371,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[VersionV1Response]:
-        """version
+        """Get game version (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -15403,7 +15440,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """version
+        """Get game version (v1)
 
 
         :param affinity: Region/affinity (e.g., na, eu, ap, kr) (required)
@@ -15532,7 +15569,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> WebsiteV1Response:
-        """website
+        """Get website content (v1)
 
 
         :param country_code: Country code (e.g., en-us, de-de) (required)
@@ -15605,7 +15642,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[WebsiteV1Response]:
-        """website
+        """Get website content (v1)
 
 
         :param country_code: Country code (e.g., en-us, de-de) (required)
@@ -15678,7 +15715,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """website
+        """Get website content (v1)
 
 
         :param country_code: Country code (e.g., en-us, de-de) (required)
@@ -15815,7 +15852,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> WebsiteByIdV1Response:
-        """website_by_id
+        """Get website entry by ID (v1)
 
 
         :param db_id: Database ID of the website entry (required)
@@ -15888,7 +15925,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[WebsiteByIdV1Response]:
-        """website_by_id
+        """Get website entry by ID (v1)
 
 
         :param db_id: Database ID of the website entry (required)
@@ -15961,7 +15998,7 @@ class ValorantApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """website_by_id
+        """Get website entry by ID (v1)
 
 
         :param db_id: Database ID of the website entry (required)

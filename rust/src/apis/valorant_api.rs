@@ -377,7 +377,9 @@ pub struct PremierByIdParams {
     /// Team UUID
     pub id: String,
     /// Premier season id (optional)
-    pub season: Option<String>
+    pub season: Option<String>,
+    /// Region/affinity for fallback resolution (optional)
+    pub affinity: Option<String>
 }
 
 /// struct for passing parameters to the method [`premier_by_id_history`]
@@ -397,7 +399,9 @@ pub struct PremierByNameParams {
     /// Team tag
     pub tag: String,
     /// Premier season id (optional)
-    pub season: Option<String>
+    pub season: Option<String>,
+    /// Region/affinity for fallback resolution (optional)
+    pub affinity: Option<String>
 }
 
 /// struct for passing parameters to the method [`premier_by_name_history`]
@@ -938,6 +942,7 @@ pub enum PremierByIdHistoryError {
 pub enum PremierByNameError {
     Status400(models::SendError),
     Status404(models::SendError),
+    Status409(models::SendError),
     Status500(models::SendError),
     UnknownValue(serde_json::Value),
 }
@@ -2384,6 +2389,9 @@ pub async fn premier_by_id(configuration: &configuration::Configuration, params:
     if let Some(ref param_value) = params.season {
         req_builder = req_builder.query(&[("season", &param_value.to_string())]);
     }
+    if let Some(ref param_value) = params.affinity {
+        req_builder = req_builder.query(&[("affinity", &param_value.to_string())]);
+    }
     if let Some(ref user_agent) = configuration.user_agent {
         req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());
     }
@@ -2457,6 +2465,9 @@ pub async fn premier_by_name(configuration: &configuration::Configuration, param
 
     if let Some(ref param_value) = params.season {
         req_builder = req_builder.query(&[("season", &param_value.to_string())]);
+    }
+    if let Some(ref param_value) = params.affinity {
+        req_builder = req_builder.query(&[("affinity", &param_value.to_string())]);
     }
     if let Some(ref user_agent) = configuration.user_agent {
         req_builder = req_builder.header(reqwest::header::USER_AGENT, user_agent.clone());

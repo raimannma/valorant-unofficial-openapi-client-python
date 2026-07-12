@@ -76,6 +76,12 @@ class PremierTeamLiteResponseDataTest : ShouldSpec() {
             //modelInstance.name shouldBe ("TODO")
         }
 
+        // to test the property `ranked`
+        should("test ranked") {
+            // uncomment below to test the property
+            //modelInstance.ranked shouldBe ("TODO")
+        }
+
         // to test the property `ranking`
         should("test ranking") {
             // uncomment below to test the property

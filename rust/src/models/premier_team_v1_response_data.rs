@@ -25,6 +25,8 @@ pub struct PremierTeamV1ResponseData {
     pub name: String,
     #[serde(rename = "placement")]
     pub placement: Box<models::PremierTeamV1ResponseDataPlacement>,
+    #[serde(rename = "ranked")]
+    pub ranked: bool,
     #[serde(rename = "stats")]
     pub stats: Box<models::PremierTeamV1ResponseDataStats>,
     #[serde(rename = "tag")]
@@ -32,7 +34,7 @@ pub struct PremierTeamV1ResponseData {
 }
 
 impl PremierTeamV1ResponseData {
-    pub fn new(customization: models::PremierTeamV1ResponseDataCustomization, enrolled: bool, id: String, member: Vec<models::PremierTeamMember>, name: String, placement: models::PremierTeamV1ResponseDataPlacement, stats: models::PremierTeamV1ResponseDataStats, tag: String) -> PremierTeamV1ResponseData {
+    pub fn new(customization: models::PremierTeamV1ResponseDataCustomization, enrolled: bool, id: String, member: Vec<models::PremierTeamMember>, name: String, placement: models::PremierTeamV1ResponseDataPlacement, ranked: bool, stats: models::PremierTeamV1ResponseDataStats, tag: String) -> PremierTeamV1ResponseData {
         PremierTeamV1ResponseData {
             customization: Box::new(customization),
             enrolled,
@@ -40,6 +42,7 @@ impl PremierTeamV1ResponseData {
             member,
             name,
             placement: Box::new(placement),
+            ranked,
             stats: Box::new(stats),
             tag,
         }

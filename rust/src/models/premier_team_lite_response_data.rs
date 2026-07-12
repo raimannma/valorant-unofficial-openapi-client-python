@@ -27,6 +27,8 @@ pub struct PremierTeamLiteResponseData {
     pub losses: i32,
     #[serde(rename = "name")]
     pub name: String,
+    #[serde(rename = "ranked")]
+    pub ranked: bool,
     #[serde(rename = "ranking")]
     pub ranking: i32,
     #[serde(rename = "region")]
@@ -42,7 +44,7 @@ pub struct PremierTeamLiteResponseData {
 }
 
 impl PremierTeamLiteResponseData {
-    pub fn new(affinity: String, conference: String, customization: models::PremierTeamV1ResponseDataCustomization, division: i32, id: String, losses: i32, name: String, ranking: i32, region: String, score: i32, tag: String, updated_at: String, wins: i32) -> PremierTeamLiteResponseData {
+    pub fn new(affinity: String, conference: String, customization: models::PremierTeamV1ResponseDataCustomization, division: i32, id: String, losses: i32, name: String, ranked: bool, ranking: i32, region: String, score: i32, tag: String, updated_at: String, wins: i32) -> PremierTeamLiteResponseData {
         PremierTeamLiteResponseData {
             affinity,
             conference,
@@ -51,6 +53,7 @@ impl PremierTeamLiteResponseData {
             id,
             losses,
             name,
+            ranked,
             ranking,
             region,
             score,

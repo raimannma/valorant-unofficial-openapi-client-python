@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **member** | [**\OpenAPI\Client\Model\PremierTeamMember[]**](PremierTeamMember.md) |  |
 **name** | **string** |  |
 **placement** | [**\OpenAPI\Client\Model\PremierTeamV1ResponseDataPlacement**](PremierTeamV1ResponseDataPlacement.md) |  |
+**ranked** | **bool** |  |
 **stats** | [**\OpenAPI\Client\Model\PremierTeamV1ResponseDataStats**](PremierTeamV1ResponseDataStats.md) |  |
 **tag** | **string** |  |
 

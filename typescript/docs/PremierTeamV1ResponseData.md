@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **member** | [**Array&lt;PremierTeamMember&gt;**](PremierTeamMember.md) |  | [default to undefined]
 **name** | **string** |  | [default to undefined]
 **placement** | [**PremierTeamV1ResponseDataPlacement**](PremierTeamV1ResponseDataPlacement.md) |  | [default to undefined]
+**ranked** | **boolean** |  | [default to undefined]
 **stats** | [**PremierTeamV1ResponseDataStats**](PremierTeamV1ResponseDataStats.md) |  | [default to undefined]
 **tag** | **string** |  | [default to undefined]
 
@@ -26,6 +27,7 @@ const instance: PremierTeamV1ResponseData = {
     member,
     name,
     placement,
+    ranked,
     stats,
     tag,
 };

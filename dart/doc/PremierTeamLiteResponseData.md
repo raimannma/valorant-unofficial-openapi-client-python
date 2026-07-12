@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **id** | **String** |  | 
 **losses** | **int** |  | 
 **name** | **String** |  | 
+**ranked** | **bool** |  | 
 **ranking** | **int** |  | 
 **region** | **String** |  | 
 **score** | **int** |  | 

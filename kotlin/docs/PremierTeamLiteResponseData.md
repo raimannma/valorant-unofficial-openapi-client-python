@@ -11,6 +11,7 @@
 | **id** | **kotlin.String** |  |  |
 | **losses** | **kotlin.Int** |  |  |
 | **name** | **kotlin.String** |  |  |
+| **ranked** | **kotlin.Boolean** |  |  |
 | **ranking** | **kotlin.Int** |  |  |
 | **region** | **kotlin.String** |  |  |
 | **score** | **kotlin.Int** |  |  |
