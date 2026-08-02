@@ -166,7 +166,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/crosshair/generate",
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -239,7 +239,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/esports/vlr/events/{event_id}/matches".replace("{"+"event_id"+"}", encodeURIComponent(eventId.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -329,7 +329,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/esports/vlr/events",
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -402,7 +402,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/esports/vlr/matches/{match_id}".replace("{"+"match_id"+"}", encodeURIComponent(matchId.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -483,7 +483,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/esports/vlr/players/{player}/matches".replace("{"+"player"+"}", encodeURIComponent(player.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -564,7 +564,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/esports/vlr/players/{player_id}".replace("{"+"player"+"}", encodeURIComponent(player.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -648,7 +648,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/esports/schedule",
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -729,7 +729,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/esports/vlr/teams/{team_id}/matches".replace("{"+"team_id"+"}", encodeURIComponent(teamId.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -802,7 +802,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/esports/vlr/teams/{team_id}/transactions".replace("{"+"team_id"+"}", encodeURIComponent(teamId.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -875,7 +875,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/esports/vlr/teams/{team_id}".replace("{"+"team_id"+"}", encodeURIComponent(teamId.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -956,7 +956,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/by-puuid/account/{puuid}".replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1037,7 +1037,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/by-puuid/account/{puuid}".replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1121,7 +1121,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/account/{name}/{tag}".replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1205,7 +1205,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/account/{name}/{tag}".replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1283,7 +1283,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/content",
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1379,7 +1379,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v3/by-puuid/matches/{affinity}/{puuid}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1478,7 +1478,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v3/matches/{affinity}/{name}/{tag}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1583,7 +1583,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v4/by-puuid/matches/{affinity}/{platform}/{puuid}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"platform"+"}", encodeURIComponent(platform.toString())).replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1691,7 +1691,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v4/matches/{affinity}/{platform}/{name}/{tag}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"platform"+"}", encodeURIComponent(platform.toString())).replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1767,7 +1767,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/by-puuid/mmr-history/{affinity}/{puuid}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1846,7 +1846,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/mmr-history/{affinity}/{name}/{tag}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -1925,7 +1925,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/by-puuid/mmr-history/{affinity}/{platform}/{puuid}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"platform"+"}", encodeURIComponent(platform.toString())).replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2007,7 +2007,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/mmr-history/{affinity}/{platform}/{name}/{tag}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"platform"+"}", encodeURIComponent(platform.toString())).replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2083,7 +2083,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/by-puuid/mmr/{affinity}/{puuid}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2162,7 +2162,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/mmr/{affinity}/{name}/{tag}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2238,7 +2238,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/by-puuid/mmr/{affinity}/{puuid}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2317,7 +2317,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/mmr/{affinity}/{name}/{tag}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2396,7 +2396,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v3/by-puuid/mmr/{affinity}/{platform}/{puuid}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"platform"+"}", encodeURIComponent(platform.toString())).replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2478,7 +2478,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v3/mmr/{affinity}/{platform}/{name}/{tag}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"platform"+"}", encodeURIComponent(platform.toString())).replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2571,7 +2571,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/leaderboard/{affinity}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2670,7 +2670,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/leaderboard/{affinity}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2778,7 +2778,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v3/leaderboard/{affinity}/{platform}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"platform"+"}", encodeURIComponent(platform.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2851,7 +2851,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/match/{match_id}".replace("{"+"match_id"+"}", encodeURIComponent(matchId.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -2927,7 +2927,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v4/match/{affinity}/{match_id}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"match_id"+"}", encodeURIComponent(matchId.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3014,7 +3014,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/premier/{id}".replace("{"+"id"+"}", encodeURIComponent(id.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3095,7 +3095,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/premier/{id}/history".replace("{"+"id"+"}", encodeURIComponent(id.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3185,7 +3185,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/premier/{name}/{tag}".replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3269,7 +3269,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/premier/{name}/{tag}/history".replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3362,7 +3362,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/premier/leaderboard/{affinity}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3458,7 +3458,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/premier/search",
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3531,7 +3531,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/queue-status/{affinity}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3605,7 +3605,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/raw",
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3678,7 +3678,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/status/{affinity}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3751,7 +3751,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/{version}/store-featured".replace("{"+"version"+"}", encodeURIComponent(version.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3824,7 +3824,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/{version}/store-offers".replace("{"+"version"+"}", encodeURIComponent(version.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -3923,7 +3923,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/stored-matches/{affinity}/{name}/{tag}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -4019,7 +4019,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/by-puuid/stored-matches/{affinity}/{puuid}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -4106,7 +4106,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/stored-mmr-history/{affinity}/{name}/{tag}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -4190,7 +4190,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/by-puuid/stored-mmr-history/{affinity}/{puuid}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -4280,7 +4280,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/stored-mmr-history/{affinity}/{platform}/{name}/{tag}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"platform"+"}", encodeURIComponent(platform.toString())).replace("{"+"name"+"}", encodeURIComponent(name.toString())).replace("{"+"tag"+"}", encodeURIComponent(tag.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -4367,7 +4367,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v2/by-puuid/stored-mmr-history/{affinity}/{platform}/{puuid}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())).replace("{"+"platform"+"}", encodeURIComponent(platform.toString())).replace("{"+"puuid"+"}", encodeURIComponent(puuid.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -4440,7 +4440,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/version/{affinity}".replace("{"+"affinity"+"}", encodeURIComponent(affinity.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -4521,7 +4521,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/website/{country_code}".replace("{"+"country_code"+"}", encodeURIComponent(countryCode.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }
@@ -4597,7 +4597,7 @@ open class ValorantApi(basePath: kotlin.String = defaultBasePath, client: Call.F
             path = "/valorant/v1/website/{country_code}/{db_id}".replace("{"+"db_id"+"}", encodeURIComponent(dbId.toString())).replace("{"+"country_code"+"}", encodeURIComponent(countryCode.toString())),
             query = localVariableQuery,
             headers = localVariableHeaders,
-            requiresAuthentication = false,
+            requiresAuthentication = true,
             body = localVariableBody
         )
     }

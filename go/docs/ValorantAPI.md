@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -315,7 +315,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -385,7 +385,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -455,7 +455,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -521,7 +521,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -591,7 +591,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -659,7 +659,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -727,7 +727,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -797,7 +797,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -867,7 +867,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -940,7 +940,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1013,7 +1013,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1077,7 +1077,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1154,7 +1154,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1234,7 +1234,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1316,7 +1316,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1401,7 +1401,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1472,7 +1472,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1546,7 +1546,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1620,7 +1620,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1697,7 +1697,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1768,7 +1768,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1842,7 +1842,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1913,7 +1913,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1987,7 +1987,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2061,7 +2061,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2138,7 +2138,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2212,7 +2212,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2288,7 +2288,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2369,7 +2369,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2437,7 +2437,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2508,7 +2508,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2580,7 +2580,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2650,7 +2650,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2725,7 +2725,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2798,7 +2798,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2872,7 +2872,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2942,7 +2942,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3010,7 +3010,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3074,7 +3074,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3142,7 +3142,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3210,7 +3210,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3278,7 +3278,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3358,7 +3358,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3435,7 +3435,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3511,7 +3511,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3584,7 +3584,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3663,7 +3663,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3739,7 +3739,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3807,7 +3807,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3877,7 +3877,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3948,7 +3948,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 

@@ -2164,6 +2164,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (id !== undefined) {
                 localVarQueryParameter['id'] = id;
             }
@@ -2202,6 +2208,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -2234,6 +2246,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (region !== undefined) {
                 localVarQueryParameter['region'] = region;
@@ -2281,6 +2299,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -2315,6 +2339,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (page !== undefined) {
                 localVarQueryParameter['page'] = page;
@@ -2355,6 +2385,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (timespan !== undefined) {
                 localVarQueryParameter['timespan'] = timespan;
             }
@@ -2390,6 +2426,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (region !== undefined) {
                 localVarQueryParameter['region'] = region;
@@ -2434,6 +2476,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (page !== undefined) {
                 localVarQueryParameter['page'] = page;
             }
@@ -2472,6 +2520,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -2505,6 +2559,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             localVarHeaderParameter['Accept'] = 'application/json';
 
@@ -2540,6 +2600,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (force !== undefined) {
                 localVarQueryParameter['force'] = force;
@@ -2579,6 +2645,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (force !== undefined) {
                 localVarQueryParameter['force'] = force;
@@ -2623,6 +2695,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (force !== undefined) {
                 localVarQueryParameter['force'] = force;
             }
@@ -2666,6 +2744,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (force !== undefined) {
                 localVarQueryParameter['force'] = force;
             }
@@ -2700,6 +2784,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (locale !== undefined) {
                 localVarQueryParameter['locale'] = locale;
@@ -2745,6 +2835,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (mode !== undefined) {
                 localVarQueryParameter['mode'] = mode;
@@ -2803,6 +2899,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (mode !== undefined) {
                 localVarQueryParameter['mode'] = mode;
             }
@@ -2860,6 +2962,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (mode !== undefined) {
                 localVarQueryParameter['mode'] = mode;
@@ -2927,6 +3035,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (mode !== undefined) {
                 localVarQueryParameter['mode'] = mode;
             }
@@ -2981,6 +3095,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3023,6 +3143,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3064,6 +3190,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             localVarHeaderParameter['Accept'] = 'application/json';
 
@@ -3111,6 +3243,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3148,6 +3286,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             localVarHeaderParameter['Accept'] = 'application/json';
 
@@ -3191,6 +3335,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3228,6 +3378,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             localVarHeaderParameter['Accept'] = 'application/json';
 
@@ -3271,6 +3427,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3312,6 +3474,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             localVarHeaderParameter['Accept'] = 'application/json';
 
@@ -3359,6 +3527,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3395,6 +3569,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (season !== undefined) {
                 localVarQueryParameter['season'] = season;
@@ -3445,6 +3625,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (season !== undefined) {
                 localVarQueryParameter['season'] = season;
@@ -3505,6 +3691,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (season !== undefined) {
                 localVarQueryParameter['season'] = season;
             }
@@ -3559,6 +3751,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3597,6 +3795,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3632,6 +3836,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (season !== undefined) {
                 localVarQueryParameter['season'] = season;
@@ -3676,6 +3886,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (season !== undefined) {
                 localVarQueryParameter['season'] = season;
             }
@@ -3719,6 +3935,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (season !== undefined) {
                 localVarQueryParameter['season'] = season;
@@ -3767,6 +3989,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (season !== undefined) {
                 localVarQueryParameter['season'] = season;
             }
@@ -3807,6 +4035,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (conference !== undefined) {
                 localVarQueryParameter['conference'] = conference;
@@ -3853,6 +4087,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (name !== undefined) {
                 localVarQueryParameter['name'] = name;
@@ -3904,6 +4144,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -3936,6 +4182,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             localVarHeaderParameter['Content-Type'] = 'application/json';
             localVarHeaderParameter['Accept'] = 'application/json';
@@ -3973,6 +4225,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -4007,6 +4265,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -4040,6 +4304,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             localVarHeaderParameter['Accept'] = 'application/json';
 
@@ -4085,6 +4355,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (mode !== undefined) {
                 localVarQueryParameter['mode'] = mode;
@@ -4138,6 +4414,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (mode !== undefined) {
                 localVarQueryParameter['mode'] = mode;
@@ -4194,6 +4476,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (size !== undefined) {
                 localVarQueryParameter['size'] = size;
             }
@@ -4236,6 +4524,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (size !== undefined) {
                 localVarQueryParameter['size'] = size;
@@ -4288,6 +4582,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (size !== undefined) {
                 localVarQueryParameter['size'] = size;
             }
@@ -4335,6 +4635,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             if (size !== undefined) {
                 localVarQueryParameter['size'] = size;
             }
@@ -4373,6 +4679,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
             localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -4407,6 +4719,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             if (category !== undefined) {
                 localVarQueryParameter['category'] = category;
@@ -4449,6 +4767,12 @@ export const ValorantApiAxiosParamCreator = function (configuration?: Configurat
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
+
+            // authentication api_key_query required
+            await setApiKeyToObject(localVarQueryParameter, "api_key", configuration)
+
+            // authentication api_key_header required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
             localVarHeaderParameter['Accept'] = 'application/json';
 

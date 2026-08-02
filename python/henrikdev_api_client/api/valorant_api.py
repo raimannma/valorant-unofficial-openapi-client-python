@@ -325,6 +325,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -588,6 +590,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -887,6 +891,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -1150,6 +1156,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -1430,6 +1438,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -1710,6 +1720,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -1995,6 +2007,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -2275,6 +2289,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -2538,6 +2554,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -2801,6 +2819,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -3084,6 +3104,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -3367,6 +3389,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -3665,6 +3689,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -3963,6 +3989,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -4231,6 +4259,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -4563,6 +4593,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -4910,6 +4942,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -5274,6 +5308,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -5653,6 +5689,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -5934,6 +5972,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -6230,6 +6270,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -6526,6 +6568,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -6837,6 +6881,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -7118,6 +7164,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -7414,6 +7462,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -7695,6 +7745,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -7991,6 +8043,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -8287,6 +8341,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -8598,6 +8654,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -8915,6 +8973,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -9249,6 +9309,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -9615,6 +9677,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -9881,6 +9945,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -10162,6 +10228,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -10462,6 +10530,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -10745,6 +10815,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -11063,6 +11135,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -11355,6 +11429,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -11672,6 +11748,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -11991,6 +12069,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -12257,6 +12337,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -12536,6 +12618,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -12802,6 +12886,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -13068,6 +13154,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -13334,6 +13422,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -13681,6 +13771,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -14013,6 +14105,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -14326,6 +14420,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -14624,6 +14720,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -14952,6 +15050,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -15265,6 +15365,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -15531,6 +15633,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -15814,6 +15918,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(
@@ -16095,6 +16201,8 @@ class ValorantApi:
 
         # authentication setting
         _auth_settings: List[str] = [
+            'api_key_query', 
+            'api_key_header'
         ]
 
         return self.api_client.param_serialize(

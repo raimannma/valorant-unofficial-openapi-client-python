@@ -77,11 +77,22 @@ Generate crosshair image (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $id = 'id_example'; // string | Crosshair code
 
@@ -104,7 +115,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -130,11 +141,22 @@ Get VLR event matches (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $event_id = 56; // int
 
@@ -158,7 +180,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -184,11 +206,22 @@ Get VLR esports events (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $region = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\EsportsV2Region(); // \OpenAPI\Client\Model\EsportsV2Region
 $type = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\EsportsV2EventType(); // \OpenAPI\Client\Model\EsportsV2EventType
@@ -216,7 +249,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -242,11 +275,22 @@ Get VLR match details (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $match_id = 56; // int
 
@@ -270,7 +314,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -296,11 +340,22 @@ Get VLR player matches (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $player = 56; // int
 $page = 56; // int
@@ -326,7 +381,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -352,11 +407,22 @@ Get VLR player (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $player = 56; // int
 $timespan = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\EsportsV2PlayerTimespan(); // \OpenAPI\Client\Model\EsportsV2PlayerTimespan
@@ -382,7 +448,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -408,11 +474,22 @@ Get esports schedule (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $region = 'region_example'; // string
 $league = 'league_example'; // string
@@ -438,7 +515,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -464,11 +541,22 @@ Get VLR team matches (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $team_id = 56; // int
 $page = 56; // int
@@ -494,7 +582,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -520,11 +608,22 @@ Get VLR team transactions (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $team_id = 56; // int
 
@@ -548,7 +647,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -574,11 +673,22 @@ Get VLR team (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $team_id = 56; // int
 
@@ -602,7 +712,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -628,11 +738,22 @@ Get account by PUUID (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $puuid = 'puuid_example'; // string | Player UUID
 $force = True; // bool | Bypass cache and refresh (optional)
@@ -658,7 +779,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -684,11 +805,22 @@ Get account by PUUID (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $puuid = 'puuid_example'; // string | Player UUID
 $force = True; // bool | Bypass cache and refresh (optional)
@@ -714,7 +846,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -740,11 +872,22 @@ Get account (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $name = 'name_example'; // string | Riot ID name
 $tag = 'tag_example'; // string | Riot ID tag
@@ -772,7 +915,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -798,11 +941,22 @@ Get account (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $name = 'name_example'; // string | Riot ID name
 $tag = 'tag_example'; // string | Riot ID tag
@@ -830,7 +984,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -856,11 +1010,22 @@ Get content (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $locale = 'locale_example'; // string | Locale code (e.g., en-US, de-DE) - optional
 
@@ -884,7 +1049,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -910,11 +1075,22 @@ Get matches by PUUID (v3)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $puuid = 'puuid_example'; // string | Player UUID
@@ -946,7 +1122,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -972,11 +1148,22 @@ Get matches by name (v3)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $name = 'name_example'; // string | Riot ID name
@@ -1010,7 +1197,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1036,11 +1223,22 @@ Get matches by PUUID (v4)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $platform = 'platform_example'; // string | Platform (pc, console)
@@ -1076,7 +1274,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1102,11 +1300,22 @@ Get matches by name (v4)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $platform = 'platform_example'; // string | Platform (pc, console)
@@ -1144,7 +1353,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1170,11 +1379,22 @@ Get MMR history by PUUID (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $puuid = 'puuid_example'; // string | Player UUID
@@ -1200,7 +1420,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1226,11 +1446,22 @@ Get MMR history by name (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $name = 'name_example'; // string | Riot ID name
@@ -1258,7 +1489,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1284,11 +1515,22 @@ Get MMR history by PUUID (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $platform = 'platform_example'; // string | Platform (pc, console)
@@ -1316,7 +1558,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1342,11 +1584,22 @@ Get MMR history by name (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $platform = 'platform_example'; // string | Platform (pc, console)
@@ -1376,7 +1629,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1402,11 +1655,22 @@ Get MMR by PUUID (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $puuid = 'puuid_example'; // string | Player UUID
@@ -1432,7 +1696,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1458,11 +1722,22 @@ Get MMR by name (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $name = 'name_example'; // string | Riot ID name
@@ -1490,7 +1765,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1516,11 +1791,22 @@ Get MMR by PUUID (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $puuid = 'puuid_example'; // string | Player UUID
@@ -1546,7 +1832,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1572,11 +1858,22 @@ Get MMR by name (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $name = 'name_example'; // string | Riot ID name
@@ -1604,7 +1901,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1630,11 +1927,22 @@ Get MMR by PUUID (v3)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $platform = 'platform_example'; // string | Platform (pc, console)
@@ -1662,7 +1970,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1688,11 +1996,22 @@ Get MMR by name (v3)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $platform = 'platform_example'; // string | Platform (pc, console)
@@ -1722,7 +2041,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1748,11 +2067,22 @@ Get leaderboard (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $season = 'season_example'; // string | Season ID (optional)
@@ -1782,7 +2112,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1808,11 +2138,22 @@ Get leaderboard (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $season = 'season_example'; // string | Season ID (optional)
@@ -1844,7 +2185,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1870,11 +2211,22 @@ Get leaderboard (v3)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $platform = 'platform_example'; // string | Platform (pc, console)
@@ -1910,7 +2262,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1936,11 +2288,22 @@ Get match details (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $match_id = 'match_id_example'; // string | Match UUID
 
@@ -1964,7 +2327,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1990,11 +2353,22 @@ Get match details (v4)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $match_id = 'match_id_example'; // string | Match UUID
@@ -2020,7 +2394,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2046,11 +2420,22 @@ Get Premier team by ID (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $id = 'id_example'; // string | Team UUID
 $season = 'season_example'; // string | Premier season id (optional)
@@ -2078,7 +2463,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2104,11 +2489,22 @@ Get Premier team history by ID (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $id = 'id_example'; // string | Team UUID
 $season = 'season_example'; // string | Premier season id (optional)
@@ -2134,7 +2530,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2160,11 +2556,22 @@ Get Premier team by name (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $name = 'name_example'; // string | Team name
 $tag = 'tag_example'; // string | Team tag
@@ -2194,7 +2601,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2220,11 +2627,22 @@ Get Premier team history by name (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $name = 'name_example'; // string | Team name
 $tag = 'tag_example'; // string | Team tag
@@ -2252,7 +2670,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2278,11 +2696,22 @@ Get Premier leaderboard (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $conference = 'conference_example'; // string | Conference filter (optional)
@@ -2312,7 +2741,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2338,11 +2767,22 @@ Search Premier teams (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $name = 'name_example'; // string | Team name to search for (optional)
 $tag = 'tag_example'; // string | Team tag to search for (optional)
@@ -2372,7 +2812,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2398,11 +2838,22 @@ Get queue status (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 
@@ -2426,7 +2877,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2452,11 +2903,22 @@ Get raw Riot API data (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $raw_v1_payload = new \OpenAPI\Client\Model\RawV1Payload(); // \OpenAPI\Client\Model\RawV1Payload
 
@@ -2480,7 +2942,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2506,11 +2968,22 @@ Get status (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 
@@ -2534,7 +3007,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2560,11 +3033,22 @@ Get featured store items
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $version = 'version_example'; // string | API version (v1, v2)
 
@@ -2588,7 +3072,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2614,11 +3098,22 @@ Get store offers
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $version = 'version_example'; // string | API version (v1, v2)
 
@@ -2642,7 +3137,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2668,11 +3163,22 @@ Get stored matches by name (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $name = 'name_example'; // string | Riot ID name
@@ -2706,7 +3212,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2732,11 +3238,22 @@ Get stored matches by PUUID (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $puuid = 'puuid_example'; // string | Player UUID
@@ -2768,7 +3285,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2794,11 +3311,22 @@ Get stored MMR history by name (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $name = 'name_example'; // string | Riot ID name
@@ -2828,7 +3356,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2854,11 +3382,22 @@ Get stored MMR history by PUUID (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $puuid = 'puuid_example'; // string | Player UUID
@@ -2886,7 +3425,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2912,11 +3451,22 @@ Get stored MMR history by name (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $platform = 'platform_example'; // string | Platform (pc, console)
@@ -2948,7 +3498,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2974,11 +3524,22 @@ Get stored MMR history by PUUID (v2)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 $platform = 'platform_example'; // string | Platform (pc, console)
@@ -3008,7 +3569,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3034,11 +3595,22 @@ Get game version (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $affinity = 'affinity_example'; // string | Region/affinity (e.g., na, eu, ap, kr)
 
@@ -3062,7 +3634,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3088,11 +3660,22 @@ Get website content (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $country_code = 'country_code_example'; // string | Country code (e.g., en-us, de-de)
 $category = 'category_example'; // string | Category filter (optional)
@@ -3118,7 +3701,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3144,11 +3727,22 @@ Get website entry by ID (v1)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: api_key_query
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+
+// Configure API key authorization: api_key_header
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new OpenAPI\Client\Api\ValorantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $db_id = 'db_id_example'; // string | Database ID of the website entry
 $country_code = 'country_code_example'; // string | Country code (e.g., en-us, de-de)
@@ -3174,7 +3768,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[api_key_query](../../README.md#api_key_query), [api_key_header](../../README.md#api_key_header)
 
 ### HTTP request headers
 

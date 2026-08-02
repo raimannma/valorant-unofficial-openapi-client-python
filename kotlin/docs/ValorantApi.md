@@ -96,7 +96,13 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -140,7 +146,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -188,7 +200,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -232,7 +250,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -278,7 +302,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -324,7 +354,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -370,7 +406,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -416,7 +458,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -460,7 +508,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -504,7 +558,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -550,7 +610,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -596,7 +662,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -644,7 +716,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -692,7 +770,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -736,7 +820,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -788,7 +878,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -842,7 +938,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -898,7 +1000,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -956,7 +1064,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1002,7 +1116,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1050,7 +1170,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1098,7 +1224,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1148,7 +1280,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1194,7 +1332,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1242,7 +1386,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1288,7 +1438,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1336,7 +1492,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1384,7 +1546,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1434,7 +1602,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1484,7 +1658,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1536,7 +1716,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1592,7 +1778,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1636,7 +1828,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1682,7 +1880,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1730,7 +1934,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1776,7 +1986,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1826,7 +2042,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1874,7 +2096,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1924,7 +2152,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -1974,7 +2208,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2018,7 +2258,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2062,7 +2308,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2106,7 +2358,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2150,7 +2408,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2194,7 +2458,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2248,7 +2518,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2300,7 +2576,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2350,7 +2632,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2398,7 +2686,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2450,7 +2744,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2500,7 +2800,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2544,7 +2850,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2590,7 +2902,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 
@@ -2636,7 +2954,13 @@ try {
 
 ### Authorization
 
-No authorization required
+
+Configure api_key_query:
+    ApiClient.apiKey["api_key"] = ""
+    ApiClient.apiKeyPrefix["api_key"] = ""
+Configure api_key_header:
+    ApiClient.apiKey["Authorization"] = ""
+    ApiClient.apiKeyPrefix["Authorization"] = ""
 
 ### HTTP request headers
 

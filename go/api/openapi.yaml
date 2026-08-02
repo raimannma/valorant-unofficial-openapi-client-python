@@ -7,6 +7,9 @@ info:
   version: 4.6.0
 servers:
 - url: https://api.henrikdev.xyz
+security:
+- api_key_header: []
+- api_key_query: []
 tags:
 - description: Valorant public API endpoints
   name: valorant

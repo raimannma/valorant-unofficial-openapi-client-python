@@ -94,7 +94,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -146,7 +146,7 @@ const { status, data } = await apiInstance.esportsEventV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -204,7 +204,7 @@ const { status, data } = await apiInstance.esportsEventsV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -256,7 +256,7 @@ const { status, data } = await apiInstance.esportsMatchV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -311,7 +311,7 @@ const { status, data } = await apiInstance.esportsPlayerMatchesV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -366,7 +366,7 @@ const { status, data } = await apiInstance.esportsPlayerV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -421,7 +421,7 @@ const { status, data } = await apiInstance.esportsSchedulesV1(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -477,7 +477,7 @@ const { status, data } = await apiInstance.esportsTeamMatchesV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -529,7 +529,7 @@ const { status, data } = await apiInstance.esportsTeamTransactionsV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -581,7 +581,7 @@ const { status, data } = await apiInstance.esportsTeamV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -636,7 +636,7 @@ const { status, data } = await apiInstance.getAccountByIdV1(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -692,7 +692,7 @@ const { status, data } = await apiInstance.getAccountByIdV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -751,7 +751,7 @@ const { status, data } = await apiInstance.getAccountV1(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -810,7 +810,7 @@ const { status, data } = await apiInstance.getAccountV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -863,7 +863,7 @@ const { status, data } = await apiInstance.getContentV1(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -928,7 +928,7 @@ const { status, data } = await apiInstance.getMatchesV3ById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -996,7 +996,7 @@ const { status, data } = await apiInstance.getMatchesV3ByName(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1067,7 +1067,7 @@ const { status, data } = await apiInstance.getMatchesV4ById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1141,7 +1141,7 @@ const { status, data } = await apiInstance.getMatchesV4ByName(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1197,7 +1197,7 @@ const { status, data } = await apiInstance.getMmrHistoryById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1256,7 +1256,7 @@ const { status, data } = await apiInstance.getMmrHistoryByName(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1315,7 +1315,7 @@ const { status, data } = await apiInstance.getMmrHistoryV2ById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1377,7 +1377,7 @@ const { status, data } = await apiInstance.getMmrHistoryV2ByName(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1433,7 +1433,7 @@ const { status, data } = await apiInstance.getMmrV1ById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1492,7 +1492,7 @@ const { status, data } = await apiInstance.getMmrV1ByName(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1548,7 +1548,7 @@ const { status, data } = await apiInstance.getMmrV2ById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1607,7 +1607,7 @@ const { status, data } = await apiInstance.getMmrV2ByName(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1666,7 +1666,7 @@ const { status, data } = await apiInstance.getMmrV3ById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1728,7 +1728,7 @@ const { status, data } = await apiInstance.getMmrV3ByName(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1790,7 +1790,7 @@ const { status, data } = await apiInstance.leaderboardV1(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1855,7 +1855,7 @@ const { status, data } = await apiInstance.leaderboardV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1926,7 +1926,7 @@ const { status, data } = await apiInstance.leaderboardV3(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1979,7 +1979,7 @@ const { status, data } = await apiInstance.matchV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2035,7 +2035,7 @@ const { status, data } = await apiInstance.matchV4(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2094,7 +2094,7 @@ const { status, data } = await apiInstance.premierById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2150,7 +2150,7 @@ const { status, data } = await apiInstance.premierByIdHistory(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2212,7 +2212,7 @@ const { status, data } = await apiInstance.premierByName(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2272,7 +2272,7 @@ const { status, data } = await apiInstance.premierByNameHistory(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2332,7 +2332,7 @@ const { status, data } = await apiInstance.premierLeaderboard(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2394,7 +2394,7 @@ const { status, data } = await apiInstance.premierSearch(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2447,7 +2447,7 @@ const { status, data } = await apiInstance.queueStatus(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2501,7 +2501,7 @@ const { status, data } = await apiInstance.raw(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2554,7 +2554,7 @@ const { status, data } = await apiInstance.status(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2607,7 +2607,7 @@ const { status, data } = await apiInstance.storeFeatured(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2660,7 +2660,7 @@ const { status, data } = await apiInstance.storeOffers(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2728,7 +2728,7 @@ const { status, data } = await apiInstance.storedMatches(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2793,7 +2793,7 @@ const { status, data } = await apiInstance.storedMatchesById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2855,7 +2855,7 @@ const { status, data } = await apiInstance.storedMmrHistory(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2914,7 +2914,7 @@ const { status, data } = await apiInstance.storedMmrHistoryById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2979,7 +2979,7 @@ const { status, data } = await apiInstance.storedMmrHistoryV2(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3041,7 +3041,7 @@ const { status, data } = await apiInstance.storedMmrHistoryV2ById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3094,7 +3094,7 @@ const { status, data } = await apiInstance.version(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3150,7 +3150,7 @@ const { status, data } = await apiInstance.website(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3206,7 +3206,7 @@ const { status, data } = await apiInstance.websiteById(
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 

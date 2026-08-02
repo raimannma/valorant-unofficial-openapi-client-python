@@ -73,6 +73,14 @@ Generate crosshair image (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final id = id_example; // String | Crosshair code
@@ -96,7 +104,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -113,6 +121,14 @@ Get VLR event matches (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final eventId = 56; // int | 
@@ -137,7 +153,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -154,6 +170,14 @@ Get VLR esports events (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final region = ; // EsportsV2Region | 
@@ -182,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -199,6 +223,14 @@ Get VLR match details (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final matchId = 56; // int | 
@@ -223,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -240,6 +272,14 @@ Get VLR player matches (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final player = 56; // int | 
@@ -266,7 +306,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -283,6 +323,14 @@ Get VLR player (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final player = 56; // int | 
@@ -309,7 +357,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -326,6 +374,14 @@ Get esports schedule (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final region = region_example; // String | 
@@ -352,7 +408,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -369,6 +425,14 @@ Get VLR team matches (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final teamId = 56; // int | 
@@ -395,7 +459,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -412,6 +476,14 @@ Get VLR team transactions (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final teamId = 56; // int | 
@@ -436,7 +508,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -453,6 +525,14 @@ Get VLR team (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final teamId = 56; // int | 
@@ -477,7 +557,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -494,6 +574,14 @@ Get account by PUUID (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final puuid = puuid_example; // String | Player UUID
@@ -520,7 +608,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -537,6 +625,14 @@ Get account by PUUID (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final puuid = puuid_example; // String | Player UUID
@@ -563,7 +659,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -580,6 +676,14 @@ Get account (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final name = name_example; // String | Riot ID name
@@ -608,7 +712,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -625,6 +729,14 @@ Get account (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final name = name_example; // String | Riot ID name
@@ -653,7 +765,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -670,6 +782,14 @@ Get content (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final locale = locale_example; // String | Locale code (e.g., en-US, de-DE) - optional
@@ -694,7 +814,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -711,6 +831,14 @@ Get matches by PUUID (v3)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -743,7 +871,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -760,6 +888,14 @@ Get matches by name (v3)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -794,7 +930,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -811,6 +947,14 @@ Get matches by PUUID (v4)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -847,7 +991,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -864,6 +1008,14 @@ Get matches by name (v4)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -902,7 +1054,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -919,6 +1071,14 @@ Get MMR history by PUUID (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -945,7 +1105,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -962,6 +1122,14 @@ Get MMR history by name (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -990,7 +1158,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1007,6 +1175,14 @@ Get MMR history by PUUID (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1035,7 +1211,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1052,6 +1228,14 @@ Get MMR history by name (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1082,7 +1266,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1099,6 +1283,14 @@ Get MMR by PUUID (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1125,7 +1317,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1142,6 +1334,14 @@ Get MMR by name (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1170,7 +1370,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1187,6 +1387,14 @@ Get MMR by PUUID (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1213,7 +1421,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1230,6 +1438,14 @@ Get MMR by name (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1258,7 +1474,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1275,6 +1491,14 @@ Get MMR by PUUID (v3)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1303,7 +1527,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1320,6 +1544,14 @@ Get MMR by name (v3)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1350,7 +1582,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1367,6 +1599,14 @@ Get leaderboard (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1397,7 +1637,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1414,6 +1654,14 @@ Get leaderboard (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1446,7 +1694,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1463,6 +1711,14 @@ Get leaderboard (v3)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1499,7 +1755,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1516,6 +1772,14 @@ Get match details (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final matchId = matchId_example; // String | Match UUID
@@ -1540,7 +1804,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1557,6 +1821,14 @@ Get match details (v4)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1583,7 +1855,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1600,6 +1872,14 @@ Get Premier team by ID (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final id = id_example; // String | Team UUID
@@ -1628,7 +1908,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1645,6 +1925,14 @@ Get Premier team history by ID (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final id = id_example; // String | Team UUID
@@ -1671,7 +1959,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1688,6 +1976,14 @@ Get Premier team by name (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final name = name_example; // String | Team name
@@ -1718,7 +2014,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1735,6 +2031,14 @@ Get Premier team history by name (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final name = name_example; // String | Team name
@@ -1763,7 +2067,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1780,6 +2084,14 @@ Get Premier leaderboard (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1810,7 +2122,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1827,6 +2139,14 @@ Search Premier teams (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final name = name_example; // String | Team name to search for (optional)
@@ -1857,7 +2177,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1874,6 +2194,14 @@ Get queue status (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1898,7 +2226,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1915,6 +2243,14 @@ Get raw Riot API data (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final rawV1Payload = RawV1Payload(); // RawV1Payload | 
@@ -1939,7 +2275,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1956,6 +2292,14 @@ Get status (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -1980,7 +2324,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1997,6 +2341,14 @@ Get featured store items
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final version = version_example; // String | API version (v1, v2)
@@ -2021,7 +2373,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2038,6 +2390,14 @@ Get store offers
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final version = version_example; // String | API version (v1, v2)
@@ -2062,7 +2422,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2079,6 +2439,14 @@ Get stored matches by name (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -2113,7 +2481,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2130,6 +2498,14 @@ Get stored matches by PUUID (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -2162,7 +2538,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2179,6 +2555,14 @@ Get stored MMR history by name (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -2209,7 +2593,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2226,6 +2610,14 @@ Get stored MMR history by PUUID (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -2254,7 +2646,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2271,6 +2663,14 @@ Get stored MMR history by name (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -2303,7 +2703,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2320,6 +2720,14 @@ Get stored MMR history by PUUID (v2)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -2350,7 +2758,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2367,6 +2775,14 @@ Get game version (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final affinity = affinity_example; // String | Region/affinity (e.g., na, eu, ap, kr)
@@ -2391,7 +2807,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2408,6 +2824,14 @@ Get website content (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final countryCode = countryCode_example; // String | Country code (e.g., en-us, de-de)
@@ -2434,7 +2858,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2451,6 +2875,14 @@ Get website entry by ID (v1)
 ### Example
 ```dart
 import 'package:henrikdev_api_client/api.dart';
+// TODO Configure API key authorization: api_key_query
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_query').apiKeyPrefix = 'Bearer';
+// TODO Configure API key authorization: api_key_header
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKey = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//defaultApiClient.getAuthentication<ApiKeyAuth>('api_key_header').apiKeyPrefix = 'Bearer';
 
 final api_instance = ValorantApi();
 final dbId = dbId_example; // String | Database ID of the website entry
@@ -2477,7 +2909,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 

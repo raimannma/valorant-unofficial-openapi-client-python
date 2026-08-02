@@ -67,6 +67,8 @@ Generate crosshair image (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -79,6 +81,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -108,7 +126,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -132,6 +150,8 @@ Get VLR event matches (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -145,6 +165,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -176,7 +212,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -200,6 +236,8 @@ Get VLR esports events (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -215,6 +253,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -250,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -274,6 +328,8 @@ Get VLR match details (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -287,6 +343,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -318,7 +390,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -342,6 +414,8 @@ Get VLR player matches (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -355,6 +429,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -388,7 +478,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -412,6 +502,8 @@ Get VLR player (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -426,6 +518,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -459,7 +567,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -483,6 +591,8 @@ Get esports schedule (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -496,6 +606,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -529,7 +655,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -554,6 +680,8 @@ Get VLR team matches (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -567,6 +695,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -600,7 +744,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -624,6 +768,8 @@ Get VLR team transactions (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -637,6 +783,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -668,7 +830,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -692,6 +854,8 @@ Get VLR team (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -705,6 +869,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -736,7 +916,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -760,6 +940,8 @@ Get account by PUUID (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -773,6 +955,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -806,7 +1004,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -831,6 +1029,8 @@ Get account by PUUID (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -844,6 +1044,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -877,7 +1093,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -902,6 +1118,8 @@ Get account (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -915,6 +1133,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -950,7 +1184,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -975,6 +1209,8 @@ Get account (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -988,6 +1224,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1023,7 +1275,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1048,6 +1300,8 @@ Get content (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1061,6 +1315,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1092,7 +1362,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1117,6 +1387,8 @@ Get matches by PUUID (v3)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1130,6 +1402,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1169,7 +1457,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1194,6 +1482,8 @@ Get matches by name (v3)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1208,6 +1498,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1249,7 +1555,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1274,6 +1580,8 @@ Get matches by PUUID (v4)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1287,6 +1595,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1330,7 +1654,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1355,6 +1679,8 @@ Get matches by name (v4)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1368,6 +1694,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1413,7 +1755,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1438,6 +1780,8 @@ Get MMR history by PUUID (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1451,6 +1795,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1484,7 +1844,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1509,6 +1869,8 @@ Get MMR history by name (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1522,6 +1884,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1557,7 +1935,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1582,6 +1960,8 @@ Get MMR history by PUUID (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1595,6 +1975,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1630,7 +2026,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1655,6 +2051,8 @@ Get MMR history by name (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1668,6 +2066,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1705,7 +2119,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1730,6 +2144,8 @@ Get MMR by PUUID (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1743,6 +2159,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1776,7 +2208,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1801,6 +2233,8 @@ Get MMR by name (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1814,6 +2248,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1849,7 +2299,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1874,6 +2324,8 @@ Get MMR by PUUID (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1887,6 +2339,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1920,7 +2388,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -1945,6 +2413,8 @@ Get MMR by name (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -1958,6 +2428,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -1993,7 +2479,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2018,6 +2504,8 @@ Get MMR by PUUID (v3)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2031,6 +2519,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2066,7 +2570,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2091,6 +2595,8 @@ Get MMR by name (v3)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2104,6 +2610,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2141,7 +2663,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2166,6 +2688,8 @@ Get leaderboard (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2178,6 +2702,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2215,7 +2755,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2240,6 +2780,8 @@ Get leaderboard (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2253,6 +2795,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2292,7 +2850,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2317,6 +2875,8 @@ Get leaderboard (v3)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2330,6 +2890,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2373,7 +2949,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2398,6 +2974,8 @@ Get match details (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2411,6 +2989,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2442,7 +3036,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2467,6 +3061,8 @@ Get match details (v4)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2480,6 +3076,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2513,7 +3125,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2538,6 +3150,8 @@ Get Premier team by ID (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2551,6 +3165,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2586,7 +3216,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2611,6 +3241,8 @@ Get Premier team history by ID (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2624,6 +3256,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2657,7 +3305,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2682,6 +3330,8 @@ Get Premier team by name (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2695,6 +3345,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2732,7 +3398,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2758,6 +3424,8 @@ Get Premier team history by name (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2771,6 +3439,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2806,7 +3490,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2829,6 +3513,8 @@ Get Premier leaderboard (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2842,6 +3528,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2879,7 +3581,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2904,6 +3606,8 @@ Search Premier teams (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2917,6 +3621,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -2954,7 +3674,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -2979,6 +3699,8 @@ Get queue status (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -2992,6 +3714,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3023,7 +3761,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3048,6 +3786,8 @@ Get raw Riot API data (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3062,6 +3802,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3093,7 +3849,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3118,6 +3874,8 @@ Get status (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3131,6 +3889,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3162,7 +3936,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3187,6 +3961,8 @@ Get featured store items
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3200,6 +3976,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3231,7 +4023,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3256,6 +4048,8 @@ Get store offers
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3269,6 +4063,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3300,7 +4110,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3325,6 +4135,8 @@ Get stored matches by name (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3338,6 +4150,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3379,7 +4207,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3404,6 +4232,8 @@ Get stored matches by PUUID (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3417,6 +4247,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3456,7 +4302,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3481,6 +4327,8 @@ Get stored MMR history by name (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3494,6 +4342,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3531,7 +4395,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3556,6 +4420,8 @@ Get stored MMR history by PUUID (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3569,6 +4435,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3604,7 +4486,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3629,6 +4511,8 @@ Get stored MMR history by name (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3642,6 +4526,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3681,7 +4581,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3706,6 +4606,8 @@ Get stored MMR history by PUUID (v2)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3719,6 +4621,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3756,7 +4674,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3781,6 +4699,8 @@ Get game version (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3794,6 +4714,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3825,7 +4761,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3850,6 +4786,8 @@ Get website content (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3863,6 +4801,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3896,7 +4850,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
@@ -3921,6 +4875,8 @@ Get website entry by ID (v1)
 
 ### Example
 
+* Api Key Authentication (api_key_query):
+* Api Key Authentication (api_key_header):
 
 ```python
 import henrikdev_api_client
@@ -3934,6 +4890,22 @@ configuration = henrikdev_api_client.Configuration(
     host = "https://api.henrikdev.xyz"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key_query
+configuration.api_key['api_key_query'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_query'] = 'Bearer'
+
+# Configure API key authorization: api_key_header
+configuration.api_key['api_key_header'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['api_key_header'] = 'Bearer'
 
 # Enter a context with an instance of the API client
 with henrikdev_api_client.ApiClient(configuration) as api_client:
@@ -3967,7 +4939,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key_query](../README.md#api_key_query), [api_key_header](../README.md#api_key_header)
 
 ### HTTP request headers
 
