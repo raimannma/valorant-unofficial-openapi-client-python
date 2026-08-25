@@ -88,7 +88,7 @@ export interface BundleItem {
 export interface ContentItem {
     'assetName': string;
     'id'?: string | null;
-    'localizedNames'?: { [key: string]: string; };
+    'localizedNames'?: { [key: string]: string; } | null;
     'name': string;
 }
 export interface ContentV1 {

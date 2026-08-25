@@ -87,8 +87,7 @@ class MatchesV4DataKill(BaseModel):
         _items = []
         if self.assistants:
             for _item_assistants in self.assistants:
-                if _item_assistants:
-                    _items.append(_item_assistants.to_dict())
+                _items.append(_item_assistants.to_dict() if _item_assistants is not None else None)
             _dict['assistants'] = _items
         # override the default output from pydantic by calling `to_dict()` of killer
         if self.killer:
@@ -100,8 +99,7 @@ class MatchesV4DataKill(BaseModel):
         _items = []
         if self.player_locations:
             for _item_player_locations in self.player_locations:
-                if _item_player_locations:
-                    _items.append(_item_player_locations.to_dict())
+                _items.append(_item_player_locations.to_dict() if _item_player_locations is not None else None)
             _dict['player_locations'] = _items
         # override the default output from pydantic by calling `to_dict()` of victim
         if self.victim:

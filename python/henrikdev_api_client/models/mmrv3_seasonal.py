@@ -83,8 +83,7 @@ class MMRV3Seasonal(BaseModel):
         _items = []
         if self.act_wins:
             for _item_act_wins in self.act_wins:
-                if _item_act_wins:
-                    _items.append(_item_act_wins.to_dict())
+                _items.append(_item_act_wins.to_dict() if _item_act_wins is not None else None)
             _dict['act_wins'] = _items
         # override the default output from pydantic by calling `to_dict()` of end_tier
         if self.end_tier:

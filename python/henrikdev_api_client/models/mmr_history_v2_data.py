@@ -79,8 +79,7 @@ class MMRHistoryV2Data(BaseModel):
         _items = []
         if self.history:
             for _item_history in self.history:
-                if _item_history:
-                    _items.append(_item_history.to_dict())
+                _items.append(_item_history.to_dict() if _item_history is not None else None)
             _dict['history'] = _items
         return _dict
 

@@ -114,9 +114,9 @@ func (o *ContentItem) UnsetId() {
 	o.Id.Unset()
 }
 
-// GetLocalizedNames returns the LocalizedNames field value if set, zero value otherwise.
+// GetLocalizedNames returns the LocalizedNames field value if set, zero value otherwise (both if not set or set to explicit null).
 func (o *ContentItem) GetLocalizedNames() map[string]string {
-	if o == nil || IsNil(o.LocalizedNames) {
+	if o == nil {
 		var ret map[string]string
 		return ret
 	}
@@ -125,6 +125,7 @@ func (o *ContentItem) GetLocalizedNames() map[string]string {
 
 // GetLocalizedNamesOk returns a tuple with the LocalizedNames field value if set, nil otherwise
 // and a boolean to check if the value has been set.
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
 func (o *ContentItem) GetLocalizedNamesOk() (map[string]string, bool) {
 	if o == nil || IsNil(o.LocalizedNames) {
 		return map[string]string{}, false
@@ -184,7 +185,7 @@ func (o ContentItem) ToMap() (map[string]interface{}, error) {
 	if o.Id.IsSet() {
 		toSerialize["id"] = o.Id.Get()
 	}
-	if !IsNil(o.LocalizedNames) {
+	if o.LocalizedNames != nil {
 		toSerialize["localizedNames"] = o.LocalizedNames
 	}
 	toSerialize["name"] = o.Name

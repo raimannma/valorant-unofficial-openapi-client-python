@@ -80,8 +80,7 @@ class EsportsV2EventPlacement(BaseModel):
         _items = []
         if self.placements:
             for _item_placements in self.placements:
-                if _item_placements:
-                    _items.append(_item_placements.to_dict())
+                _items.append(_item_placements.to_dict() if _item_placements is not None else None)
             _dict['placements'] = _items
         return _dict
 

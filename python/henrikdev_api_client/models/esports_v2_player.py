@@ -89,8 +89,7 @@ class EsportsV2Player(BaseModel):
         _items = []
         if self.agent_stats:
             for _item_agent_stats in self.agent_stats:
-                if _item_agent_stats:
-                    _items.append(_item_agent_stats.to_dict())
+                _items.append(_item_agent_stats.to_dict() if _item_agent_stats is not None else None)
             _dict['agent_stats'] = _items
         # override the default output from pydantic by calling `to_dict()` of country
         if self.country:
@@ -99,29 +98,25 @@ class EsportsV2Player(BaseModel):
         _items = []
         if self.current_teams:
             for _item_current_teams in self.current_teams:
-                if _item_current_teams:
-                    _items.append(_item_current_teams.to_dict())
+                _items.append(_item_current_teams.to_dict() if _item_current_teams is not None else None)
             _dict['current_teams'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in event_placements (list)
         _items = []
         if self.event_placements:
             for _item_event_placements in self.event_placements:
-                if _item_event_placements:
-                    _items.append(_item_event_placements.to_dict())
+                _items.append(_item_event_placements.to_dict() if _item_event_placements is not None else None)
             _dict['event_placements'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in past_teams (list)
         _items = []
         if self.past_teams:
             for _item_past_teams in self.past_teams:
-                if _item_past_teams:
-                    _items.append(_item_past_teams.to_dict())
+                _items.append(_item_past_teams.to_dict() if _item_past_teams is not None else None)
             _dict['past_teams'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in socials (list)
         _items = []
         if self.socials:
             for _item_socials in self.socials:
-                if _item_socials:
-                    _items.append(_item_socials.to_dict())
+                _items.append(_item_socials.to_dict() if _item_socials is not None else None)
             _dict['socials'] = _items
         # set to None if avatar (nullable) is None
         # and model_fields_set contains the field

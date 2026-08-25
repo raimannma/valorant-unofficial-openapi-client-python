@@ -3431,6 +3431,8 @@ components:
         localizedNames:
           additionalProperties:
             type: string
+          nullable: true
+          type: object
         name:
           type: string
       required:
@@ -19338,6 +19340,7 @@ components:
           additionalProperties:
             format: int32
             type: integer
+          type: object
         IsDirectPurchase:
           type: boolean
         OfferID:

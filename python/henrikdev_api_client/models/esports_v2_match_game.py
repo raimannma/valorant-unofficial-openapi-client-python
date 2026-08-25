@@ -80,15 +80,13 @@ class EsportsV2MatchGame(BaseModel):
         _items = []
         if self.rounds:
             for _item_rounds in self.rounds:
-                if _item_rounds:
-                    _items.append(_item_rounds.to_dict())
+                _items.append(_item_rounds.to_dict() if _item_rounds is not None else None)
             _dict['rounds'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in teams (list)
         _items = []
         if self.teams:
             for _item_teams in self.teams:
-                if _item_teams:
-                    _items.append(_item_teams.to_dict())
+                _items.append(_item_teams.to_dict() if _item_teams is not None else None)
             _dict['teams'] = _items
         # set to None if duration_in_s (nullable) is None
         # and model_fields_set contains the field

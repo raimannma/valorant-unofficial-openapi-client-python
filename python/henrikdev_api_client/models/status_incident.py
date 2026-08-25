@@ -84,15 +84,13 @@ class StatusIncident(BaseModel):
         _items = []
         if self.titles:
             for _item_titles in self.titles:
-                if _item_titles:
-                    _items.append(_item_titles.to_dict())
+                _items.append(_item_titles.to_dict() if _item_titles is not None else None)
             _dict['titles'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in updates (list)
         _items = []
         if self.updates:
             for _item_updates in self.updates:
-                if _item_updates:
-                    _items.append(_item_updates.to_dict())
+                _items.append(_item_updates.to_dict() if _item_updates is not None else None)
             _dict['updates'] = _items
         # set to None if archive_at (nullable) is None
         # and model_fields_set contains the field

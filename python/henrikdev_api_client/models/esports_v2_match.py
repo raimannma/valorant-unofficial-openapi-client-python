@@ -92,15 +92,13 @@ class EsportsV2Match(BaseModel):
         _items = []
         if self.games:
             for _item_games in self.games:
-                if _item_games:
-                    _items.append(_item_games.to_dict())
+                _items.append(_item_games.to_dict() if _item_games is not None else None)
             _dict['games'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in head_to_head (list)
         _items = []
         if self.head_to_head:
             for _item_head_to_head in self.head_to_head:
-                if _item_head_to_head:
-                    _items.append(_item_head_to_head.to_dict())
+                _items.append(_item_head_to_head.to_dict() if _item_head_to_head is not None else None)
             _dict['head_to_head'] = _items
         # override the default output from pydantic by calling `to_dict()` of metadata
         if self.metadata:
@@ -109,8 +107,7 @@ class EsportsV2Match(BaseModel):
         _items = []
         if self.past_matches:
             for _item_past_matches in self.past_matches:
-                if _item_past_matches:
-                    _items.append(_item_past_matches.to_dict())
+                _items.append(_item_past_matches.to_dict() if _item_past_matches is not None else None)
             _dict['past_matches'] = _items
         # override the default output from pydantic by calling `to_dict()` of performance
         if self.performance:
@@ -119,22 +116,19 @@ class EsportsV2Match(BaseModel):
         _items = []
         if self.streams:
             for _item_streams in self.streams:
-                if _item_streams:
-                    _items.append(_item_streams.to_dict())
+                _items.append(_item_streams.to_dict() if _item_streams is not None else None)
             _dict['streams'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in teams (list)
         _items = []
         if self.teams:
             for _item_teams in self.teams:
-                if _item_teams:
-                    _items.append(_item_teams.to_dict())
+                _items.append(_item_teams.to_dict() if _item_teams is not None else None)
             _dict['teams'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in vods (list)
         _items = []
         if self.vods:
             for _item_vods in self.vods:
-                if _item_vods:
-                    _items.append(_item_vods.to_dict())
+                _items.append(_item_vods.to_dict() if _item_vods is not None else None)
             _dict['vods'] = _items
         # set to None if economy (nullable) is None
         # and model_fields_set contains the field

@@ -89,8 +89,7 @@ class MMRV3Data(BaseModel):
         _items = []
         if self.seasonal:
             for _item_seasonal in self.seasonal:
-                if _item_seasonal:
-                    _items.append(_item_seasonal.to_dict())
+                _items.append(_item_seasonal.to_dict() if _item_seasonal is not None else None)
             _dict['seasonal'] = _items
         # set to None if peak (nullable) is None
         # and model_fields_set contains the field

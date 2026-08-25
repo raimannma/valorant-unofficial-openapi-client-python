@@ -97,8 +97,7 @@ class QueueStatusV1Data(BaseModel):
         _items = []
         if self.maps:
             for _item_maps in self.maps:
-                if _item_maps:
-                    _items.append(_item_maps.to_dict())
+                _items.append(_item_maps.to_dict() if _item_maps is not None else None)
             _dict['maps'] = _items
         # override the default output from pydantic by calling `to_dict()` of party_size
         if self.party_size:
@@ -107,8 +106,7 @@ class QueueStatusV1Data(BaseModel):
         _items = []
         if self.skill_disparity:
             for _item_skill_disparity in self.skill_disparity:
-                if _item_skill_disparity:
-                    _items.append(_item_skill_disparity.to_dict())
+                _items.append(_item_skill_disparity.to_dict() if _item_skill_disparity is not None else None)
             _dict['skill_disparity'] = _items
         return _dict
 

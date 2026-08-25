@@ -89,106 +89,91 @@ class ContentV1(BaseModel):
         _items = []
         if self.acts:
             for _item_acts in self.acts:
-                if _item_acts:
-                    _items.append(_item_acts.to_dict())
+                _items.append(_item_acts.to_dict() if _item_acts is not None else None)
             _dict['acts'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in ceremonies (list)
         _items = []
         if self.ceremonies:
             for _item_ceremonies in self.ceremonies:
-                if _item_ceremonies:
-                    _items.append(_item_ceremonies.to_dict())
+                _items.append(_item_ceremonies.to_dict() if _item_ceremonies is not None else None)
             _dict['ceremonies'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in characters (list)
         _items = []
         if self.characters:
             for _item_characters in self.characters:
-                if _item_characters:
-                    _items.append(_item_characters.to_dict())
+                _items.append(_item_characters.to_dict() if _item_characters is not None else None)
             _dict['characters'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in charm_levels (list)
         _items = []
         if self.charm_levels:
             for _item_charm_levels in self.charm_levels:
-                if _item_charm_levels:
-                    _items.append(_item_charm_levels.to_dict())
+                _items.append(_item_charm_levels.to_dict() if _item_charm_levels is not None else None)
             _dict['charmLevels'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in charms (list)
         _items = []
         if self.charms:
             for _item_charms in self.charms:
-                if _item_charms:
-                    _items.append(_item_charms.to_dict())
+                _items.append(_item_charms.to_dict() if _item_charms is not None else None)
             _dict['charms'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in chromas (list)
         _items = []
         if self.chromas:
             for _item_chromas in self.chromas:
-                if _item_chromas:
-                    _items.append(_item_chromas.to_dict())
+                _items.append(_item_chromas.to_dict() if _item_chromas is not None else None)
             _dict['chromas'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in equips (list)
         _items = []
         if self.equips:
             for _item_equips in self.equips:
-                if _item_equips:
-                    _items.append(_item_equips.to_dict())
+                _items.append(_item_equips.to_dict() if _item_equips is not None else None)
             _dict['equips'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in game_modes (list)
         _items = []
         if self.game_modes:
             for _item_game_modes in self.game_modes:
-                if _item_game_modes:
-                    _items.append(_item_game_modes.to_dict())
+                _items.append(_item_game_modes.to_dict() if _item_game_modes is not None else None)
             _dict['gameModes'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in maps (list)
         _items = []
         if self.maps:
             for _item_maps in self.maps:
-                if _item_maps:
-                    _items.append(_item_maps.to_dict())
+                _items.append(_item_maps.to_dict() if _item_maps is not None else None)
             _dict['maps'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in player_cards (list)
         _items = []
         if self.player_cards:
             for _item_player_cards in self.player_cards:
-                if _item_player_cards:
-                    _items.append(_item_player_cards.to_dict())
+                _items.append(_item_player_cards.to_dict() if _item_player_cards is not None else None)
             _dict['playerCards'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in player_titles (list)
         _items = []
         if self.player_titles:
             for _item_player_titles in self.player_titles:
-                if _item_player_titles:
-                    _items.append(_item_player_titles.to_dict())
+                _items.append(_item_player_titles.to_dict() if _item_player_titles is not None else None)
             _dict['playerTitles'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in skin_levels (list)
         _items = []
         if self.skin_levels:
             for _item_skin_levels in self.skin_levels:
-                if _item_skin_levels:
-                    _items.append(_item_skin_levels.to_dict())
+                _items.append(_item_skin_levels.to_dict() if _item_skin_levels is not None else None)
             _dict['skinLevels'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in skins (list)
         _items = []
         if self.skins:
             for _item_skins in self.skins:
-                if _item_skins:
-                    _items.append(_item_skins.to_dict())
+                _items.append(_item_skins.to_dict() if _item_skins is not None else None)
             _dict['skins'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in spray_levels (list)
         _items = []
         if self.spray_levels:
             for _item_spray_levels in self.spray_levels:
-                if _item_spray_levels:
-                    _items.append(_item_spray_levels.to_dict())
+                _items.append(_item_spray_levels.to_dict() if _item_spray_levels is not None else None)
             _dict['sprayLevels'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in sprays (list)
         _items = []
         if self.sprays:
             for _item_sprays in self.sprays:
-                if _item_sprays:
-                    _items.append(_item_sprays.to_dict())
+                _items.append(_item_sprays.to_dict() if _item_sprays is not None else None)
             _dict['sprays'] = _items
         return _dict
 

@@ -76,15 +76,13 @@ class EsportsV2MatchPerformance(BaseModel):
         _items = []
         if self.kill_matrix:
             for _item_kill_matrix in self.kill_matrix:
-                if _item_kill_matrix:
-                    _items.append(_item_kill_matrix.to_dict())
+                _items.append(_item_kill_matrix.to_dict() if _item_kill_matrix is not None else None)
             _dict['kill_matrix'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in player_performances (list)
         _items = []
         if self.player_performances:
             for _item_player_performances in self.player_performances:
-                if _item_player_performances:
-                    _items.append(_item_player_performances.to_dict())
+                _items.append(_item_player_performances.to_dict() if _item_player_performances is not None else None)
             _dict['player_performances'] = _items
         return _dict
 

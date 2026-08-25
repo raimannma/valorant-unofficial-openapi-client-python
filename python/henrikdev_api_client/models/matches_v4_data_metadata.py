@@ -93,8 +93,7 @@ class MatchesV4DataMetadata(BaseModel):
         _items = []
         if self.party_rr_penaltys:
             for _item_party_rr_penaltys in self.party_rr_penaltys:
-                if _item_party_rr_penaltys:
-                    _items.append(_item_party_rr_penaltys.to_dict())
+                _items.append(_item_party_rr_penaltys.to_dict() if _item_party_rr_penaltys is not None else None)
             _dict['party_rr_penaltys'] = _items
         # override the default output from pydantic by calling `to_dict()` of queue
         if self.queue:

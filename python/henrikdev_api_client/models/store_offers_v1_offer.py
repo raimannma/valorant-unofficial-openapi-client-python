@@ -78,8 +78,7 @@ class StoreOffersV1Offer(BaseModel):
         _items = []
         if self.rewards:
             for _item_rewards in self.rewards:
-                if _item_rewards:
-                    _items.append(_item_rewards.to_dict())
+                _items.append(_item_rewards.to_dict() if _item_rewards is not None else None)
             _dict['Rewards'] = _items
         return _dict
 

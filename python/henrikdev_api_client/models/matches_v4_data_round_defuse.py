@@ -85,8 +85,7 @@ class MatchesV4DataRoundDefuse(BaseModel):
         _items = []
         if self.player_locations:
             for _item_player_locations in self.player_locations:
-                if _item_player_locations:
-                    _items.append(_item_player_locations.to_dict())
+                _items.append(_item_player_locations.to_dict() if _item_player_locations is not None else None)
             _dict['player_locations'] = _items
         return _dict
 

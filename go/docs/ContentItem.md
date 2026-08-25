@@ -108,6 +108,16 @@ SetLocalizedNames sets LocalizedNames field to given value.
 
 HasLocalizedNames returns a boolean if a field has been set.
 
+### SetLocalizedNamesNil
+
+`func (o *ContentItem) SetLocalizedNamesNil(b bool)`
+
+ SetLocalizedNamesNil sets the value for LocalizedNames to be an explicit nil
+
+### UnsetLocalizedNames
+`func (o *ContentItem) UnsetLocalizedNames()`
+
+UnsetLocalizedNames ensures that no value is present for LocalizedNames, not even an explicit nil
 ### GetName
 
 `func (o *ContentItem) GetName() string`

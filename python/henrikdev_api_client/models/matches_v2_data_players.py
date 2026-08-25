@@ -76,22 +76,19 @@ class MatchesV2DataPlayers(BaseModel):
         _items = []
         if self.all_players:
             for _item_all_players in self.all_players:
-                if _item_all_players:
-                    _items.append(_item_all_players.to_dict())
+                _items.append(_item_all_players.to_dict() if _item_all_players is not None else None)
             _dict['all_players'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in blue (list)
         _items = []
         if self.blue:
             for _item_blue in self.blue:
-                if _item_blue:
-                    _items.append(_item_blue.to_dict())
+                _items.append(_item_blue.to_dict() if _item_blue is not None else None)
             _dict['blue'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in red (list)
         _items = []
         if self.red:
             for _item_red in self.red:
-                if _item_red:
-                    _items.append(_item_red.to_dict())
+                _items.append(_item_red.to_dict() if _item_red is not None else None)
             _dict['red'] = _items
         return _dict
 

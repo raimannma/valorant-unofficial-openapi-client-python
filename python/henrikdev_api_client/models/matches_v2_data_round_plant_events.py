@@ -87,8 +87,7 @@ class MatchesV2DataRoundPlantEvents(BaseModel):
         _items = []
         if self.player_locations_on_plant:
             for _item_player_locations_on_plant in self.player_locations_on_plant:
-                if _item_player_locations_on_plant:
-                    _items.append(_item_player_locations_on_plant.to_dict())
+                _items.append(_item_player_locations_on_plant.to_dict() if _item_player_locations_on_plant is not None else None)
             _dict['player_locations_on_plant'] = _items
         # set to None if plant_location (nullable) is None
         # and model_fields_set contains the field

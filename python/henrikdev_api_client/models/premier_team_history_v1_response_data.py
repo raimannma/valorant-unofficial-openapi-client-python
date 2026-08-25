@@ -76,15 +76,13 @@ class PremierTeamHistoryV1ResponseData(BaseModel):
         _items = []
         if self.league_matches:
             for _item_league_matches in self.league_matches:
-                if _item_league_matches:
-                    _items.append(_item_league_matches.to_dict())
+                _items.append(_item_league_matches.to_dict() if _item_league_matches is not None else None)
             _dict['league_matches'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in tournament_matches (list)
         _items = []
         if self.tournament_matches:
             for _item_tournament_matches in self.tournament_matches:
-                if _item_tournament_matches:
-                    _items.append(_item_tournament_matches.to_dict())
+                _items.append(_item_tournament_matches.to_dict() if _item_tournament_matches is not None else None)
             _dict['tournament_matches'] = _items
         return _dict
 

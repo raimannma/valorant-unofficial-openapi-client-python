@@ -81,8 +81,7 @@ class StatusIncidentUpdate(BaseModel):
         _items = []
         if self.translations:
             for _item_translations in self.translations:
-                if _item_translations:
-                    _items.append(_item_translations.to_dict())
+                _items.append(_item_translations.to_dict() if _item_translations is not None else None)
             _dict['translations'] = _items
         return _dict
 

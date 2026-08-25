@@ -93,8 +93,7 @@ class MatchesV2DataKill(BaseModel):
         _items = []
         if self.assistants:
             for _item_assistants in self.assistants:
-                if _item_assistants:
-                    _items.append(_item_assistants.to_dict())
+                _items.append(_item_assistants.to_dict() if _item_assistants is not None else None)
             _dict['assistants'] = _items
         # override the default output from pydantic by calling `to_dict()` of damage_weapon_assets
         if self.damage_weapon_assets:
@@ -103,8 +102,7 @@ class MatchesV2DataKill(BaseModel):
         _items = []
         if self.player_locations_on_kill:
             for _item_player_locations_on_kill in self.player_locations_on_kill:
-                if _item_player_locations_on_kill:
-                    _items.append(_item_player_locations_on_kill.to_dict())
+                _items.append(_item_player_locations_on_kill.to_dict() if _item_player_locations_on_kill is not None else None)
             _dict['player_locations_on_kill'] = _items
         # override the default output from pydantic by calling `to_dict()` of victim_death_location
         if self.victim_death_location:

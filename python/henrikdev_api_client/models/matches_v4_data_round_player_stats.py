@@ -88,8 +88,7 @@ class MatchesV4DataRoundPlayerStats(BaseModel):
         _items = []
         if self.damage_events:
             for _item_damage_events in self.damage_events:
-                if _item_damage_events:
-                    _items.append(_item_damage_events.to_dict())
+                _items.append(_item_damage_events.to_dict() if _item_damage_events is not None else None)
             _dict['damage_events'] = _items
         # override the default output from pydantic by calling `to_dict()` of economy
         if self.economy:

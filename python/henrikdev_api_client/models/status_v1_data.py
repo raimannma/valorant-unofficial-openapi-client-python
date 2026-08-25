@@ -75,15 +75,13 @@ class StatusV1Data(BaseModel):
         _items = []
         if self.incidents:
             for _item_incidents in self.incidents:
-                if _item_incidents:
-                    _items.append(_item_incidents.to_dict())
+                _items.append(_item_incidents.to_dict() if _item_incidents is not None else None)
             _dict['incidents'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in maintenances (list)
         _items = []
         if self.maintenances:
             for _item_maintenances in self.maintenances:
-                if _item_maintenances:
-                    _items.append(_item_maintenances.to_dict())
+                _items.append(_item_maintenances.to_dict() if _item_maintenances is not None else None)
             _dict['maintenances'] = _items
         return _dict
 

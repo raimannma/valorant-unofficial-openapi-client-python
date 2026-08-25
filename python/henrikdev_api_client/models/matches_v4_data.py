@@ -86,15 +86,13 @@ class MatchesV4Data(BaseModel):
         _items = []
         if self.coaches:
             for _item_coaches in self.coaches:
-                if _item_coaches:
-                    _items.append(_item_coaches.to_dict())
+                _items.append(_item_coaches.to_dict() if _item_coaches is not None else None)
             _dict['coaches'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in kills (list)
         _items = []
         if self.kills:
             for _item_kills in self.kills:
-                if _item_kills:
-                    _items.append(_item_kills.to_dict())
+                _items.append(_item_kills.to_dict() if _item_kills is not None else None)
             _dict['kills'] = _items
         # override the default output from pydantic by calling `to_dict()` of metadata
         if self.metadata:
@@ -103,29 +101,25 @@ class MatchesV4Data(BaseModel):
         _items = []
         if self.observers:
             for _item_observers in self.observers:
-                if _item_observers:
-                    _items.append(_item_observers.to_dict())
+                _items.append(_item_observers.to_dict() if _item_observers is not None else None)
             _dict['observers'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in players (list)
         _items = []
         if self.players:
             for _item_players in self.players:
-                if _item_players:
-                    _items.append(_item_players.to_dict())
+                _items.append(_item_players.to_dict() if _item_players is not None else None)
             _dict['players'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in rounds (list)
         _items = []
         if self.rounds:
             for _item_rounds in self.rounds:
-                if _item_rounds:
-                    _items.append(_item_rounds.to_dict())
+                _items.append(_item_rounds.to_dict() if _item_rounds is not None else None)
             _dict['rounds'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in teams (list)
         _items = []
         if self.teams:
             for _item_teams in self.teams:
-                if _item_teams:
-                    _items.append(_item_teams.to_dict())
+                _items.append(_item_teams.to_dict() if _item_teams is not None else None)
             _dict['teams'] = _items
         return _dict
 

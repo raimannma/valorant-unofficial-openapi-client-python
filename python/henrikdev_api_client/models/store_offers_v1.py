@@ -76,15 +76,13 @@ class StoreOffersV1(BaseModel):
         _items = []
         if self.offers:
             for _item_offers in self.offers:
-                if _item_offers:
-                    _items.append(_item_offers.to_dict())
+                _items.append(_item_offers.to_dict() if _item_offers is not None else None)
             _dict['Offers'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in upgrade_currency_offers (list)
         _items = []
         if self.upgrade_currency_offers:
             for _item_upgrade_currency_offers in self.upgrade_currency_offers:
-                if _item_upgrade_currency_offers:
-                    _items.append(_item_upgrade_currency_offers.to_dict())
+                _items.append(_item_upgrade_currency_offers.to_dict() if _item_upgrade_currency_offers is not None else None)
             _dict['UpgradeCurrencyOffers'] = _items
         return _dict
 

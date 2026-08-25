@@ -86,8 +86,7 @@ class MatchesV2DataRoundDefuseEvents(BaseModel):
         _items = []
         if self.player_locations_on_defuse:
             for _item_player_locations_on_defuse in self.player_locations_on_defuse:
-                if _item_player_locations_on_defuse:
-                    _items.append(_item_player_locations_on_defuse.to_dict())
+                _items.append(_item_player_locations_on_defuse.to_dict() if _item_player_locations_on_defuse is not None else None)
             _dict['player_locations_on_defuse'] = _items
         # set to None if defuse_location (nullable) is None
         # and model_fields_set contains the field

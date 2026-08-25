@@ -188,10 +188,10 @@ try {
 ```
 
 ### Parameters
-| **region** | [**EsportsV2Region**](.md)|  | [optional] [enum: north_america, europe, brazil, asia_pacific, korea, japan, latin_america, oceania, mena, gc, collegiate] |
-| **type** | [**EsportsV2EventType**](.md)|  | [optional] [enum: completed, upcoming] |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **region** | [**EsportsV2Region**](.md)|  | [optional] [enum: north_america, europe, brazil, asia_pacific, korea, japan, latin_america, oceania, mena, gc, collegiate] |
+| **type** | [**EsportsV2EventType**](.md)|  | [optional] [enum: completed, upcoming] |
 | **page** | **kotlin.Int**|  | [optional] |
 
 ### Return type
@@ -291,9 +291,9 @@ try {
 ```
 
 ### Parameters
-| **player** | **kotlin.Int**|  | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **player** | **kotlin.Int**|  | |
 | **page** | **kotlin.Int**|  | [optional] |
 
 ### Return type
@@ -343,9 +343,9 @@ try {
 ```
 
 ### Parameters
-| **player** | **kotlin.Int**|  | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **player** | **kotlin.Int**|  | |
 | **timespan** | [**EsportsV2PlayerTimespan**](.md)|  | [optional] [enum: 30d, 60d, 90d, all] |
 
 ### Return type
@@ -395,9 +395,9 @@ try {
 ```
 
 ### Parameters
-| **region** | **kotlin.String**|  | [optional] |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **region** | **kotlin.String**|  | [optional] |
 | **league** | **kotlin.String**|  | [optional] |
 
 ### Return type
@@ -447,9 +447,9 @@ try {
 ```
 
 ### Parameters
-| **teamId** | **kotlin.Int**|  | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **teamId** | **kotlin.Int**|  | |
 | **page** | **kotlin.Int**|  | [optional] |
 
 ### Return type
@@ -599,9 +599,9 @@ try {
 ```
 
 ### Parameters
-| **puuid** | **kotlin.String**| Player UUID | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **puuid** | **kotlin.String**| Player UUID | |
 | **force** | **kotlin.Boolean**| Bypass cache and refresh (optional) | [optional] |
 
 ### Return type
@@ -651,9 +651,9 @@ try {
 ```
 
 ### Parameters
-| **puuid** | **kotlin.String**| Player UUID | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **puuid** | **kotlin.String**| Player UUID | |
 | **force** | **kotlin.Boolean**| Bypass cache and refresh (optional) | [optional] |
 
 ### Return type
@@ -704,10 +704,10 @@ try {
 ```
 
 ### Parameters
-| **name** | **kotlin.String**| Riot ID name | |
-| **tag** | **kotlin.String**| Riot ID tag | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **name** | **kotlin.String**| Riot ID name | |
+| **tag** | **kotlin.String**| Riot ID tag | |
 | **force** | **kotlin.Boolean**| Bypass cache and refresh (optional) | [optional] |
 
 ### Return type
@@ -758,10 +758,10 @@ try {
 ```
 
 ### Parameters
-| **name** | **kotlin.String**| Riot ID name | |
-| **tag** | **kotlin.String**| Riot ID tag | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **name** | **kotlin.String**| Riot ID name | |
+| **tag** | **kotlin.String**| Riot ID tag | |
 | **force** | **kotlin.Boolean**| Bypass cache and refresh (optional) | [optional] |
 
 ### Return type
@@ -864,12 +864,12 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **puuid** | **kotlin.String**| Player UUID | |
 | **mode** | **kotlin.String**| Game mode filter (optional) | [optional] |
 | **map** | **kotlin.String**| Map filter (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **size** | **kotlin.Int**| Number of results (optional) | [optional] |
 
 ### Return type
@@ -923,13 +923,13 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **name** | **kotlin.String**| Riot ID name | |
 | **tag** | **kotlin.String**| Riot ID tag | |
 | **mode** | [**MatchMode**](.md)| Game mode filter (optional) | [optional] [enum: Competitive, Unrated, Custom, Practice, Unknown] |
 | **map** | **kotlin.String**| Map filter (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **size** | **kotlin.Int**| Number of results (optional) | [optional] |
 
 ### Return type
@@ -984,14 +984,14 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **platform** | **kotlin.String**| Platform (pc, console) | |
 | **puuid** | **kotlin.String**| Player UUID | |
 | **mode** | **kotlin.String**| Game mode filter (optional) | [optional] |
 | **map** | **kotlin.String**| Map filter (optional) | [optional] |
 | **size** | **kotlin.Int**| Number of results (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **start** | **kotlin.Int**| Start index for pagination (optional) | [optional] |
 
 ### Return type
@@ -1047,6 +1047,8 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **platform** | **kotlin.String**| Platform (pc, console) | |
 | **name** | **kotlin.String**| Riot ID name | |
@@ -1054,8 +1056,6 @@ try {
 | **mode** | **kotlin.String**| Game mode filter (optional) | [optional] |
 | **map** | **kotlin.String**| Map filter (optional) | [optional] |
 | **size** | **kotlin.Int**| Number of results (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **start** | **kotlin.Int**| Start index for pagination (optional) | [optional] |
 
 ### Return type
@@ -1105,9 +1105,9 @@ try {
 ```
 
 ### Parameters
-| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **puuid** | **kotlin.String**| Player UUID | |
 
 ### Return type
@@ -1158,10 +1158,10 @@ try {
 ```
 
 ### Parameters
-| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
-| **name** | **kotlin.String**| Riot ID name | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
+| **name** | **kotlin.String**| Riot ID name | |
 | **tag** | **kotlin.String**| Riot ID tag | |
 
 ### Return type
@@ -1212,10 +1212,10 @@ try {
 ```
 
 ### Parameters
-| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
-| **platform** | **kotlin.String**| Platform (pc, console) | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
+| **platform** | **kotlin.String**| Platform (pc, console) | |
 | **puuid** | **kotlin.String**| Player UUID | |
 
 ### Return type
@@ -1267,11 +1267,11 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **platform** | **kotlin.String**| Platform (pc, console) | |
 | **name** | **kotlin.String**| Riot ID name | |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **tag** | **kotlin.String**| Riot ID tag | |
 
 ### Return type
@@ -1321,9 +1321,9 @@ try {
 ```
 
 ### Parameters
-| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **puuid** | **kotlin.String**| Player UUID | |
 
 ### Return type
@@ -1374,10 +1374,10 @@ try {
 ```
 
 ### Parameters
-| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
-| **name** | **kotlin.String**| Riot ID name | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
+| **name** | **kotlin.String**| Riot ID name | |
 | **tag** | **kotlin.String**| Riot ID tag | |
 
 ### Return type
@@ -1427,9 +1427,9 @@ try {
 ```
 
 ### Parameters
-| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **puuid** | **kotlin.String**| Player UUID | |
 
 ### Return type
@@ -1480,10 +1480,10 @@ try {
 ```
 
 ### Parameters
-| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
-| **name** | **kotlin.String**| Riot ID name | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
+| **name** | **kotlin.String**| Riot ID name | |
 | **tag** | **kotlin.String**| Riot ID tag | |
 
 ### Return type
@@ -1534,10 +1534,10 @@ try {
 ```
 
 ### Parameters
-| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
-| **platform** | **kotlin.String**| Platform (pc, console) | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
+| **platform** | **kotlin.String**| Platform (pc, console) | |
 | **puuid** | **kotlin.String**| Player UUID | |
 
 ### Return type
@@ -1589,11 +1589,11 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **platform** | **kotlin.String**| Platform (pc, console) | |
 | **name** | **kotlin.String**| Riot ID name | |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **tag** | **kotlin.String**| Riot ID tag | |
 
 ### Return type
@@ -1645,11 +1645,11 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **season** | **kotlin.String**| Season ID (optional) | [optional] |
 | **name** | **kotlin.String**| Player name to search for (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **tag** | **kotlin.String**| Player tag to search for (optional) | [optional] |
 
 ### Return type
@@ -1702,12 +1702,12 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **season** | **kotlin.String**| Season ID (optional) | [optional] |
 | **name** | **kotlin.String**| Player name to search for (optional) | [optional] |
 | **tag** | **kotlin.String**| Player tag to search for (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **puuid** | **kotlin.String**| Player UUID to search for (optional) | [optional] |
 
 ### Return type
@@ -1762,14 +1762,14 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **platform** | **kotlin.String**| Platform (pc, console) | |
 | **season** | **kotlin.String**| Season ID (optional) | [optional] |
 | **size** | **kotlin.Int**| Number of results per page (optional) | [optional] |
 | **page** | **kotlin.Int**| Page number (optional) | [optional] |
 | **name** | **kotlin.String**| Player name to search for (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **tag** | **kotlin.String**| Player tag to search for (optional) | [optional] |
 
 ### Return type
@@ -1869,9 +1869,9 @@ try {
 ```
 
 ### Parameters
-| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **matchId** | **kotlin.String**| Match UUID | |
 
 ### Return type
@@ -1922,10 +1922,10 @@ try {
 ```
 
 ### Parameters
-| **id** | **kotlin.String**| Team UUID | |
-| **season** | **kotlin.String**| Premier season id (optional) | [optional] |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **id** | **kotlin.String**| Team UUID | |
+| **season** | **kotlin.String**| Premier season id (optional) | [optional] |
 | **affinity** | **kotlin.String**| Region/affinity for fallback resolution (optional) | [optional] |
 
 ### Return type
@@ -1975,9 +1975,9 @@ try {
 ```
 
 ### Parameters
-| **id** | **kotlin.String**| Team UUID | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **id** | **kotlin.String**| Team UUID | |
 | **season** | **kotlin.String**| Premier season id (optional) | [optional] |
 
 ### Return type
@@ -2029,11 +2029,11 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **name** | **kotlin.String**| Team name | |
 | **tag** | **kotlin.String**| Team tag | |
 | **season** | **kotlin.String**| Premier season id (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity for fallback resolution (optional) | [optional] |
 
 ### Return type
@@ -2084,10 +2084,10 @@ try {
 ```
 
 ### Parameters
-| **name** | **kotlin.String**| Team name | |
-| **tag** | **kotlin.String**| Team tag | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **name** | **kotlin.String**| Team name | |
+| **tag** | **kotlin.String**| Team tag | |
 | **season** | **kotlin.String**| Premier season id (optional) | [optional] |
 
 ### Return type
@@ -2139,11 +2139,11 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **conference** | **kotlin.String**| Conference filter (optional) | [optional] |
 | **division** | **kotlin.String**| Division filter (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **season** | **kotlin.String**| Premier season id (optional) | [optional] |
 
 ### Return type
@@ -2195,11 +2195,11 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **name** | **kotlin.String**| Team name to search for (optional) | [optional] |
 | **tag** | **kotlin.String**| Team tag to search for (optional) | [optional] |
 | **id** | **kotlin.String**| Team UUID to search for (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **season** | **kotlin.String**| Premier season id (optional) | [optional] |
 
 ### Return type
@@ -2503,13 +2503,13 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **name** | **kotlin.String**| Riot ID name | |
 | **tag** | **kotlin.String**| Riot ID tag | |
 | **mode** | **kotlin.String**| Game mode filter (optional) | [optional] |
 | **map** | **kotlin.String**| Map filter (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **size** | **kotlin.Int**| Number of results (optional) | [optional] |
 
 ### Return type
@@ -2562,12 +2562,12 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **puuid** | **kotlin.String**| Player UUID | |
 | **mode** | **kotlin.String**| Game mode filter (optional) | [optional] |
 | **map** | **kotlin.String**| Map filter (optional) | [optional] |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **size** | **kotlin.Int**| Number of results (optional) | [optional] |
 
 ### Return type
@@ -2619,11 +2619,11 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **name** | **kotlin.String**| Riot ID name | |
 | **tag** | **kotlin.String**| Riot ID tag | |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **size** | **kotlin.Int**| Number of results (optional) | [optional] |
 
 ### Return type
@@ -2674,10 +2674,10 @@ try {
 ```
 
 ### Parameters
-| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
-| **puuid** | **kotlin.String**| Player UUID | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
+| **puuid** | **kotlin.String**| Player UUID | |
 | **size** | **kotlin.Int**| Number of results (optional) | [optional] |
 
 ### Return type
@@ -2730,12 +2730,12 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **platform** | **kotlin.String**| Platform (pc, console) | |
 | **name** | **kotlin.String**| Riot ID name | |
 | **tag** | **kotlin.String**| Riot ID tag | |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **size** | **kotlin.Int**| Number of results (optional) | [optional] |
 
 ### Return type
@@ -2787,11 +2787,11 @@ try {
 ```
 
 ### Parameters
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
 | **affinity** | **kotlin.String**| Region/affinity (e.g., na, eu, ap, kr) | |
 | **platform** | **kotlin.String**| Platform (pc, console) | |
 | **puuid** | **kotlin.String**| Player UUID | |
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
 | **size** | **kotlin.Int**| Number of results (optional) | [optional] |
 
 ### Return type
@@ -2891,9 +2891,9 @@ try {
 ```
 
 ### Parameters
-| **countryCode** | **kotlin.String**| Country code (e.g., en-us, de-de) | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **countryCode** | **kotlin.String**| Country code (e.g., en-us, de-de) | |
 | **category** | **kotlin.String**| Category filter (optional) | [optional] |
 
 ### Return type
@@ -2943,9 +2943,9 @@ try {
 ```
 
 ### Parameters
-| **dbId** | **kotlin.String**| Database ID of the website entry | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **dbId** | **kotlin.String**| Database ID of the website entry | |
 | **countryCode** | **kotlin.String**| Country code (e.g., en-us, de-de) | |
 
 ### Return type

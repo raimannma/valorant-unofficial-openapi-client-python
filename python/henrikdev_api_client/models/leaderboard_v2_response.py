@@ -81,8 +81,7 @@ class LeaderboardV2Response(BaseModel):
         _items = []
         if self.players:
             for _item_players in self.players:
-                if _item_players:
-                    _items.append(_item_players.to_dict())
+                _items.append(_item_players.to_dict() if _item_players is not None else None)
             _dict['players'] = _items
         return _dict
 

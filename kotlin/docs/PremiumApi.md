@@ -183,9 +183,9 @@ try {
 ```
 
 ### Parameters
-| **id** | **kotlin.String**| Tracked user id | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **id** | **kotlin.String**| Tracked user id | |
 | **premiumWebhookUserUpdateRequest** | [**PremiumWebhookUserUpdateRequest**](PremiumWebhookUserUpdateRequest.md)|  | |
 
 ### Return type

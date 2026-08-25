@@ -88,8 +88,7 @@ class PremierTeamV1ResponseData(BaseModel):
         _items = []
         if self.member:
             for _item_member in self.member:
-                if _item_member:
-                    _items.append(_item_member.to_dict())
+                _items.append(_item_member.to_dict() if _item_member is not None else None)
             _dict['member'] = _items
         # override the default output from pydantic by calling `to_dict()` of placement
         if self.placement:

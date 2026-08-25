@@ -77,6 +77,11 @@ class ContentItem(BaseModel):
         if self.id is None and "id" in self.model_fields_set:
             _dict['id'] = None
 
+        # set to None if localized_names (nullable) is None
+        # and model_fields_set contains the field
+        if self.localized_names is None and "localized_names" in self.model_fields_set:
+            _dict['localizedNames'] = None
+
         return _dict
 
     @classmethod

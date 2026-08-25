@@ -89,22 +89,19 @@ class EsportsV2Team(BaseModel):
         _items = []
         if self.event_placements:
             for _item_event_placements in self.event_placements:
-                if _item_event_placements:
-                    _items.append(_item_event_placements.to_dict())
+                _items.append(_item_event_placements.to_dict() if _item_event_placements is not None else None)
             _dict['event_placements'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in roster (list)
         _items = []
         if self.roster:
             for _item_roster in self.roster:
-                if _item_roster:
-                    _items.append(_item_roster.to_dict())
+                _items.append(_item_roster.to_dict() if _item_roster is not None else None)
             _dict['roster'] = _items
         # override the default output from pydantic by calling `to_dict()` of each item in socials (list)
         _items = []
         if self.socials:
             for _item_socials in self.socials:
-                if _item_socials:
-                    _items.append(_item_socials.to_dict())
+                _items.append(_item_socials.to_dict() if _item_socials is not None else None)
             _dict['socials'] = _items
         # set to None if country (nullable) is None
         # and model_fields_set contains the field

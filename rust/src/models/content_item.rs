@@ -17,8 +17,8 @@ pub struct ContentItem {
     pub asset_name: String,
     #[serde(rename = "id", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
     pub id: Option<Option<String>>,
-    #[serde(rename = "localizedNames", skip_serializing_if = "Option::is_none")]
-    pub localized_names: Option<std::collections::HashMap<String, String>>,
+    #[serde(rename = "localizedNames", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    pub localized_names: Option<Option<std::collections::HashMap<String, String>>>,
     #[serde(rename = "name")]
     pub name: String,
 }
